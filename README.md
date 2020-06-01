@@ -19,8 +19,15 @@ Examples:
 
 **You can see Retrofix in action here:**
 
+
+![Tiles view](https://github.com/20GotoTen/es-theme-retrofix/blob/master/_inc/screenshot/Tiles.png "Tiles view")
 - Tiles view: https://youtu.be/A2hP1grA_Pg
+
+
+![Detailed view](https://github.com/20GotoTen/es-theme-retrofix/blob/master/_inc/screenshot/Detailed.png "Detailed view")
 - Detailed view: https://youtu.be/cFv1xhQ5-xM
+
+![Boxes view](https://github.com/20GotoTen/es-theme-retrofix/blob/master/_inc/screenshot/Boxes.png "Boxes view")
 - Boxes view: https://youtu.be/XLuyA9z8LYA
 
 Supported themes in version 1.0:
