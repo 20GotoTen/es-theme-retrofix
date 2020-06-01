@@ -1,0 +1,28 @@
+<theme>
+	<formatVersion>7</formatVersion>
+	<include>./../theme.xml</include>
+
+	<view name="system">
+		<image name="startSet" extra="static"></image>
+	</view>
+
+	<view name="basic, detailed">
+		<textlist name="gamelist">
+			<selectorColor>ED1C24</selectorColor>
+			<selectedColor>ffffff</selectedColor>
+		</textlist>
+	</view>
+
+	<view name="grid">
+		<image name="gridtile.favorite">
+			<color>ED1C24ff</color>
+		</image>  
+	</view>
+
+	<customView name="Tiles" inherits="grid">
+		<gridtile name="selected">
+			<backgroundEdgeColor>ED1C24</backgroundEdgeColor>
+		</gridtile>
+	</customView>
+
+</theme>

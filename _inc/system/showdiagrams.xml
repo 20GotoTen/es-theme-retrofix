@@ -1,0 +1,12 @@
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="basic, detailed">
+		<image name="listsystem" extra="true">
+			<path>./../${system.theme}/_inc/listsystem.png</path>
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<zIndex>12</zIndex>
+		</image>
+	</view>
+</theme>

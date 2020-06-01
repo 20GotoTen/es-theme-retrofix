@@ -1,0 +1,14 @@
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="Boxes" inherits="grid">
+		<text name="md_name">
+			<pos>0.5 0.2</pos>
+			<size>0.520833333333333 0.055555555555556</size>
+			<origin>0.5 0.5</origin>
+			<fontPath>./_inc/fonts/RedHatDisplay-Regular.ttf</fontPath>
+			<fontSize>0.032407407407407</fontSize>
+			<color>ffffffff</color>
+			<zIndex>100</zIndex>
+		</text>
+	</customView>
+</theme>

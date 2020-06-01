@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	
+	<view name="system">
+		<image name="startSet" extra="static">
+			<path>./../sega32x/_inc/start.png</path>
+		</image>
+	</view>
+
+	<view name="basic,detailed,grid">
+		<image name="btnSet" extra="true">
+			<path>./../sega32x/_inc/btnset.png</path>
+		</image>
+	</view>
+
+	<customView name="Tiles" inherits="grid">
+		<image name="btnSet" extra="true">
+			<path>./../sega32x/_inc/btnset.png</path>
+		</image>
+	</customView>
+
+</theme>

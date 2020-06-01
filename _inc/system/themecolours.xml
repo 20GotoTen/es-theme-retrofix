@@ -1,0 +1,9 @@
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="basic, detailed">
+		<textlist name="gamelist">
+			<selectorColor>000000</selectorColor>
+			<selectedColor>FF2222</selectedColor>
+		</textlist>
+	</view>
+</theme>
