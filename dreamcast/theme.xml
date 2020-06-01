@@ -1,0 +1,43 @@
+<theme>
+	<formatVersion>7</formatVersion>
+	<include>./../theme.xml</include>
+  <view name="system">
+   <image name="startSet" extra="static"></image>
+ </view>
+
+ <view name="basic, detailed">
+  <textlist name="gamelist">
+   <selectorColor>CF3311</selectorColor>
+   <selectedColor>ffffff</selectedColor>
+ </textlist>
+</view>
+
+
+<customView name="Boxes" inherits="grid">
+  <imagegrid name="gamegrid">
+    <autoLayout>7 1</autoLayout>
+    <pos>-0.13 0.174</pos>
+    <size>1.26 0.65</size>
+    <autoLayoutSelectedZoom>1.45</autoLayoutSelectedZoom>
+  </imagegrid>
+
+  <text name="md_name">
+    <pos>0.5 0.231481481481481</pos>
+  </text>
+
+</customView>
+
+
+<view name="grid">
+  <image name="gridtile.favorite">
+    <color>CF3311ff</color>
+  </image>  
+</view>
+
+<customView name="Tiles" inherits="grid">
+  <gridtile name="selected">
+    <backgroundEdgeColor>CF3311</backgroundEdgeColor>
+  </gridtile>
+</customView>
+
+</theme>
