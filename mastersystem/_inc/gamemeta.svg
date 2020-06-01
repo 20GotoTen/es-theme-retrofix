@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="723px" height="85px" viewBox="0 0 723 85" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>gamemeta</title>
+    <g id="gamemeta" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="GAME-DETAILS" transform="translate(44.000000, 0.000000)">
+            <g id="ICON-DIVIDERS" opacity="0.351446243" transform="translate(126.000000, 0.000000)" fill="#FFFFFF">
+                <rect id="Rectangle" x="0" y="0" width="1" height="73"></rect>
+                <rect id="Rectangle" x="191" y="0" width="1" height="73"></rect>
+                <rect id="Rectangle" x="382" y="0" width="1" height="73"></rect>
+            </g>
+            <g id="MD_LBL_PLAYERS-INFO" transform="translate(194.000000, 0.000000)" stroke="#FFFFFF" stroke-width="3">
+                <g id="PLAYERS---ICON">
+                    <circle id="Oval" cx="14" cy="8" r="6.5"></circle>
+                    <path d="M21,19.5 L7,19.5 C5.48121694,19.5 4.10621694,20.1156085 3.1109127,21.1109127 C2.11560847,22.1062169 1.5,23.4812169 1.5,25 L1.5,36.5 L26.5,36.5 L26.5,25 C26.5,23.4812169 25.8843915,22.1062169 24.8890873,21.1109127 C23.8937831,20.1156085 22.5187831,19.5 21,19.5 Z" id="Rectangle"></path>
+                    <circle id="Oval" cx="43" cy="8" r="6.5"></circle>
+                    <path d="M50,19.5 L36,19.5 C34.4812169,19.5 33.1062169,20.1156085 32.1109127,21.1109127 C31.1156085,22.1062169 30.5,23.4812169 30.5,25 L30.5,36.5 L55.5,36.5 L55.5,25 C55.5,23.4812169 54.8843915,22.1062169 53.8890873,21.1109127 C52.8937831,20.1156085 51.5187831,19.5 50,19.5 Z" id="Rectangle"></path>
+                </g>
+            </g>
+            <g id="MASTER-SYSTEM-CONTROLLER---ICON" transform="translate(0.000000, 2.000000)" stroke="#FFFFFF">
+                <rect id="Rectangle" stroke-width="3" x="1.5" y="1.5" width="61" height="28" rx="3"></rect>
+                <g id="Group-47" transform="translate(39.000000, 14.000000)" stroke-width="2">
+                    <circle id="Oval" cx="14.5" cy="4.5" r="3.5"></circle>
+                    <circle id="Oval" cx="4.5" cy="4.5" r="3.5"></circle>
+                </g>
+                <rect id="Rectangle" stroke-width="2" x="10" y="8" width="15" height="15" rx="5"></rect>
+                <path d="M61.9904785,10 L31.5,10 C30.1192881,10 29,8.88071187 29,7.5 L29,2 L61,2" id="Path" stroke-width="2"></path>
+                <path d="M47.5,29 L28,29 L28,27.0833333 C28,25.9327401 29.1192881,25 30.5,25 L62.8959961,25" id="Path" stroke-width="2"></path>
+                <path d="M14.5,13 L-6.5,13 C-6.91421356,13 -7.28921356,13.1678932 -7.56066017,13.4393398 C-7.83210678,13.7107864 -8,14.0857864 -8,14.5 L-8,18 L16,18 L16,14.5 C16,14.0857864 15.8321068,13.7107864 15.5606602,13.4393398 C15.2892136,13.1678932 14.9142136,13 14.5,13 Z" id="Rectangle" stroke-width="2" transform="translate(4.000000, 15.500000) rotate(-270.000000) translate(-4.000000, -15.500000) "></path>
+                <rect id="Rectangle" fill="#FFFFFF" x="17" y="10" width="1" height="3" rx="0.5"></rect>
+                <rect id="Rectangle" fill="#FFFFFF" x="17" y="18" width="1" height="3" rx="0.5"></rect>
+                <rect id="Rectangle" fill="#FFFFFF" transform="translate(13.500000, 15.500000) rotate(-90.000000) translate(-13.500000, -15.500000) " x="13" y="14" width="1" height="3" rx="0.5"></rect>
+                <rect id="Rectangle" fill="#FFFFFF" transform="translate(21.500000, 15.500000) rotate(-90.000000) translate(-21.500000, -15.500000) " x="21" y="14" width="1" height="3" rx="0.5"></rect>
+            </g>
+            <g id="MD_DEVELOPER-INFO" transform="translate(376.000000, 1.000000)">
+                <g id="PROCESSOR---ICON">
+                    <g id="Group-51" transform="translate(0.000000, 12.000000)" fill="#FFFFFF">
+                        <rect id="Rectangle" x="0" y="0" width="8" height="3" rx="1.5"></rect>
+                        <rect id="Rectangle" x="0" y="5" width="8" height="3" rx="1.5"></rect>
+                        <rect id="Rectangle" x="0" y="10" width="8" height="3" rx="1.5"></rect>
+                    </g>
+                    <g id="Group-52" transform="translate(15.000000, 0.000000)" fill="#FFFFFF">
+                        <rect id="Rectangle" transform="translate(11.500000, 3.500000) rotate(-270.000000) translate(-11.500000, -3.500000) " x="8" y="2" width="7" height="3" rx="1.5"></rect>
+                        <rect id="Rectangle" transform="translate(6.500000, 3.500000) rotate(-270.000000) translate(-6.500000, -3.500000) " x="3" y="2" width="7" height="3" rx="1.5"></rect>
+                        <rect id="Rectangle" transform="translate(1.500000, 3.500000) rotate(-270.000000) translate(-1.500000, -3.500000) " x="-2" y="2" width="7" height="3" rx="1.5"></rect>
+                        <rect id="Rectangle" transform="translate(26.500000, 3.500000) rotate(-270.000000) translate(-26.500000, -3.500000) " x="23" y="2" width="7" height="3" rx="1.5"></rect>
+                        <rect id="Rectangle" transform="translate(21.500000, 3.500000) rotate(-270.000000) translate(-21.500000, -3.500000) " x="18" y="2" width="7" height="3" rx="1.5"></rect>
+                        <rect id="Rectangle" transform="translate(16.500000, 3.500000) rotate(-270.000000) translate(-16.500000, -3.500000) " x="13" y="2" width="7" height="3" rx="1.5"></rect>
+                        <rect id="Rectangle" transform="translate(41.500000, 3.500000) rotate(-270.000000) translate(-41.500000, -3.500000) " x="38" y="2" width="7" height="3" rx="1.5"></rect>
+                        <rect id="Rectangle" transform="translate(31.500000, 3.500000) rotate(-270.000000) translate(-31.500000, -3.500000) " x="28" y="2" width="7" height="3" rx="1.5"></rect>
+                        <rect id="Rectangle" transform="translate(36.500000, 3.500000) rotate(-270.000000) translate(-36.500000, -3.500000) " x="33" y="2" width="7" height="3" rx="1.5"></rect>
+                    </g>
+                    <g id="Group-52" transform="translate(15.000000, 30.000000)" fill="#FFFFFF">
+                        <rect id="Rectangle" transform="translate(11.500000, 3.500000) rotate(-270.000000) translate(-11.500000, -3.500000) " x="8" y="2" width="7" height="3" rx="1.5"></rect>
+                        <rect id="Rectangle" transform="translate(6.500000, 3.500000) rotate(-270.000000) translate(-6.500000, -3.500000) " x="3" y="2" width="7" height="3" rx="1.5"></rect>
+                        <rect id="Rectangle" transform="translate(1.500000, 3.500000) rotate(-270.000000) translate(-1.500000, -3.500000) " x="-2" y="2" width="7" height="3" rx="1.5"></rect>
+                        <rect id="Rectangle" transform="translate(26.500000, 3.500000) rotate(-270.000000) translate(-26.500000, -3.500000) " x="23" y="2" width="7" height="3" rx="1.5"></rect>
+                        <rect id="Rectangle" transform="translate(21.500000, 3.500000) rotate(-270.000000) translate(-21.500000, -3.500000) " x="18" y="2" width="7" height="3" rx="1.5"></rect>
+                        <rect id="Rectangle" transform="translate(16.500000, 3.500000) rotate(-270.000000) translate(-16.500000, -3.500000) " x="13" y="2" width="7" height="3" rx="1.5"></rect>
+                        <rect id="Rectangle" transform="translate(41.500000, 3.500000) rotate(-270.000000) translate(-41.500000, -3.500000) " x="38" y="2" width="7" height="3" rx="1.5"></rect>
+                        <rect id="Rectangle" transform="translate(31.500000, 3.500000) rotate(-270.000000) translate(-31.500000, -3.500000) " x="28" y="2" width="7" height="3" rx="1.5"></rect>
+                        <rect id="Rectangle" transform="translate(36.500000, 3.500000) rotate(-270.000000) translate(-36.500000, -3.500000) " x="33" y="2" width="7" height="3" rx="1.5"></rect>
+                    </g>
+                    <g id="Group-51" transform="translate(66.000000, 12.000000)" fill="#FFFFFF">
+                        <rect id="Rectangle" x="0" y="0" width="8" height="3" rx="1.5"></rect>
+                        <rect id="Rectangle" x="0" y="5" width="8" height="3" rx="1.5"></rect>
+                        <rect id="Rectangle" x="0" y="10" width="8" height="3" rx="1.5"></rect>
+                    </g>
+                    <rect id="Rectangle" stroke="#FFFFFF" stroke-width="3" x="6.5" y="6.5" width="60" height="24" rx="2.55555556"></rect>
+                    <rect id="Rectangle" stroke="#FFFFFF" stroke-width="2" x="12" y="12" width="49" height="13"></rect>
+                </g>
+            </g>
+            <g id="RELEASEDATE---INFO" transform="translate(576.000000, 0.000000)">
+                <g id="RELEASEDATE---ICON">
+                    <rect id="Rectangle" fill="#FFFFFF" transform="translate(10.500000, 5.000000) rotate(-270.000000) translate(-10.500000, -5.000000) " x="5.5" y="3.5" width="10" height="3" rx="1.5"></rect>
+                    <rect id="Rectangle" fill="#FFFFFF" x="0" y="11" width="57" height="2"></rect>
+                    <rect id="Rectangle" fill="#FFFFFF" transform="translate(46.500000, 5.000000) rotate(-270.000000) translate(-46.500000, -5.000000) " x="41.5" y="3.5" width="10" height="3" rx="1.5"></rect>
+                    <rect id="Rectangle" stroke="#FFFFFF" stroke-width="3" x="1.5" y="4.5" width="54" height="32" rx="2.55555556"></rect>
+                    <circle id="Oval" fill="#FFFFFF" cx="14.5" cy="16.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="21.5" cy="16.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="28.5" cy="16.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="35.5" cy="16.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="42.5" cy="16.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="49.5" cy="16.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="7.5" cy="21.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="14.5" cy="21.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="21.5" cy="21.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="28.5" cy="21.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="35.5" cy="21.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="42.5" cy="21.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="49.5" cy="21.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="7.5" cy="26.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="14.5" cy="26.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="21.5" cy="26.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="28.5" cy="26.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="35.5" cy="26.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="42.5" cy="26.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="49.5" cy="26.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="7.5" cy="31.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="14.5" cy="31.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="21.5" cy="31.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="28.5" cy="31.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="35.5" cy="31.5" r="1.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="42.5" cy="31.5" r="1.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
