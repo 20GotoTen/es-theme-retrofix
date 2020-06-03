@@ -822,6 +822,7 @@ GitHub:      	https://github.com/
 		<include name="Mega Drive / 32x / CD">./_inc/system/buttons/megadrive.xml</include>
 		<include name="Atari 2600 / 5200">./_inc/system/buttons/atari2600-5200.xml</include>
 		<include name="Atari 7800">./_inc/system/buttons/atari7800.xml</include>
+		<include name="Atari Jaguar">./_inc/system/buttons/jaguar.xml</include>
 		<include name="NES">./_inc/system/buttons/nes.xml</include>
 		<include name="PC Engine / PC Engine CD">./_inc/system/buttons/pcengine.xml</include>
 		<include name="Super Grafx">./_inc/system/buttons/supergrafx.xml</include>
