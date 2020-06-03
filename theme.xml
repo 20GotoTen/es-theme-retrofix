@@ -830,6 +830,7 @@ GitHub:      	https://github.com/
 		<include name="GameBoy Advance">./_inc/system/buttons/gba.xml</include>
 		<include name="Nintendo 64">./_inc/system/buttons/n64.xml</include>
 		<include name="PlayStation">./_inc/system/buttons/psx.xml</include>
+		<include name="3DO">./_inc/system/buttons/3do.xml</include>
 	</subset>
 
 	<subset name="boxNames" displayName="${subset.boxNames}">
