@@ -119,7 +119,7 @@ Show console art on lists (yes/no, default: no):
 
 3/6/2020:
 ---------
-- Added Atari Jaguar.
+- Added Atari Jaguar, Atari 800, 3DO.
 
 
 
