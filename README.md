@@ -116,6 +116,13 @@ Show console art on lists (yes/no, default: no):
 
 
 
+
+3/6/2020:
+---------
+- Added Atari Jaguar.
+
+
+
 Coming soon:
 ------------
 
