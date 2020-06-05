@@ -121,6 +121,10 @@ Show console art on lists (yes/no, default: no):
 ---------
 - Added Atari Jaguar, Atari 800, 3DO.
 
+4/6/2020:
+--------
+- Added SNK, Odyssey 2.
+
 
 
 Coming soon:
