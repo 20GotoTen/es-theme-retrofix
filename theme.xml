@@ -179,9 +179,9 @@ GitHub:      	https://github.com/
 		</image>
 
 		<image name="batologo" extra="static">
-			<origin>0 0</origin>
-			<pos>0.8984375 0.046296296296296</pos>
-			<size>0.072395833333333 0.017592592592593</size>
+			<origin>1 0</origin>
+			<pos>0.9739583333333333 0.0462962962962963</pos>
+			<size>0.0723958333333333 0.0204444444444444</size>
 			<path>./_inc/icons/batocera.svg</path>    
 			<zIndex>200</zIndex>
 		</image>
@@ -237,7 +237,7 @@ GitHub:      	https://github.com/
 			<path>./_inc/assets/marker.png</path>
 			<path>./${system.theme}/_inc/marker.png</path>
 			<size>0.0078125 0.1666666666666667</size>
-			<pos>0.2291666666666667 0.4166666666666667</pos>
+			<pos>0.2213541666666667 0.4166666666666667</pos>
 			<origin>0 0</origin>
 			<zIndex>30</zIndex>
 		</image>  
