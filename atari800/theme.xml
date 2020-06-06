@@ -21,7 +21,7 @@
 
 	<customView name="Tiles" inherits="grid">
 		<gridtile name="selected">
-			<backgroundEdgeColor>EFEE606</backgroundEdgeColor>
+			<backgroundEdgeColor>FEE606</backgroundEdgeColor>
 		</gridtile>
 	</customView>
 
