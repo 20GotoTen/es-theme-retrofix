@@ -37,6 +37,7 @@ Supported themes in version 1.0:
 
 - Master system
 - Mega drive
+- Dreamcast
 - Mame
 - N64
 - Neo Geo
@@ -49,7 +50,10 @@ Supported themes in version 1.0:
 - SG-1000
 - Snes / Super Famicom
 - Super Grafx
+- Atari 800
 - Atari 2600
+- Atari 5200
+- Atari 7800
 - Atari Lynx
 - Laserdisc
 - Game Gear
@@ -64,7 +68,13 @@ Supported themes in version 1.0:
 - Jaleco
 - Capcom
 - Konami
+- Taito
 - Auto Favourites
+- SNK
+- PC ports
+- 3DO
+- Odyssey 2
+- Images
 
 
 Scraping images for Retrofix:
