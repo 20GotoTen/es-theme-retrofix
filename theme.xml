@@ -178,7 +178,6 @@ GitHub:      	https://github.com/
 			<path>./${system.theme}/_inc/bg.jpg</path>
 		</image>
 
-		<!--
 		<image name="batologo" extra="static">
 			<origin>0 0</origin>
 			<pos>0.8984375 0.046296296296296</pos>
@@ -186,7 +185,6 @@ GitHub:      	https://github.com/
 			<path>./_inc/icons/batocera.svg</path>    
 			<zIndex>200</zIndex>
 		</image>
-		-->
 
 		<video name="backgroundvideo" extra="true">
 			<path>{random}</path>
