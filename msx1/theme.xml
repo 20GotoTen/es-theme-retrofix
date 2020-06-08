@@ -5,9 +5,5 @@
 		<image name="startSet" extra="static"></image>
 	</view>
 
-	<view name="basic, detailed">
-		<textlist name="gamelist">
-			<selectorColor>E60012</selectorColor>
-		</textlist>
-	</view>
+
 </theme>

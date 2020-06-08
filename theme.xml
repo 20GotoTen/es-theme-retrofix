@@ -5,7 +5,7 @@ theme name:     Retrofix
 author:         20goto10
 version:    	1.0
 System      	Batocera 5.25+
-GitHub:      	https://github.com/
+GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 -->
 
 <theme defaultView="Tiles">
@@ -254,7 +254,7 @@ GitHub:      	https://github.com/
 
 		<image name="mainlogo" extra="true">
 			<origin>0 1</origin>
-			<path>./_inc/icons/batocera.svg</path>
+			<!--<path>./_inc/icons/batocera.svg</path>-->
 			<path>./${system.theme}/_inc/mainlogo.svg</path>
 			<pos>0.28125 0.750185185185185</pos>
 			<maxSize>0.192708333333333 0.148148148148148</maxSize>
@@ -470,12 +470,12 @@ GitHub:      	https://github.com/
 			<origin>0 0</origin>
 			<pos>0.052083333333333 0.092592592592593</pos>
 			<maxSize>0.125 0.160185185185185</maxSize>
-			<path>./_inc/icons/batocera.svg</path>
 			<path>./${system.theme}/_inc/mainlogo.svg</path>
 		</image>
 
 		<image name="logo">
 			<origin>0 0</origin>
+			<path>./_inc/icons/batocera.svg</path>
 			<pos>-2 -2</pos>
 		</image>
 

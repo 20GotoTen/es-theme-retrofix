@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+theme name:     Retrofix
+author:         20goto10
+version:    	1.0
+System      	Batocera 5.25+
+GitHub:      	https://github.com/
+-->
+
+<theme>
+	<formatVersion>7</formatVersion>
+
+
+<view name="splash">
+		<splash name="splash">
+			<backgroundColor>303030FF</backgroundColor>
+		</splash>
+
+		<image name="background">
+			<path>./_inc/assets/background.png</path>
+		</image>
+
+
+
+		<image name="progressbarbg" extra="true">
+			<origin>0 0</origin>
+			<pos>0.2005208333333333 0.7083333333333333</pos>
+			<size>0.5989583333333333 0.0092592592592593</size>
+			<tile>true</tile>
+			<path>./_inc/assets/progressbar.png</path>
+			<color>FF2222</color>
+			<colorEnd>FF2222</colorEnd>
+			<zIndex>5</zIndex>
+		</image>
+
+
+		<image name="progressbar">
+			<origin>0 0</origin>
+			<pos>0.2005208333333333 0.7083333333333333</pos>
+			<size>0.5989583333333333 0.0092592592592593</size>
+			<path>./_inc/assets/progressbarbg.png</path>
+			<color>3E3E3Eff</color>
+			<colorEnd>3E3E3Eff</colorEnd>
+			<roundCorners>0</roundCorners>
+			<zIndex>6</zIndex>
+		</image>
+		<image name="progressbar:active">
+			<tile>true</tile>
+			<path>./_inc/assets/progressbar.png</path>
+			<color>FF2222</color>
+			<colorEnd>FF2222</colorEnd>
+			<zIndex>7</zIndex>
+		</image>
+
+
+		<image name="splashlogo" extra="true">
+			<path>./_inc/assets/splashlogo.svg</path>
+			<size>0.2903958333333333 0.1666666666666667</size>
+			<pos>0.2005208333333333 0.4166666666666667</pos>
+		</image>
+
+
+		
+		<text name="label">
+
+			<color>FFFFFFFF</color>
+			<alignment>left</alignment>
+			<fontPath>./_inc/fonts/RedHatDisplay-Regular.ttf</fontPath>
+			<pos>0.2005208333333333 0.7361111111111111</pos>
+			<fontSize>0.028</fontSize>
+			<color>d9d9d9</color>
+			<glowColor>00000018</glowColor>
+			<glowSize>0</glowSize>
+			<glowOffset>0</glowOffset>
+		</text>
+	</view>
+
+
+
+
+
+
+
+
+
+
+</theme>

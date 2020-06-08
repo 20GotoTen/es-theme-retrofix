@@ -10,4 +10,18 @@
 			<selectorColor>E60012</selectorColor>
 		</textlist>
 	</view>
+
+<view name="grid">
+  <image name="gridtile.favorite">
+    <color>E60012ff</color>
+  </image>  
+</view>
+
+<customView name="Tiles" inherits="grid">
+  <gridtile name="selected">
+    <backgroundEdgeColor>E60012</backgroundEdgeColor>
+  </gridtile>
+</customView>
+
+
 </theme>

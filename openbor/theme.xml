@@ -1,9 +1,53 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<include>./../theme.xml</include>
+  <view name="system">
+   <image name="startSet" extra="static"></image>
 
-	<view name="system">
-		<image name="startSet" extra="static"></image>
-	</view>
+<text name="systemtitle" extra="true">
+  <text>OpenBOR</text>
+  <text lang="pl">PL OpenBOR</text>
+
+  <fontPath>./../_inc/fonts/RedHatDisplay-Regular.ttf</fontPath>
+  <color>ffffff</color>
+  <fontSize>0.068</fontSize>
+  <zIndex>110</zIndex>
+  <origin>0 1</origin>
+  <pos>0.28125 0.762962962962963</pos>
+      <maxSize>0.192708333333333 0.148148148148148</maxSize>
+</text>
+ </view>
+
+ <view name="basic, detailed">
+  <textlist name="gamelist">
+   <selectorColor>0097E0</selectorColor>
+   <selectedColor>ffffff</selectedColor>
+ </textlist>
+</view>
+
+
+<view name="grid">
+  <image name="gridtile.favorite">
+    <color>0097E0ff</color>
+  </image>  
+<text name="systemtitle" extra="true">
+  <text>OpenBOR</text>
+  <text lang="pl">PL OpenBOR</text>
+  <fontPath>./../_inc/fonts/RedHatDisplay-Regular.ttf</fontPath>
+  <color>ffffff</color>
+  <fontSize>0.034</fontSize>
+  <zIndex>110</zIndex>
+  <origin>0 0</origin>
+  <pos>0.052083333333333 0.092592592592593</pos>
+      <maxSize>0.25 0.148148148148148</maxSize>
+</text>
+</view>
+
+
+<customView name="Tiles" inherits="grid">
+  <gridtile name="selected">
+    <backgroundEdgeColor>0097E0</backgroundEdgeColor>
+  </gridtile>
+</customView>
 
 </theme>
