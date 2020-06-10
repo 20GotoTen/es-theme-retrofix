@@ -248,7 +248,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<backgroundColor>00000000</backgroundColor>
 			<color>ffffff</color>
 			<fontPath>./_inc/fonts/RedHatDisplay-Regular.ttf</fontPath>
-			<fontSize>0.018</fontSize>
+			<fontSize>0.022</fontSize>
 			<alignment>left</alignment>
 		</text> 
 
