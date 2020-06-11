@@ -358,7 +358,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<alignment>left</alignment>
 			<horizontalMargin>0.01 0.09</horizontalMargin>
 			<selectorHeight>0.046296296296296</selectorHeight>
-			<selectorOffsetY>-0.007407407407407</selectorOffsetY>
+			<!--<selectorOffsetY>-0.007407407407407</selectorOffsetY>-->
 			<lines>11</lines>
 			<lineSpacing>2.2</lineSpacing>
 			<scrollSound>./_inc/sound/cursor.wav</scrollSound>
