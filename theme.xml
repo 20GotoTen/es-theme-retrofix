@@ -15,7 +15,8 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<tilesViewName>Tiles</tilesViewName>
 		<subset.buttonSet>Button styles</subset.buttonSet> 
 		<subset.boxNames>Show game names on Boxes View</subset.boxNames>
-		<subset.diagrams>Show console art on Lists</subset.diagrams> 
+		<subset.diagrams>Show console art on Lists</subset.diagrams>
+		<subset.darkmode>Use Darker Mode</subset.darkmode>
 	</variables>
 
 	<view name="system, basic, detailed, grid">
@@ -819,6 +820,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<include name="SG-1000">./_inc/system/buttons/sg1000.xml</include>
 		<include name="Snes">./_inc/system/buttons/snes.xml</include>
 		<include name="Neo Geo">./_inc/system/buttons/neogeo.xml</include>
+		<include name="Neo Geo Pocket Color">./_inc/system/buttons/ngpc.xml</include>
 		<include name="Mega Drive / 32x / CD">./_inc/system/buttons/megadrive.xml</include>
 		<include name="Atari 800 / 2600 / 5200">./_inc/system/buttons/atari2600-5200.xml</include>
 		<include name="Atari 7800">./_inc/system/buttons/atari7800.xml</include>
@@ -833,6 +835,13 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<include name="PlayStation">./_inc/system/buttons/psx.xml</include>
 		<include name="3DO">./_inc/system/buttons/3do.xml</include>
 		<include name="Odyssey 2 / Videopac">./_inc/system/buttons/odyssey2.xml</include>
+		<include name="Dreamcast">./_inc/system/buttons/dreamcast.xml</include>
+		<include name="Wii">./_inc/system/buttons/wii.xml</include>
+		<include name="Gamecube">./_inc/system/buttons/gamecube.xml</include>
+		<include name="MSX">./_inc/system/buttons/msx.xml</include>
+		<include name="Vectrex">./_inc/system/buttons/vectrex.xml</include>
+
+
 	</subset>
 
 	<subset name="boxNames" displayName="${subset.boxNames}">
@@ -845,5 +854,13 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<include name="yes">./_inc/system/showdiagrams.xml</include>
 		<include name="no"/>
 	</subset>
+
+
+
+	<subset name="darkmode" displayName="${subset.darkmode}">
+		<include name="no"/>
+		<include name="yes">./_inc/system/darkmode.xml</include>
+	</subset>
+
 
 </theme>
