@@ -36,27 +36,29 @@ Supported themes in version 1.0:
 **Theme systems are currently supported, mainly because they have the best art :) other systems supported by Batocera to follow.**
 
 - Master system
-- Mega drive
-- Dreamcast
+- Mega drive (and regional variants)
+- Dreamcast (and regional variants)
 - Mame
 - N64
 - Neo Geo
+- Neo Geo Pocket Color
 - NES
-- PC Engine
+- PC Engine (and regional variants)
 - PC Engine CD
 - Playstation
 - 32X
-- Mega CD
+- Mega CD (and regional variants)
 - SG-1000
-- Snes / Super Famicom
+- Snes (and regional variants)
 - Super Grafx
 - Atari 800
 - Atari 2600
 - Atari 5200
 - Atari 7800
 - Atari Lynx
-- Laserdisc
-- Game Gear
+- Atari Jaguar
+- Laserdisc/Daphne
+- Game Gear (and regional variants)
 - Gameboy
 - Gameboy Advance
 - Famicom Disk System
@@ -69,12 +71,23 @@ Supported themes in version 1.0:
 - Capcom
 - Konami
 - Taito
+- Atari
 - Auto Favourites
 - SNK
 - PC ports
 - 3DO
 - Odyssey 2
 - Images
+- 3DO
+- Commodore 64
+- Gamecube
+- MSX
+- MSX 2
+- OpenBoR
+- Wii
+
+
+
 
 
 Scraping images for Retrofix:
@@ -125,15 +138,19 @@ Show console art on lists (yes/no, default: no):
 - **YES:** Games list shows a technical drawing for the selected system (only currently viewable on Master System, Neo Geo, PC Engine, Super Famicom).
 
 
+Region (mix, eu, jp, us):
+------------------------
+- **mix:** Uses the theme default region settings (theme default).
+- **eu:** Uses European logos if available.
+- **jp:** Uses Japanese logos if available.
+- **us:** Uses US logos if available.
 
 
-3/6/2020:
----------
-- Added Atari Jaguar, Atari 800, 3DO.
+Use darker mode (yes/no, default: no):
+-----------------------------------------------
 
-4/6/2020:
---------
-- Added SNK, Odyssey 2.
+- **NO:** Uses a dark grey system-wide colour setting.
+- **YES:** Uses a black system-wide colour setting.
 
 
 
@@ -149,9 +166,10 @@ Coming soon:
 Thanks and credits
 ------------------
 - The Batocera team (https://batocera.org) and the Batocera Discord artwork community for helping those who need it and being great overall.
-- jdorigao (https://github.com/jdorigao) for his Alekfull theme which got me interested developing themes in the first place
-- Darknior (https://github.com/Darknior) for his amazing RVGM theme and his thoroughly documented comments which were very helpful
+- jdorigao (https://github.com/jdorigao) for his Alekfull theme which got me interested developing themes in the first place.
+- Darknior (https://github.com/Darknior) for his amazing RVGM theme and his thoroughly documented comments which were very helpful.
 - fabricecaruso (https://github.com/fabricecaruso) for the continued improvements and additions to Emulationstation which make it so much fun.
+- Ordovice (https://github.com/ordovice) for support and his contibutions to regional settings.
 - The game artists themselves for creating over 40 years of memorable and influential artwork which has inspired generations, and inspired me to want to show it all off.
 
 
