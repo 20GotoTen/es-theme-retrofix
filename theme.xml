@@ -18,6 +18,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<subset.diagrams>Show console art on Lists</subset.diagrams>
 		<subset.darkmode>Use Darker Mode</subset.darkmode>
 		<subset.videoDelay>Video delay</subset.videoDelay>
+		<subset.systemsVideoDelay>System views video delay</subset.systemsVideoDelay>
 	</variables>
 
 	<view name="system, basic, detailed, grid">
@@ -201,7 +202,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<path>{random}</path>
 			<pos>0.229166666666667 0</pos>
 			<origin>0 0.1</origin>
-			<size>0.770833333333333 1</size>
+			<maxSize>0.770833333333333 2</maxSize>
 			<delay>2</delay>
 			<effect>none</effect>
 			<zIndex>11</zIndex>
@@ -476,8 +477,8 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		</text> 
 
 		<video name="md_video">
-			<pos>0.322916666666667 -0.2</pos>
-			<size>0.677083333333333 0.902777777777778</size>
+			<pos>0.322916666666667 0</pos>
+			<maxSize>0.677083333333333 2</maxSize>
 			<zIndex>10</zIndex>
 			<origin>0 0</origin>
 			<delay>1</delay>
@@ -876,6 +877,12 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<include name="video off">./_inc/system/video/videooff.xml</include>
 	</subset>
 
+
+	<subset name="systemsVideoDelay" displayName="${subset.systemsVideoDelay}">
+		<include name="2 Seconds"/>
+		<include name="5 Seconds">./_inc/system/video/systems-5seconds.xml</include>
+		<include name="video off">./_inc/system/video/systems-videooff.xml</include>
+	</subset>
 
 
 	<subset name="buttonSet" displayName="${subset.buttonSet}">

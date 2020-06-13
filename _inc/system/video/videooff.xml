@@ -4,7 +4,8 @@
 <view name="system">
  		<video name="backgroundvideo" extra="true">
 			<delay>9999</delay>
-			<loops>-1</loops>
+			<!--<loops>-1</loops>-->
+			<visible>false</visible>
 		</video>
 	</view>
 
