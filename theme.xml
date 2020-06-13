@@ -22,15 +22,15 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 	<view name="system, basic, detailed, grid">
 		<image name="preloadOverlay" extra="true">
-			<pos>-1 -1</pos>
-			<size>0.2 0.2</size>
+			<pos>0	0</pos>
+			<size>1 1</size>
 			<path>./../_inc/assets/tileoverlay.png</path>
 			<zIndex>-10</zIndex>
 		</image>
 
 		<image name="preloadBasicDetailed" extra="true">
-			<pos>-1 -1</pos>
-			<size>0.2 0.2</size>
+			<pos>0 0</pos>
+			<size>1 1</size>
 			<path>./../_inc/assets/detailed.png</path>
 			<zIndex>-10</zIndex>
 		</image>
