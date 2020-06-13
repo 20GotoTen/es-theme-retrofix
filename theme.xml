@@ -17,6 +17,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<subset.boxNames>Show game names on Boxes View</subset.boxNames>
 		<subset.diagrams>Show console art on Lists</subset.diagrams>
 		<subset.darkmode>Use Darker Mode</subset.darkmode>
+		<subset.videoDelay>Video delay</subset.videoDelay>
 	</variables>
 
 	<view name="system, basic, detailed, grid">
@@ -869,6 +870,14 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 
 
+	<subset name="videoDelay" displayName="${subset.videoDelay}">
+		<include name="2 Seconds"/>
+		<include name="5 Seconds">./_inc/system/video/5seconds.xml</include>
+		<include name="video off">./_inc/system/video/videooff.xml</include>
+	</subset>
+
+
+
 	<subset name="buttonSet" displayName="${subset.buttonSet}">
 		<include name="All system buttons"/>
 		<include name="Generic buttons">./_inc/system/buttons/generic.xml</include>
@@ -896,8 +905,6 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<include name="Gamecube">./_inc/system/buttons/gamecube.xml</include>
 		<include name="MSX">./_inc/system/buttons/msx.xml</include>
 		<include name="Vectrex">./_inc/system/buttons/vectrex.xml</include>
-
-
 	</subset>
 
 	<subset name="boxNames" displayName="${subset.boxNames}">

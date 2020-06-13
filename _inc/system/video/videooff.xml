@@ -1,0 +1,12 @@
+<theme>
+	<formatVersion>7</formatVersion>
+
+<view name="system">
+ 		<video name="backgroundvideo" extra="true">
+			<delay>9999</delay>
+			<loops>-1</loops>
+		</video>
+	</view>
+
+
+</theme>
