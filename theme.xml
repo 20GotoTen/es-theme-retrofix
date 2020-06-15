@@ -77,9 +77,6 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<image name="logo">
 			<path>./${system.theme}/_inc/syslogo.svg</path>
 		</image>
-		<image name="logo" region="mix">
-			<path>./${system.theme}/_inc/syslogo.svg</path>
-		</image>
 		<image name="logo" region="eu">
 			<path>./${system.theme}/_inc/syslogo-eu.svg</path>
 		</image>
@@ -88,6 +85,9 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		</image>
 		<image name="logo" region="jp">
 			<path>./${system.theme}/_inc/syslogo-jp.svg</path>
+		</image>
+		<image name="logo" region="mix">
+			<path>./${system.theme}/_inc/syslogo.svg</path>
 		</image>
 	</view>
 
@@ -272,9 +272,6 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<maxSize>0.192708333333333 0.148148148148148</maxSize>
 			<zIndex>100</zIndex>
 		</image>
-		<image name="mainlogo" extra="true" region="mix">
-			<path>./${system.theme}/_inc/mainlogo.svg</path>
-		</image>
 		<image name="mainlogo" extra="true" region="eu">
 			<path>./${system.theme}/_inc/mainlogo-eu.svg</path>
 		</image>
@@ -283,6 +280,9 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		</image>
 		<image name="mainlogo" extra="true"  region="us">
 			<path>./${system.theme}/_inc/mainlogo-us.svg</path>
+		</image>
+		<image name="mainlogo" extra="true" region="mix">
+			<path>./${system.theme}/_inc/mainlogo.svg</path>
 		</image>
 
 		<image name="system_help" extra="static">
@@ -358,9 +358,6 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<path>./${system.theme}/_inc/mainlogo.svg</path>
 		</image>
 
-		<image name="logo" region="mix">
-			<path>./${system.theme}/_inc/mainlogo.svg</path>
-		</image>
 		<image name="logo" region="eu">
 			<path>./${system.theme}/_inc/mainlogo-eu.svg</path>
 		</image>
@@ -369,6 +366,9 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		</image>
 		<image name="logo" region="jp">
 			<path>./${system.theme}/_inc/mainlogo-jp.svg</path>
+		</image>
+		<image name="logo" region="mix">
+			<path>./${system.theme}/_inc/mainlogo.svg</path>
 		</image>
 
 
@@ -515,10 +515,6 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<path>./${system.theme}/_inc/mainlogo.svg</path>
 		</image>
 
-
-		<image name="logo2" extra="true" region="mix">
-			<path>./${system.theme}/_inc/mainlogo.svg</path>
-		</image>
 		<image name="logo2" extra="true" region="eu">
 			<path>./${system.theme}/_inc/mainlogo-eu.svg</path>
 		</image>
@@ -527,6 +523,9 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		</image>
 		<image name="logo2" extra="true" region="jp">
 			<path>./${system.theme}/_inc/mainlogo-jp.svg</path>
+		</image>
+		<image name="logo2" extra="true" region="mix">
+			<path>./${system.theme}/_inc/mainlogo.svg</path>
 		</image>
 
 
