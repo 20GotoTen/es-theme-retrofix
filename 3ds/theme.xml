@@ -6,9 +6,11 @@
     <image name="startSet" extra="static"></image>
   </view>
 
+
   <view name="basic, detailed">
+
     <textlist name="gamelist">
-     <selectorColor>EB222C</selectorColor>
+     <selectorColor>D12228</selectorColor>
      <selectedColor>ffffff</selectedColor>
    </textlist>
  </view>
@@ -25,15 +27,17 @@
   </text>
 </customView>
 
+
 <view name="grid">
   <image name="gridtile.favorite">
-    <color>EB222Cff</color>
+    <color>D12228ff</color>
   </image>  
 </view>
 
+
 <customView name="Tiles" inherits="grid">
   <gridtile name="selected">
-    <backgroundEdgeColor>EB222C</backgroundEdgeColor>
+    <backgroundEdgeColor>D12228</backgroundEdgeColor>
   </gridtile>
 </customView>
 

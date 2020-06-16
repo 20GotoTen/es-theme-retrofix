@@ -56,7 +56,6 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<color>FFFFFF90</color>
 			<activityColor>FFFFFF</activityColor>
 			<hotkeyColor>DEEC00</hotkeyColor>
-			<verticalAlignment>center</verticalAlignment>
 		</controllerActivity> 
 
 		<text name="clock">
@@ -66,7 +65,6 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<pos>-2 -2</pos>
 			<size>0.09 0.058</size>
 			<alignment>right</alignment>
-			<verticalAlignment>center</verticalAlignment>
 		</text>
 	</view>
 
@@ -419,7 +417,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<pos>0.474479166666667 0.665740740740741</pos>
 			<size>0.3765625 0.078703703703704</size>
 			<path>./_inc/assets/gamemeta.svg</path>
-			<path>./_inc/gamemeta.svg</path>
+			<path>./_inc/assets/gamemeta.svg</path>
 			<color>ffffff</color>
 			<zIndex>100</zIndex>
 		</image>
@@ -753,7 +751,6 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<alignment>center</alignment>
 			<singleLineScroll>false</singleLineScroll>
 			<padding>0 0</padding>      
-			<backgroundImage>./_inc/icons/batocera.svg</backgroundImage>
 			<backgroundColor>00000000</backgroundColor>
 			<glowSize>3</glowSize>
 			<visible>false</visible>
