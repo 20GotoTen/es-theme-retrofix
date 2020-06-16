@@ -17,8 +17,8 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<subset.boxNames>Show game names on Boxes View</subset.boxNames>
 		<subset.diagrams>Show console art on Lists</subset.diagrams>
 		<subset.darkmode>Use Darker Mode</subset.darkmode>
-		<subset.videoDelay>Video delay</subset.videoDelay>
-		<subset.systemsVideoDelay>System views video delay</subset.systemsVideoDelay>
+		<subset.videoDelay>System select video delay</subset.videoDelay>
+		<subset.systemsVideoDelay>Views video delay</subset.systemsVideoDelay>
 	</variables>
 
 	<view name="system, basic, detailed, grid">
@@ -181,10 +181,13 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 
 	<view name="system">
+
+
 		<image name="sysBackgrounds" extra="true">
 			<origin>0 0</origin>
 			<pos>0.229166666666667 0</pos>
 			<size>0.770833333333333 1</size>
+			<path>./../_inc/assets/default.svg</path>
 			<path>./${system.theme}/_inc/bg.jpg</path>
 		</image>
 
