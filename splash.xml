@@ -25,8 +25,8 @@ GitHub:      	https://github.com/
 
 		<image name="progressbarbg" extra="true">
 			<origin>0 0</origin>
-			<pos>0.2005208333333333 0.7083333333333333</pos>
-			<size>0.5989583333333333 0.0092592592592593</size>
+			<pos>0.2213541666666667 0.6472222222222222</pos>
+			<size>0.4973958333333333 0.0092592592592593</size>
 			<tile>true</tile>
 			<path>./_inc/assets/progressbar.png</path>
 			<color>FF2222</color>
@@ -37,8 +37,8 @@ GitHub:      	https://github.com/
 
 		<image name="progressbar">
 			<origin>0 0</origin>
-			<pos>0.2005208333333333 0.7083333333333333</pos>
-			<size>0.5989583333333333 0.0092592592592593</size>
+			<pos>0.2213541666666667 0.6472222222222222</pos>
+			<size>0.4973958333333333 0.0092592592592593</size>
 			<path>./_inc/assets/progressbarbg.png</path>
 			<color>3E3E3Eff</color>
 			<colorEnd>3E3E3Eff</colorEnd>
@@ -56,8 +56,8 @@ GitHub:      	https://github.com/
 
 		<image name="splashlogo" extra="true">
 			<path>./_inc/assets/splashlogo.svg</path>
-			<size>0.2903958333333333 0.1666666666666667</size>
-			<pos>0.2005208333333333 0.4166666666666667</pos>
+			<size>0.3216458333333333 0.1666666666666667</size>
+			<pos>0.2213541666666667 0.4166666666666667</pos>
 		</image>
 
 
@@ -67,7 +67,7 @@ GitHub:      	https://github.com/
 			<color>FFFFFFFF</color>
 			<alignment>left</alignment>
 			<fontPath>./_inc/fonts/RedHatDisplay-Regular.ttf</fontPath>
-			<pos>0.2005208333333333 0.7361111111111111</pos>
+			<pos>0.2213541666666667 0.6740740740740741</pos>
 			<fontSize>0.028</fontSize>
 			<color>d9d9d9</color>
 			<glowColor>00000018</glowColor>
