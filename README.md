@@ -38,6 +38,7 @@ Supported themes in version 1.0:
 - Master system
 - Mega drive (and regional variants)
 - Dreamcast (and regional variants)
+- Sega Saturn
 - Mame
 - N64
 - Neo Geo
@@ -46,11 +47,13 @@ Supported themes in version 1.0:
 - PC Engine (and regional variants)
 - PC Engine CD
 - Playstation
+- PSP
 - 32X
 - Mega CD (and regional variants)
 - SG-1000
 - Snes (and regional variants)
 - Super Grafx
+- Amiga
 - Atari 800
 - Atari 2600
 - Atari 5200
@@ -85,9 +88,10 @@ Supported themes in version 1.0:
 - MSX 2
 - OpenBoR
 - Wii
+- ZX Spectrum
 
 
-
+Also included in /root is an initial video splash.
 
 
 Scraping images for Retrofix:
