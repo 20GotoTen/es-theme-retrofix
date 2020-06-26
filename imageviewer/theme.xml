@@ -3,6 +3,8 @@
 	<include>./../theme.xml</include>
 	<view name="system">
 		<image name="startSet" extra="static"></image>
+		<image name="sysBackgrounds" extra="static">
+		</image>
 	</view>
 
 	<view name="basic, detailed">

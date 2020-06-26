@@ -4,6 +4,7 @@
 
 	<view name="system">
 		<image name="startSet" extra="static"></image>
+
 	</view>
 
 	<view name="basic, detailed">
