@@ -60,6 +60,7 @@ Supported themes in version 1.0:
 - Atari 7800
 - Atari Lynx
 - Atari Jaguar
+- Atari ST
 - Laserdisc/Daphne
 - Game Gear (and regional variants)
 - Gameboy
@@ -78,6 +79,9 @@ Supported themes in version 1.0:
 - Auto Favourites
 - SNK
 - PC ports
+- CPS1
+- CPS2
+- CPS3
 - 3DO
 - Odyssey 2
 - Images
@@ -88,6 +92,7 @@ Supported themes in version 1.0:
 - MSX 2
 - OpenBoR
 - Wii
+- WiiU
 - ZX Spectrum
 
 
