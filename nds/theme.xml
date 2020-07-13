@@ -1,9 +1,71 @@
+<!-- nds pecifics -->
+
 <theme>
 	<formatVersion>7</formatVersion>
 	<include>./../theme.xml</include>
 
-	<view name="system">
-		<image name="startSet" extra="static"></image>
-	</view>
+  <view name="system">
+    <image name="startSet" extra="static"></image>
+
+<video name="backgroundvideo" extra="true">
+      <path>{random}</path>
+      <pos>0.229166666666667 0</pos>
+      <origin>0 0.1</origin>
+      <size>0.770833333333333 2</size>
+      <delay>2</delay>
+      <effect>none</effect>
+      <zIndex>11</zIndex>
+    </video>
+
+
+  </view>
+
+  <view name="basic, detailed">
+   <textlist name="gamelist">
+<selectorColor>E60012</selectorColor>
+			<selectedColor>ffffff</selectedColor>
+  </textlist>
+</view>
+
+<customView name="Boxes" inherits="grid">
+  <imagegrid name="gamegrid">
+    <autoLayout>7 1</autoLayout>
+    <pos>-0.13 0.174</pos>
+    <size>1.26 0.65</size>
+    <autoLayoutSelectedZoom>1.45</autoLayoutSelectedZoom>
+  </imagegrid>
+  <text name="md_name">
+    <pos>0.5 0.231481481481481</pos>
+  </text>
+</customView>
+
+<customView name="Tiles" inherits="grid">
+  <gridtile name="selected">
+    <backgroundEdgeColor>E60012</backgroundEdgeColor>
+  </gridtile>
+
+<video name="md_video">
+      <pos>0 0</pos>
+      <maxSize>4 4</maxSize>
+      <zIndex>6</zIndex>
+      <origin>0 0</origin>
+      <delay>0.5</delay>
+      <showSnapshotNoVideo>true</showSnapshotNoVideo>
+      <showSnapshotDelay>true</showSnapshotDelay>
+      <loops>10</loops>
+      <effect>none</effect>
+    </video>
+
+
+
+
+
+</customView>
+
+<view name="grid">
+  <image name="gridtile.favorite">
+    <color>E60012ff</color>
+  </image>  
+</view>
 
 </theme>
