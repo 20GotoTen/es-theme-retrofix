@@ -47,6 +47,8 @@ Supported themes in version 1.0:
 - PC Engine (and regional variants)
 - PC Engine CD
 - Playstation
+- Playstation 2
+- PS3
 - PSP
 - 32X
 - Mega CD (and regional variants)
@@ -76,6 +78,7 @@ Supported themes in version 1.0:
 - Konami
 - Taito
 - Atari
+- Data East
 - Auto Favourites
 - SNK
 - PC ports
@@ -94,6 +97,9 @@ Supported themes in version 1.0:
 - Wii
 - WiiU
 - ZX Spectrum
+- Atomiswave
+- Naomi
+
 
 
 Also included in /root is an initial video splash.
