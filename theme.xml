@@ -763,6 +763,16 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<visible>false</visible>
 		</text>
 
+
+		<image name="thumbnailFallback" extra="true">
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<zIndex>5</zIndex>
+			<origin>0 0</origin>
+			<path>./../_inc/assets/defaultwide.svg</path>
+		</image>
+
+
 		<video name="md_video">
 			<pos>0 -0.3</pos>
 			<size>1 1</size>
