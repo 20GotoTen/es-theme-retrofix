@@ -4,25 +4,62 @@
 
 	<view name="system">
 		<image name="startSet" extra="static"></image>
+
+    <image name="gamemarker" region="eu" extra="static">
+      <path>./_inc/marker-eu.png</path>
+    </image>  
+
+<image name="startSet" extra="static" region="eu">
+      <path>./_inc/start-eu.png</path>
+    </image>
+
 	</view>
+
+
 
 	<view name="basic, detailed">
 		<textlist name="gamelist">
 			<selectorColor>F57E25</selectorColor>
 			<selectedColor>000000</selectedColor>
 		</textlist>
+
+ <textlist name="gamelist" region="eu">
+     <selectorColor>FF3333</selectorColor>
+     <selectedColor>000000</selectedColor>
+   </textlist>
+
+
 	</view>
+
+
+
 
 	<view name="grid">
 		<image name="gridtile.favorite">
 			<color>F57E25ff</color>
 		</image>  
+
+  <image name="gridtile.favorite" region="eu">
+    <color>FF3333ff</color>
+  </image>  
+
 	</view>
+
+
+
 
 	<customView name="Tiles" inherits="grid">
 		<gridtile name="selected">
 			<backgroundEdgeColor>F57E25</backgroundEdgeColor>
 		</gridtile>
-	</customView>
+
+<gridtile name="selected" region="eu">
+    <backgroundEdgeColor>FF3333</backgroundEdgeColor>
+  </gridtile>
+</customView>
+
+
+
+
 
 </theme>
