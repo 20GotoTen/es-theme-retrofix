@@ -12,10 +12,9 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 	<formatVersion>7</formatVersion>
 
 	<variables>
-		<tilesViewName>Tiles</tilesViewName>
+		<!--<tilesViewName>Tiles</tilesViewName>-->
 		<subset.buttonSet>Button styles</subset.buttonSet> 
 		<subset.boxNames>Show game names on Boxes View</subset.boxNames>
-		<subset.diagrams>Show console art on Lists</subset.diagrams>
 		<subset.darkmode>Use Darker Mode</subset.darkmode>
 		<subset.videoDelay>System select video delay</subset.videoDelay>
 		<subset.systemsVideoDelay>Views video delay</subset.systemsVideoDelay>
@@ -25,14 +24,14 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<image name="preloadOverlay" extra="true">
 			<pos>0	0</pos>
 			<size>1 1</size>
-			<path>./../_inc/assets/tileoverlay.png</path>
+			<path>./_inc/assets/tileoverlay.png</path>
 			<zIndex>-10</zIndex>
 		</image>
 
 		<image name="preloadBasicDetailed" extra="true">
 			<pos>0 0</pos>
 			<size>1 1</size>
-			<path>./../_inc/assets/detailed.png</path>
+			<path>./_inc/assets/detailed.png</path>
 			<zIndex>-10</zIndex>
 		</image>
 
@@ -168,7 +167,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<image name="startSet" extra="static">
 			<pos>0.2828125 0.816666666666667</pos>
 			<size>0.239583333333333 0.134259259259259</size>
-			<path>./../_inc/assets/start.png</path> 
+			<path>./_inc/assets/start.png</path> 
 			<path>./${system.theme}/_inc/start.png</path>
 			<zIndex>200</zIndex>
 		</image>
@@ -187,7 +186,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<origin>0 0</origin>
 			<pos>0.229166666666667 0</pos>
 			<size>0.770833333333333 1</size>
-			<path>./../_inc/assets/default.svg</path>
+			<path>./_inc/assets/default.svg</path>
 			<path>./${system.theme}/_inc/bg.jpg</path>
 		</image>
 
@@ -202,8 +201,9 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<video name="backgroundvideo" extra="true">
 			<path>{random}</path>
 			<pos>0.229166666666667 0</pos>
-			<origin>0 0.1</origin>
-			<maxSize>0.770833333333333 2</maxSize>
+			<origin>0 0</origin>
+			<!--<maxSize>0.770833333333333 2</maxSize>-->
+			<size>0.770833333333333 1</size>
 			<delay>2</delay>
 			<effect>none</effect>
 			<zIndex>11</zIndex>
@@ -316,7 +316,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<image name="btnSet" extra="true">
 			<pos>0.052083333333333 0.818518518518519</pos>
 			<size>0.239583333333333 0.134259259259259</size>
-			<path>./../_inc/assets/btnset.png</path>
+			<path>./_inc/assets/btnset.png</path>
 			<path>./${system.theme}/_inc/btnset.png</path>
 			<zIndex>100</zIndex>
 		</image>
@@ -337,13 +337,13 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<zIndex>11</zIndex>
 		</image>
 
-		<image name="listsystem" extra="true">
+		<!--<image name="listsystem" extra="true">
 			<path></path>
 			<size>1 1</size>
 			<pos>0 0</pos>
 			<origin>0 0</origin>
 			<zIndex>12</zIndex>
-		</image>
+		</image>-->
 
 		<image name="list_help" extra="true">
 			<path>./_inc/assets/tilehelp.svg</path>
@@ -419,8 +419,8 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<image name="game-meta" extra="true">
 			<pos>0.474479166666667 0.665740740740741</pos>
 			<size>0.3765625 0.078703703703704</size>
-			<path>./_inc/assets/gamemeta.svg</path>
-			<path>./_inc/assets/gamemeta.svg</path>
+<path>./_inc/assets/gamemeta.svg</path>
+		<!--	<path>./${system.theme}/_inc/gamemeta.svg</path>-->
 			<color>ffffff</color>
 			<zIndex>100</zIndex>
 		</image>
@@ -437,7 +437,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<size>0.078125 0.034259259259259</size>
 			<color>B3B3B3</color>
 			<fontSize>0.014814814814815</fontSize>
-			<fontPath>./../_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
+			<fontPath>./_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
 			<alignment>center</alignment>
 		</text> 
 
@@ -446,7 +446,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<size>0.078125 0.034259259259259</size>
 			<color>B3B3B3</color>
 			<fontSize>0.014814814814815</fontSize>
-			<fontPath>./../_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
+			<fontPath>./_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
 			<alignment>center</alignment>
 		</text>
 
@@ -455,7 +455,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<size>0.078125 0.034259259259259</size>
 			<color>B3B3B3</color>
 			<fontSize>0.014814814814815</fontSize>
-			<fontPath>./../_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
+			<fontPath>./_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
 			<alignment>center</alignment>
 		</datetime>
 
@@ -464,7 +464,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<size>0.078125 0.034259259259259</size>
 			<color>B3B3B3</color>
 			<fontSize>0.014814814814815</fontSize>
-			<fontPath>./../_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
+			<fontPath>./_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
 			<alignment>center</alignment>
 		</text>
 
@@ -500,6 +500,8 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 
 	<view name="grid">
+
+
 		<image name="gridtile.favorite">
 			<path>./_inc/images/favorite.svg</path>
 			<pos>0.75 0</pos>
@@ -508,6 +510,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<origin>0 0</origin>
 			<color>909090ff</color>
 		</image>  
+
 
 		<image name="logo2" extra="true">
 			<origin>0 0</origin>
@@ -569,7 +572,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 		<gridtile name="selected">
 			<size>0.20 0.277777777777778</size>
-			<backgroundImage>./_inc/images/default_grid.png</backgroundImage>
+			<!--<backgroundImage>./_inc/images/default_grid.png</backgroundImage>-->
 			<backgroundColor>42424200</backgroundColor>
 			<imageColor>ffffffff</imageColor>
 		</gridtile>   
@@ -630,7 +633,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<pos>0.311979166666667 0.776851851851852</pos>
 			<size>0.3765625 0.07037037037037</size>
 			<path>./_inc/assets/gamemeta.svg</path>
-			<path>./_inc/gamemeta.svg</path>
+			<path>./${system.theme}/_inc/gamemeta.svg</path>
 			<color>ffffff</color>
 			<zIndex>100</zIndex>
 		</image>  
@@ -645,7 +648,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<size>0.078125 0.034259259259259</size>
 			<color>B3B3B3</color>
 			<fontSize>0.014814814814815</fontSize>
-			<fontPath>./../_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
+			<fontPath>./_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
 			<alignment>center</alignment>
 		</datetime>
 
@@ -654,7 +657,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<size>0.078125 0.034259259259259</size>
 			<color>B3B3B3</color>
 			<fontSize>0.014814814814815</fontSize>
-			<fontPath>./../_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
+			<fontPath>./_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
 			<alignment>center</alignment>
 		</text>
 
@@ -663,7 +666,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<size>0.078125 0.034259259259259</size>
 			<color>B3B3B3</color>
 			<fontSize>0.014814814814815</fontSize>
-			<fontPath>./../_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
+			<fontPath>./_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
 			<alignment>center</alignment>
 		</text>         
 
@@ -672,7 +675,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<size>0.078125 0.034259259259259</size>
 			<color>B3B3B3</color>
 			<fontSize>0.014814814814815</fontSize>
-			<fontPath>./../_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
+			<fontPath>./_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
 			<alignment>center</alignment>
 		</text>
 
@@ -692,23 +695,9 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 	<customView name="Tiles" inherits="grid">
 
-		<image name="grid_help" extra="true">
-			<path>./_inc/assets/tilehelp.svg</path>
-			<origin>0.5 0</origin>
-			<pos>0.5 0.918518518518519</pos>
-			<maxSize>0.546875 0.05</maxSize>
-			<zIndex>100</zIndex>
-		</image>
-
-		<image name="btnSet" extra="true">
-			<pos>0.052083333333333 0.356481481481481</pos>
-			<size>0.239583333333333 0.134259259259259</size>
-			<path>./${system.theme}/_inc/btnset.png</path>
-			<zIndex>100</zIndex>
-		</image>
 
 
-		<imagegrid name="gamegrid">
+<imagegrid name="gamegrid">
 			<autoLayout>5 2</autoLayout>
 			<scrollLoop>true</scrollLoop>
 			<autoLayoutSelectedZoom>1</autoLayoutSelectedZoom>
@@ -721,6 +710,46 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<zIndex>10</zIndex>
 			<scrollSound>./_inc/sound/cursor.wav</scrollSound>
 		</imagegrid>
+
+
+		<image name="grid_help" extra="true">
+			<path>./_inc/assets/tilehelp.svg</path>
+			<origin>0.5 0</origin>
+			<pos>0.5 0.918518518518519</pos>
+			<maxSize>0.546875 0.05</maxSize>
+			<zIndex>100</zIndex>
+		</image>
+
+		<image name="btnSet" extra="true">
+			<pos>0.052083333333333 0.356481481481481</pos>
+			<size>0.239583333333333 0.134259259259259</size>
+
+			<path>./${system.theme}/_inc/btnset.png</path>
+			<zIndex>100</zIndex>
+		</image>
+
+
+		
+
+
+
+<video name="md_video">
+			<pos>0 -0.3</pos>
+			<size>1 1</size>
+			<zIndex>6</zIndex>
+			<origin>0 0</origin>
+			<delay>0.5</delay>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>true</showSnapshotDelay>
+			<loops>10</loops>
+			<effect>none</effect>
+		</video>
+
+
+		<imagegrid name="gamegrid">
+			<showVideoAtDelay>-1</showVideoAtDelay>
+		</imagegrid>
+
 
 		<gridtile name="default">
 			<backgroundCenterColor>40404080</backgroundCenterColor>
@@ -744,24 +773,6 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<roundCorners>0</roundCorners>
 		</image>
 
-		<text name="gridtile">
-			<visible>true</visible>
-			<pos>0 0</pos>
-			<size>1 1</size>
-			<fontPath>./../_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
-			<fontSize>0.018</fontSize>
-			<lineSpacing>1.15</lineSpacing>
-			<alignment>center</alignment>
-			<singleLineScroll>false</singleLineScroll>
-			<padding>0 0</padding>      
-			<backgroundColor>00000000</backgroundColor>
-			<glowSize>3</glowSize>
-			<visible>false</visible>
-		</text>
-
-		<text name="gridtile_selected">
-			<visible>false</visible>
-		</text>
 
 
 		<image name="thumbnailFallback" extra="true">
@@ -769,21 +780,11 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<size>1 1</size>
 			<zIndex>5</zIndex>
 			<origin>0 0</origin>
-			<path>./../_inc/assets/defaultwide.svg</path>
+			<path>./_inc/assets/defaultwide.svg</path>
 		</image>
 
 
-		<video name="md_video">
-			<pos>0 -0.3</pos>
-			<size>1 1</size>
-			<zIndex>6</zIndex>
-			<origin>0 0</origin>
-			<delay>0.5</delay>
-			<showSnapshotNoVideo>true</showSnapshotNoVideo>
-			<showSnapshotDelay>true</showSnapshotDelay>
-			<loops>10</loops>
-			<effect>none</effect>
-		</video>
+
 
 		<image name="gridtile.marquee">
 			<color>dadadaff</color>
@@ -803,18 +804,9 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<size>0.60 0.60</size>
 		</image>
 
-		<text name="gridtile.text">
-			<pos>0 0</pos>
-			<padding>0.1 0</padding>
-			<fontPath>./_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
-			<size>1 1</size>
-			<fontSize>0.020</fontSize>
-			<alignment>center</alignment>
-		</text>
+		
 
-		<imagegrid name="gamegrid">
-			<showVideoAtDelay>-1</showVideoAtDelay>
-		</imagegrid>
+		
 
 		<image name="md_marquee">
 			<pos>0.5 0.162037037037037</pos>
@@ -827,17 +819,18 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<pos>0.311979166666667 0.416666666666667</pos>
 			<size>0.3765625 0.078703703703704</size>
 			<path>./_inc/assets/gamemeta.svg</path>
-			<path>./_inc/gamemeta.svg</path>
+			<path>./${system.theme}/_inc/gamemeta.svg</path>
 			<color>ffffff</color>
 			<zIndex>100</zIndex>
 		</image>
+
 
 		<text name="md_genre">
 			<pos>0.311979166666667 0.467592592592593</pos>
 			<size>0.078125 0.034259259259259</size>
 			<color>B3B3B3</color>
 			<fontSize>0.014814814814815</fontSize>
-			<fontPath>./../_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
+			<fontPath>./_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
 			<alignment>center</alignment>
 		</text> 
 
@@ -846,7 +839,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<size>0.078125 0.034259259259259</size>
 			<color>B3B3B3</color>
 			<fontSize>0.014814814814815</fontSize>
-			<fontPath>./../_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
+			<fontPath>./_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
 			<alignment>center</alignment>
 		</text>
 
@@ -855,7 +848,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<size>0.078125 0.034259259259259</size>
 			<color>B3B3B3</color>
 			<fontSize>0.014814814814815</fontSize>
-			<fontPath>./../_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
+			<fontPath>./_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
 			<alignment>center</alignment>
 		</datetime>
 
@@ -864,7 +857,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<size>0.078125 0.034259259259259</size>
 			<color>B3B3B3</color>
 			<fontSize>0.014814814814815</fontSize>
-			<fontPath>./../_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
+			<fontPath>./_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
 			<alignment>center</alignment>
 		</text>
 
@@ -876,6 +869,41 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<size>0.336458333333333 0.094444444444444</size>
 			<pos>0.332291666666667 0.287037037037037</pos>
 		</text> 
+
+
+<!--<text name="gridtile.text">
+			<pos>0 0</pos>
+			<padding>0.1 0</padding>
+			<fontPath>./_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
+			<size>1 1</size>
+			<fontSize>0.020</fontSize>
+			<alignment>center</alignment>
+		</text>
+	-->
+
+
+<text name="gridtile">
+			<visible>true</visible>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<fontPath>./../_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
+			<fontSize>0.018</fontSize>
+			<lineSpacing>1.15</lineSpacing>
+			<alignment>center</alignment>
+			<singleLineScroll>false</singleLineScroll>
+			<padding>0 0</padding>      
+			<backgroundColor>00000000</backgroundColor>
+			<glowSize>3</glowSize>
+			<visible>false</visible>
+		</text>
+
+
+
+
+
+
+
+
 	</customView>
 
 
@@ -926,12 +954,6 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 	<subset name="boxNames" displayName="${subset.boxNames}">
 		<include name="no"/>
 		<include name="yes">./_inc/system/toggleboxnames.xml</include>
-	</subset>
-
-
-	<subset name="diagrams" displayName="${subset.diagrams}">
-		<include name="yes">./_inc/system/showdiagrams.xml</include>
-		<include name="no"/>
 	</subset>
 
 

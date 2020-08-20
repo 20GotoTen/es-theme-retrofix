@@ -4,7 +4,7 @@
 
   <view name="system">
     <image name="startSet" extra="static"></image>
-    <video name="backgroundvideo" extra="true">
+   <!-- <video name="backgroundvideo" extra="true">
       <path>{random}</path>
       <pos>0.229166666666667 0</pos>
       <origin>0 0.1</origin>
@@ -13,7 +13,7 @@
       <color>94B300ff</color>
       <effect>none</effect>
       <zIndex>11</zIndex>
-    </video>
+    </video>-->
   </view>
 
 
