@@ -631,7 +631,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 		<image name="game-meta" extra="true">
 			<pos>0.311979166666667 0.776851851851852</pos>
-			<size>0.3765625 0.07037037037037</size>
+			<size>0.3765625 0.078703703703704</size>
 			<path>./_inc/assets/gamemeta.svg</path>
 			<path>./${system.theme}/_inc/gamemeta.svg</path>
 			<color>ffffff</color>
