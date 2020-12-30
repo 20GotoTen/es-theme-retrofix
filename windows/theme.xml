@@ -8,20 +8,20 @@
 
  <view name="basic, detailed">
   <textlist name="gamelist">
-   <selectorColor>FE2832</selectorColor>
+   <selectorColor>0DADEA</selectorColor>
    <selectedColor>ffffff</selectedColor>
  </textlist>
 </view>
 
 <view name="grid">
   <image name="gridtile.favorite">
-    <color>FE2832ff</color>
+    <color>0DADEAff</color>
   </image>  
 </view>
 
 <customView name="Tiles" inherits="grid">
   <gridtile name="selected">
-    <backgroundEdgeColor>FE2832</backgroundEdgeColor>
+    <backgroundEdgeColor>0DADEA</backgroundEdgeColor>
   </gridtile>
 </customView>
 
