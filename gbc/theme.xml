@@ -1,31 +1,19 @@
 <theme>
-	<formatVersion>7</formatVersion>
-	<include>./../theme.xml</include>
+  <formatVersion>7</formatVersion>
+  <include>./../theme.xml</include>
 
   <view name="system">
     <image name="startSet" extra="static"></image>
-   <!-- <video name="backgroundvideo" extra="true">
-      <path>{random}</path>
-      <pos>0.229166666666667 0</pos>
-      <origin>0 0.1</origin>
-      <size>0.770833333333333 1</size>
-      <delay>2</delay>
-      <color>94B300ff</color>
-      <effect>none</effect>
-      <zIndex>11</zIndex>
-    </video>-->
   </view>
 
-
   <view name="basic, detailed">
-    <textlist name="gamelist">
-     <selectorColor>4B4793</selectorColor>
-     <selectedColor>ffffff</selectedColor>
-   </textlist>
- </view>
+   <textlist name="gamelist">
+    <selectorColor>1F00CC</selectorColor>
+    <selectedColor>ffffff</selectedColor>
+  </textlist>
+</view>
 
-
- <customView name="Boxes" inherits="grid">
+<customView name="Boxes" inherits="grid">
   <imagegrid name="gamegrid">
     <autoLayout>7 1</autoLayout>
     <pos>-0.13 0.174</pos>
@@ -35,38 +23,17 @@
   <text name="md_name">
     <pos>0.5 0.231481481481481</pos>
   </text>
-
 </customView>
 
-
 <customView name="Tiles" inherits="grid">
-  <gridtile name="default">
-    <backgroundCenterColor>40404080</backgroundCenterColor>
-    <backgroundEdgeColor>00000000</backgroundEdgeColor>
-    <padding>4 4</padding>
-    <imageSizeMode>minSize</imageSizeMode>
-    <backgroundCornerSize>0 0</backgroundCornerSize>
-    <backgroundColor>42424200</backgroundColor>
-    <imageColor>657A00FF</imageColor>
-  </gridtile>
-
   <gridtile name="selected">
-    <padding>4 4</padding>
-    <imageColor>94B300ff</imageColor>
-    <backgroundCornerSize>0</backgroundCornerSize>
-    <backgroundEdgeColor>4B4793</backgroundEdgeColor>
+    <backgroundEdgeColor>1F00CC</backgroundEdgeColor>
   </gridtile>
-
-  <video name="md_video">
-   <color>94B300ff</color>
-   <showSnapshotDelay>false</showSnapshotDelay>
-   <delay>0</delay>
- </video>
 </customView>
 
 <view name="grid">
   <image name="gridtile.favorite">
-    <color>4B4793ff</color>
+    <color>1F00CCff</color>
   </image>  
 </view>
 
