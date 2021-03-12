@@ -66,6 +66,15 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<size>0.09 0.058</size>
 			<alignment>right</alignment>
 		</text>
+
+
+<!-- forces UI icons off screen by default -->
+ <batteryIndicator name="batteryIndicator">
+      <pos>-2 -2</pos>
+      <color>00000000</color>
+    </batteryIndicator>
+
+
 	</view>
 
 
@@ -700,7 +709,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 
 
-	<customView name="Tiles" inherits="grid">
+<customView name="Tiles" inherits="grid">
 
 
 
