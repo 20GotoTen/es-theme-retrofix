@@ -18,6 +18,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<subset.darkmode>Use Darker Mode</subset.darkmode>
 		<subset.videoDelay>System select video delay</subset.videoDelay>
 		<subset.systemsVideoDelay>Views video delay</subset.systemsVideoDelay>
+		<subset.animations>Use animations</subset.animations>
 	</variables>
 
 	<view name="system, basic, detailed, grid">
@@ -265,14 +266,20 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<alignment>left</alignment>
 		</text> 
 
-		<image name="mainlogo" extra="true">
+		<image name="mainlogo" extra="static">
 			<origin>0 1</origin>
 			<!--<path>./_inc/icons/batocera.svg</path>-->
 			<path>./${system.theme}/_inc/mainlogo.svg</path>
 			<pos>0.28125 0.750185185185185</pos>
 			<maxSize>0.192708333333333 0.148148148148148</maxSize>
 			<zIndex>100</zIndex>
+ 
+
 		</image>
+
+
+
+
 		<image name="mainlogo" extra="true" region="eu">
 			<path>./${system.theme}/_inc/mainlogo-eu.svg</path>
 		</image>
@@ -420,7 +427,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<pos>0.474479166666667 0.665740740740741</pos>
 			<size>0.3765625 0.078703703703704</size>
 <path>./_inc/assets/gamemeta.svg</path>
-		<!--	<path>./${system.theme}/_inc/gamemeta.svg</path>-->
+		<path>./${system.theme}/_inc/gamemeta.svg</path>
 			<color>ffffff</color>
 			<zIndex>100</zIndex>
 		</image>
@@ -825,6 +832,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		</image>
 
 
+
 		<text name="md_genre">
 			<pos>0.311979166666667 0.467592592592593</pos>
 			<size>0.078125 0.034259259259259</size>
@@ -912,6 +920,12 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<include name="2 Seconds"/>
 		<include name="5 Seconds">./_inc/system/video/5seconds.xml</include>
 		<include name="video off">./_inc/system/video/videooff.xml</include>
+	</subset>
+
+
+<subset name="animations" displayName="${subset.animations}">
+		<include name="Off"/>
+		<include name="On">./_inc/system/storyboards.xml</include>
 	</subset>
 
 

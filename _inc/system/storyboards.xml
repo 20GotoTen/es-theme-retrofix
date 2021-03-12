@@ -1,0 +1,54 @@
+<!-- animation routine -->
+
+<theme>
+	<formatVersion>7</formatVersion>
+
+<view name="system">
+		<image name="mainlogo" extra="static">
+			
+ <storyboard>
+        		<animation property="x" from="0.27125" begin="300" duration="500" mode="easeOut"/>
+        		<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
+        		<animation property="opacity" from="0" to="1" duration="500" begin="300" mode="easeOut"/>
+			</storyboard>
+		</image>
+	</view>
+
+
+
+
+<customView name="Tiles" inherits="grid">
+
+<image name="md_marquee">
+	<storyboard>
+        		<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+        		<animation property="opacity" from="0" to="1" begin="300"  duration="500" mode="easeOut"/>
+			</storyboard>
+</image>
+
+
+<text name="md_description">
+	<storyboard>
+        		<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+        		<animation property="opacity" from="0" to="1" begin="500" duration="500" mode="easeOut"/>
+			</storyboard>
+</text>
+
+
+	<image name="game-meta" extra="true">
+ <storyboard>
+        		<animation property="opacity" from="0" to="0" duration="800" mode="linear"/>
+        		<animation property="opacity" from="0" to="1" duration="500" begin="800" mode="easeOut"/>
+			</storyboard>
+		</image>
+
+
+<text name="md_genre, md_players, md_releasedate, md_publisher">
+	<storyboard>
+        		<animation property="opacity" from="0" to="0" duration="800" mode="linear"/>
+        		<animation property="opacity" from="0" to="1" duration="500" begin="800" mode="easeOut"/>
+			</storyboard>
+</text>
+</customView>
+
+</theme>
