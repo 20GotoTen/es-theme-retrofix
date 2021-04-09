@@ -102,7 +102,7 @@ Supported themes in version 1.0:
 
 
 
-Also included in /root is an initial video splash.
+Also included in /root is splash video.
 
 
 Scraping images for Retrofix:
@@ -191,7 +191,6 @@ Thanks and credits
 Notice:
 -------
 - All system logos, game artwork, screenshots and trademarks are copyright of their respective owners. 
-- This theme uses a custom Batocera logo I created purely for fun for my own use. Do not use it in your own work.
 - Commercial distribution is prohibited.
 - The inclusion of this theme in "all-in-one" or "preloaded" distributions is prohibited.
 
