@@ -3,7 +3,8 @@ Retrofix - Emulationstation theme for Batocera 5.25+
 
 Theme designed by 20Goto10
 Version 1.0
-31/05/2020
+First release 31/05/2020
+Last updated 9/04/2021
 
 
 **Retrofix combines two of my loves: vintage video game artwork and Batocera. Sometimes the game art
