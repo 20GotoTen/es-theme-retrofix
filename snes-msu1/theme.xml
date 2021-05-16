@@ -1,0 +1,38 @@
+<theme>
+	<formatVersion>7</formatVersion>
+	<include>./../theme.xml</include>
+
+	<view name="system">
+		<image name="startSet" extra="static"></image>
+	</view>
+
+	<view name="basic, detailed">
+		<textlist name="gamelist">
+			<selectorColor>E60012</selectorColor>
+			<selectedColor>ffffff</selectedColor>
+		</textlist>
+	</view>
+
+	<customView name="Boxes" inherits="grid">
+		<imagegrid name="gamegrid">
+			<autoLayout>5 1</autoLayout>
+			<autoLayoutSelectedZoom>1.40</autoLayoutSelectedZoom>
+		</imagegrid>
+		<text name="md_name">
+			<pos>0.5 0.231481481481481</pos>
+		</text>
+	</customView>
+
+	<view name="grid">
+		<image name="gridtile.favorite">
+			<color>E60012ff</color>
+		</image>  
+	</view>
+
+	<customView name="Tiles" inherits="grid">
+		<gridtile name="selected">
+			<backgroundEdgeColor>E60012</backgroundEdgeColor>
+		</gridtile>
+	</customView>
+
+</theme>
