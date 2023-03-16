@@ -16,7 +16,9 @@ reference library.**
 Examples:
 ---------
 
-**You can see Retrofix (v1) in action here (v2 to videos to follow):**
+**You can see Retrofix in action here (v2 to videos to follow):**
+
+![Main menu](https://github.com/20GotoTen/es-theme-retrofix/blob/master/_inc/screenshot/Main%20menu.png "Main menu")
 
 
 ![Tiles view](https://github.com/20GotoTen/es-theme-retrofix/blob/master/_inc/screenshot/Tiles.png "Tiles view")
