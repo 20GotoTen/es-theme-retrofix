@@ -1,0 +1,53 @@
+
+<theme>
+	<formatVersion>7</formatVersion>
+	
+
+
+<view name="detailed, grid">
+		<image name="secondaryBtn" extra="static">		
+			<path>./_inc/assets/a-button.png</path>
+			<path>./../_inc/assets/a-button.png</path>
+			<path>./../${system.theme}/_inc/a-button.png</path>
+
+			<path ifSubset="buttonSet:Red Buttons">./buttons/red/a-button.png</path>
+			<path ifSubset="buttonSet:Blue Buttons">./buttons/blue/a-button.png</path>
+			<path ifSubset="buttonSet:Black Buttons">./buttons/black/a-button.png</path>
+			<path ifSubset="buttonSet:Cyan Buttons">./buttons/cyan/a-button.png</path>
+			<path ifSubset="buttonSet:Green Buttons">./buttons/green/a-button.png</path>
+			<path ifSubset="buttonSet:Yellow Buttons">./buttons/yellow/a-button.png</path>
+
+
+
+
+
+			<path ifSubset="buttonSet:Master System">./../../mastersystem/_inc/a-button.png</path>
+			<path ifSubset="buttonSet:SG-1000">./../../sg-1000/_inc/a-button.png</path>
+			<path ifSubset="buttonSet:Snes">./../../snes/_inc/a-button.png</path>
+			<path ifSubset="buttonSet:Neo Geo">./../../neogeo/_inc/a-button.png</path>
+			<path ifSubset="buttonSet:Neo Geo Pocket Color">./../../ngpc/_inc/a-button.png</path>
+			<path ifSubset="buttonSet:Mega Drive / 32x / Mega CD">./../../megadrive/_inc/a-button.png</path>
+			<path ifSubset="buttonSet:Atari 800 / 2600 / 5200">./../../atari2600/_inc/a-button.png</path>
+			<path ifSubset="buttonSet:Atari 7800">./../../atari7800/_inc/a-button.png</path>
+			<path ifSubset="buttonSet:Atari Jaguar">./../../jaguar/_inc/a-button.png</path>
+			<path ifSubset="buttonSet:NES">./../../nes/_inc/a-button.png</path>
+			<path ifSubset="buttonSet:PC Engine / PC Engine CD">./../../pcengine/_inc/a-button.png</path>
+			<path ifSubset="buttonSet:Super Grafx">./../../supergrafx/_inc/a-button.png</path>
+			<path ifSubset="buttonSet:GameBoy">./../../gb/_inc/a-button.png</path>
+			<path ifSubset="buttonSet:GameBoy Advance">./../../gba/_inc/a-button.png</path>
+			<path ifSubset="buttonSet:Nintendo 64">./../../n64/_inc/a-button.png</path>
+			<path ifSubset="buttonSet:3DO">./../../3do/_inc/a-button.png</path>
+			<path ifSubset="buttonSet:Odyssey 2 / Videopac">./../../o2em/_inc/a-button.png</path>
+			<path ifSubset="buttonSet:Dreamcast">./../../dreamcast/_inc/a-button.png</path>
+			<path ifSubset="buttonSet:Wii">./../../wii/_inc/a-button.png</path>
+			<path ifSubset="buttonSet:Gamecube">./../../gamecube/_inc/a-button.png</path>
+			<path ifSubset="buttonSet:MSX">./../../msx/_inc/a-button.png</path>
+			<path ifSubset="buttonSet:Vectrex">./../../vectrex/_inc/a-button.png</path>
+
+			<path ifSubset="artworkregion:US">./../../${system.theme}/_inc/a-button-us.png</path>
+			<zIndex>100</zIndex>
+		</image>
+</view>
+
+
+</theme>

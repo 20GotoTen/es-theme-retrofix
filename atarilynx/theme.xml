@@ -1,8 +1,13 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<include>./../theme.xml</include>
+<include>./../_inc/system/hidenames.xml</include>
 
-  <view name="basic, detailed">
+	<view name="system">
+		<image name="startSet" extra="static"></image>
+	</view>
+
+  <view name="detailed">
     <textlist name="gamelist">
      <selectorColor>FFD42A</selectorColor>
      <selectedColor>000000</selectedColor>

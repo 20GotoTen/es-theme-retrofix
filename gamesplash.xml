@@ -8,36 +8,30 @@
     </splash>
 
     <image name="background">
-			<origin>0 0</origin>
-			<roundCorners>0</roundCorners>
-			<pos>0 0</pos>
-			<size>1 1</size>
-			<path>./_inc/assets/background.png</path>
-			<zIndex>0</zIndex>
-    </image>
+     <origin>0 0</origin>
+     <roundCorners>0</roundCorners>
+     <pos>0 0</pos>
+     <size>1 1</size>
+     <path>./_inc/assets/background.png</path>
+     <zIndex>0</zIndex>
+   </image>
 
-    <image name="logosplash" extra="true">
-		<origin>0 0 </origin>
-			<pos>0 0</pos>
-			<size>1 1</size>
-			<path>./_inc/assets/splashloading.svg</path>
-			<zIndex>0</zIndex>
-    </image>
+   <image name="logosplash" extra="true">
+    <origin>0 0 </origin>
+    <pos>0 0</pos>
+    <size>1 1</size>
+    <path>./_inc/assets/splashloading.svg</path>
+    <zIndex>0</zIndex>
+  </image>
 
+  <text name="label">
+    <color>00000000</color>
+    <fontSize>0</fontSize>
+    <glowColor>00000000</glowColor>
+    <glowSize>2</glowSize>
+    <glowOffset>1</glowOffset>
+    <pos>-2 -2</pos>
+  </text>
 
-    <text name="label">
-      <color>00000000</color>
-      <fontSize>0</fontSize>
-      <glowColor>00000000</glowColor>
-      <glowSize>2</glowSize>
-      <glowOffset>1</glowOffset>
-      <pos>-2 -2</pos>
-    </text>
-
-
-
-
-
-
-  </view>
+</view>
 </theme>

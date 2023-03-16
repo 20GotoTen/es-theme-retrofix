@@ -2,9 +2,9 @@ Retrofix - Emulationstation theme for Batocera 5.25+
 ====================================================
 
 Theme designed by 20Goto10
-Version 1.0
+Version 2.0
 First release 31/05/2020
-Last updated 9/04/2021
+Last updated 16/03/2023
 
 
 **Retrofix combines two of my loves: vintage video game artwork and Batocera. Sometimes the game art
@@ -12,13 +12,11 @@ can be more interesting than the games themselves, so you don't need any games t
 you can add dummy .zip files into the games directories, then scrape, you have a visual
 reference library.**
 
-This is the initial release of Retrofix and it's still in its early stages of development.
-
 
 Examples:
 ---------
 
-**You can see Retrofix in action here:**
+**You can see Retrofix (v1) in action here (v2 to videos to follow):**
 
 
 ![Tiles view](https://github.com/20GotoTen/es-theme-retrofix/blob/master/_inc/screenshot/Tiles.png "Tiles view")
@@ -31,32 +29,40 @@ Examples:
 ![Boxes view](https://github.com/20GotoTen/es-theme-retrofix/blob/master/_inc/screenshot/Boxes.png "Boxes view")
 - Boxes view: https://youtu.be/XLuyA9z8LYA
 
-Supported themes in version 1.0:
+Supported themes in version 2.0:
 --------------------------------
 
 **Theme systems are currently supported, mainly because they have the best art :) other systems supported by Batocera to follow.**
 
-- Master system
-- Mega drive (and regional variants)
-- Dreamcast (and regional variants)
+- Sega Master system
+- Sega Mega Drive (and regional variants)
+- Sega Dreamcast (and regional variants)
 - Sega Saturn
 - Mame
 - N64
+- N64DD
 - Neo Geo
+- Neo Geo CD
 - Neo Geo Pocket Color
 - NES
 - PC Engine (and regional variants)
 - PC Engine CD
-- Playstation
-- Playstation 2
-- PS3
+- PlayStation
+- PlayStation 2
+- PlayStation 3
 - PSP
-- 32X
-- Mega CD (and regional variants)
-- SG-1000
-- Snes (and regional variants)
+- PS Vita
+- Sega 32X
+- Sega Mega CD (and regional variants)
+- Sega SG-1000
+- Super Famicom / Super Nintendo (and regional variants)
+- SNES-MSU1
+- SatellaView
+- Nintendo DS
+- Nintendo Switch
+- Nintendo Virtualboy
 - Super Grafx
-- Amiga
+- NEC PC-FX
 - Atari 800
 - Atari 2600
 - Atari 5200
@@ -64,13 +70,17 @@ Supported themes in version 1.0:
 - Atari Lynx
 - Atari Jaguar
 - Atari ST
+- Atari XE
 - Laserdisc/Daphne
 - Game Gear (and regional variants)
 - Gameboy
+- Super Gameboy
 - Gameboy Advance
 - Famicom Disk System
+- Fairchild Channel F
 - Intellivision
 - Colecovision
+- Coleco Adam
 - Vectrex
 - Sega
 - Namco
@@ -78,8 +88,35 @@ Supported themes in version 1.0:
 - Capcom
 - Konami
 - Taito
+- Technos
+- Tecmo
 - Atari
 - Data East
+- Alpha Denshi
+- Banpresto
+- Eighting
+- Exidy
+- Cave
+- Gaelco
+- Gottlieb
+- Hikaru
+- IGS
+- Incredible Technologies
+- Irem
+- Kaneko
+- Midway
+- Mitchell
+- Nichibutsu
+- Nintendo
+- NMK
+- Psikyo
+- Sammy
+- Seibu Kaihatsu
+- Semicom
+- Toaplan
+- Universal
+- Visco
+- Video System Co
 - Auto Favourites
 - SNK
 - PC ports
@@ -87,19 +124,63 @@ Supported themes in version 1.0:
 - CPS2
 - CPS3
 - 3DO
-- Odyssey 2
-- Images
+- Odyssey 2 / Philips Videpac
+- Philips Videopac +
 - 3DO
 - Commodore 64
 - Gamecube
 - MSX
+- MSX 1
 - MSX 2
+- MSX 2+
+- MSX Turbo R
 - OpenBoR
-- Wii
-- WiiU
-- ZX Spectrum
+- Nintendo Wii
+- Nintendo WiiU
+- Triforce
+- Sinclair ZX Spectrum
+- Sinclair ZX-81
 - Atomiswave
 - Naomi
+- Naomi 2
+- Sega STV
+- Amiga 500
+- Amiga CD32
+- Amiga CDTV
+- Amstrad CPC
+- Amstrad GX4000
+- AFP M1000
+- Apple II
+- Astrocade
+- BBC Micro
+- Vic 20
+- Commodore 128
+- Commodore Plus4
+- Commodore PET
+- Final Burn Neo
+- Fujitsu FM-7
+- Fujitsu FM Towns
+- Game & Watch
+- Sega Model 2
+- Sega Model 3
+- MSU-MD
+- NEC PC8800
+- NEC PC9800
+- Pico-8
+- Pygame
+- Sam Coupe
+- Scummvm
+- Super Cassette Vision
+- Solarus
+- Sufami Turbo
+- TI-99
+- TIC-80
+- Windows
+- Wonderswan
+- Wonderswan Color
+- Sharp X1
+- Sharp x68000
+- Xbox
 
 
 
@@ -120,6 +201,11 @@ directly in Batocera, no external scraper required!
 **Don't use Scraped image mixes. They will look terrible with this theme.**
 
 
+
+SETTINGS
+--------
+
+
 Gamelist view styles to try:
 ----------------------------
 
@@ -131,52 +217,63 @@ Gamelist view styles to try:
 
 - **BOXES:** Game box art configured for each system, which is nice if you love box art / Japanese variations like me. The grids have been autoconfigured for the format of each system's box art, so it's recommended to keep the grid set to AUTO.
 
-Button styles:
---------------
 
-Here you can choose what button style you want to see throughout Retrofix. By default, where available, it will display the button styles for each system selected, including a supporting colour palette.
+Main Menu / System views video delay:
+----------------------
 
-- **All system buttons:** Uses a button style specific to the system (default, recommended)
-- **Generic buttons:** Uses a generic button style across Retrofix.
-- **<system name>:** When selected Retrofix will use that button style across all systems.
+If you've scraped videos, Retrofix will display these as backgrounds across the system and gamelist views. Here you can determine if and when they show.
 
-Show game names on boxes view (yes/no, default: no):
----------------------------------------------------
-
-- **NO:** Shows boxes without game titles.
-- **YES:** Shows game titles above the boxes, good for foreign language titles.
+- **2 Seconds (default):** The scraped image will be replaced by the scraped video after 2 seconds.
+- **5 Seconds:** The scraped image will be replaced by the scraped video after 5 seconds.
+- **Video off:** Only the scraped image will show.
 
 
-Show console art on lists (yes/no, default: no):
------------------------------------------------
+System logos:
+-------------
 
-- **NO:** Games list shows a solid grey background.
-- **YES:** Games list shows a technical drawing for the selected system (only currently viewable on Master System, Neo Geo, PC Engine, Super Famicom).
-
-
-Region (mix, eu, jp, us):
-------------------------
-- **mix:** Uses the theme default region settings (theme default).
-- **eu:** Uses European logos if available.
+- **mix:** Uses the theme default (my preferred mix). This is the theme default.
+- **eu:** Uses European logos if available.z
 - **jp:** Uses Japanese logos if available.
 - **us:** Uses US logos if available.
 
 
-Use darker mode (yes/no, default: no):
------------------------------------------------
+Batocera logo:
+--------------
 
-- **NO:** Uses a dark grey system-wide colour setting.
-- **YES:** Uses a black system-wide colour setting.
+- **Show logo:** Shows the Batocera logo across all menu screens.
+- **Hide logo:** Shows the Batocera logo across all menu screens.
+
+Animations:
+-----------
+
+To user of lower-powered devices such as the Raspberry Pi, you may want to turn off animations for a speedier experience.
+
+- **Animations on:** Turn on the animations (theme default).
+- **Animations off:** Turn off the animations.
 
 
+Button set:
+-----------
 
-Coming soon:
-------------
+Here you can choose what button style you want to see throughout Retrofix. By default, where available, it will display the button styles for each system selected, including a supporting colour palette.
 
-- Splash screen.
-- System theme music.
-- Metadata icons for all systems to complete. Currently those without custom metadata icons fallback to generic.
-- Buttonsets for all supported systems.
+- **Unique (default):** Uses a button style specific to the system (default, recommended)
+- **Red/Blue/Black/Cyan/Green/Yellow buttons:** Uses a generic button style in your chosen colour across Retrofix.
+- **<system name>:** When selected Retrofix will use that button style across all of your systems.
+
+
+Primary / Secondary button graphic:
+-----------------------------------
+
+Retrofix uses a custom help system (english at v2 launch) that allows you to set the theme to the specific buttons you set when you configured your controller. That way, the button graphics in Retrofix match your configuation (either A, B, X or Y).
+
+
+UI modes:
+---------
+
+- **Grey mode (default):** Uses a dark grey system-wide colour setting.
+- **Darker mode:** Uses a darker system-wide colour setting.
+
 
 
 Thanks and credits
@@ -186,6 +283,7 @@ Thanks and credits
 - Darknior (https://github.com/Darknior) for his amazing RVGM theme and his thoroughly documented comments which were very helpful.
 - fabricecaruso (https://github.com/fabricecaruso) for the continued improvements and additions to Emulationstation which make it so much fun.
 - Ordovice (https://github.com/ordovice) for support and his contibutions to regional settings.
+- Dan Patrick for filling in some logo gaps with his mindblowing platform logo set (https://forums.launchbox-app.com/files/file/3402-v2-platform-logos-professionally-redrawn-official-versions-new-bigbox-defaults/)
 - The game artists themselves for creating over 40 years of memorable and influential artwork which has inspired generations, and inspired me to want to show it all off.
 
 

@@ -1,0 +1,14 @@
+<theme>
+	<formatVersion>7</formatVersion>
+	<include>./../theme.xml</include>
+
+	<view name="system, detailed, grid">
+
+		<text name="systemName" extra="true">
+			<zIndex>0</zIndex>
+			<pos>-2 -2</pos>
+		</text>
+		
+	</view>
+
+</theme>

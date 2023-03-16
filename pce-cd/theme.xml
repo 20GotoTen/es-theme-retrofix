@@ -1,29 +1,17 @@
 <theme>
-  <formatVersion>7</formatVersion>
-  <include>./../theme.xml</include>
-
-  <view name="system">
-    <image name="startSet" extra="static"></image>
-
-    <image name="gamemarker" region="us" extra="static">
-      <path>./_inc/marker-us.png</path>
-    </image>  
-
-<image name="startSet" extra="static" region="us">
-      <path>./_inc/start-us.png</path>
-    </image>
-
-  </view>
+	<formatVersion>7</formatVersion>
+	<include>./../theme.xml</include>
+<include>./../_inc/system/hidenames.xml</include>
 
 
-  <view name="basic, detailed">
+  <view name="detailed">
 
     <textlist name="gamelist">
      <selectorColor>EB222C</selectorColor>
      <selectedColor>ffffff</selectedColor>
    </textlist>
 
- <textlist name="gamelist" region="us">
+ <textlist ifSubset="artworkregion:US" name="gamelist">
      <selectorColor>F79226</selectorColor>
      <selectedColor>000000</selectedColor>
    </textlist>
@@ -47,9 +35,14 @@
     <color>EB222Cff</color>
   </image>  
 
-  <image name="gridtile.favorite" region="us">
+  <image ifSubset="artworkregion:US" name="gridtile.favorite">
     <color>F79226ff</color>
   </image>  
+
+
+
+
+
 
 </view>
 
@@ -59,31 +52,9 @@
     <backgroundEdgeColor>EB222C</backgroundEdgeColor>
   </gridtile>
 
-<gridtile name="selected" region="us">
+<gridtile ifSubset="artworkregion:US" name="selected">
     <backgroundEdgeColor>F79226</backgroundEdgeColor>
   </gridtile>
 </customView>
-
-
-  <view name="basic, detailed, grid">
-    <image name="btnSet" extra="true" region="us">
-      <path>./_inc/btnset-us.png</path>
-    </image>
-  </view>
-
-
-  <customView name="Tiles" inherits="grid">
-    <image name="btnSet" extra="true" region="us">
-      <path>./_inc/btnset-us.png</path>
-      <zIndex>100</zIndex>
-    </image>
-  </customView>
-
-
-
-
-
-
-
 
 </theme>

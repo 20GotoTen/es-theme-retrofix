@@ -3,39 +3,57 @@
 <!--
 theme name:     Retrofix
 author:         20goto10
-version:    	1.0
+version:    	2.0
 System      	Batocera 5.25+
 GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 -->
 
-<theme defaultView="Tiles">
+<theme defaultView="Tiles" defaultTransition="fade & slide">
+
+
 	<formatVersion>7</formatVersion>
 
 	<variables>
-		<!--<tilesViewName>Tiles</tilesViewName>-->
-		<subset.buttonSet>Button styles</subset.buttonSet> 
-		<subset.boxNames>Show game names on Boxes View</subset.boxNames>
-		<subset.darkmode>Use Darker Mode</subset.darkmode>
-		<subset.videoDelay>System select video delay</subset.videoDelay>
-		<subset.systemsVideoDelay>Views video delay</subset.systemsVideoDelay>
-		<subset.animations>Use animations</subset.animations>
+		<subset.UImode>UI modes</subset.UImode>
+		<subset.mainVideoDelay>Main menu video delay</subset.mainVideoDelay>
+		<subset.systemVideoDelay>System views video delay</subset.systemVideoDelay>
+		<subset.animations>Animations</subset.animations>
+		<subset.primaryButton>Primary button graphic</subset.primaryButton>
+		<subset.secondaryButton>Secondary button graphic</subset.secondaryButton>
+		<subset.artworkregion>System logos</subset.artworkregion>
+		<subset.buttonSet>Button Set</subset.buttonSet>
+		<subset.hideLogo>Batocera logo</subset.hideLogo>
 	</variables>
 
-	<view name="system, basic, detailed, grid">
-		<image name="preloadOverlay" extra="true">
-			<pos>0	0</pos>
-			<size>1 1</size>
-			<path>./_inc/assets/tileoverlay.png</path>
-			<zIndex>-10</zIndex>
-		</image>
 
-		<image name="preloadBasicDetailed" extra="true">
-			<pos>0 0</pos>
-			<size>1 1</size>
-			<path>./_inc/assets/detailed.png</path>
-			<zIndex>-10</zIndex>
-		</image>
+	<subset name="mainVideoDelay" displayName="${subset.mainVideoDelay}">
+		<include name="2 Seconds"/>
+		<include name="5 Seconds"/>
+		<include name="Video off"/>
+	</subset>
 
+		<subset name="systemVideoDelay" displayName="${subset.systemVideoDelay}">
+		<include name="2 Seconds"/>
+		<include name="5 Seconds"/>
+		<include name="Video off"/>
+	</subset>
+
+	<subset name="artworkregion" displayName="${subset.artworkregion}">
+		<include name="MIX"/>
+		<include name="JP"/>
+		<include name="US"/>
+		<include name="EU"/>
+	</subset>
+
+
+	<subset name="hideLogo" displayName="${subset.hideLogo}">
+		<include name="Show logo"/>
+		<include name="Hide logo"/>
+	</subset>
+
+
+	<view name="system, detailed, grid">
+		
 		<text name="md_lbl_rating">
 			<pos>-2 -2</pos>
 			<color>ffffff00</color>
@@ -45,86 +63,62 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<pos>-2 -2</pos>
 			<color>ffffff00</color>
 		</rating>
+
+		<image name="batologo" extra="static">
+			<origin>1 0</origin>
+			<pos ifSubset="hideLogo:Show logo">0.94 0.07</pos>
+			<pos ifSubset="hideLogo:Hide logo">-2 -2</pos>
+			<size>0.071875 0.0203703703703704</size>
+			<path>./_inc/icons/batocera.svg</path>    
+			<zIndex>200</zIndex>
+		</image>
+
 	</view>
 
+<!-- ----- Screen view properties ----- -->
 
 	<view name="screen"> 
+
 		<controllerActivity name="controllerActivity">
-			<pos>-2 -2</pos>
+			<pos>0 0</pos>
 			<size>0.072395833333333 0.017592592592593</size>
+			<imagePath>./_inc/gamepad.svg</imagePath>
+			<gunPath>./_inc/gun.svg</gunPath>
 			<itemSpacing>0.003</itemSpacing>
 			<color>FFFFFF90</color>
 			<activityColor>FFFFFF</activityColor>
 			<hotkeyColor>DEEC00</hotkeyColor>
 		</controllerActivity> 
 
+		<!-- the clock is permanently hidden in this theme -->
+
 		<text name="clock">
-			<color>ffffff</color>
+			<color>000000</color>
 			<fontSize>0.035</fontSize>
-			<fontPath>./_inc/fonts/RedHatDisplay-Regular.ttf</fontPath>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
 			<pos>-2 -2</pos>
+			<origin>1 1</origin>
 			<size>0.09 0.058</size>
 			<alignment>right</alignment>
 		</text>
 
+		<!-- Battery and WIfi icons -->
 
-<!-- forces UI icons off screen by default -->
- <batteryIndicator name="batteryIndicator">
-      <pos>-2 -2</pos>
-      <color>00000000</color>
-    </batteryIndicator>
-
+		<batteryIndicator name="batteryIndicator">
+			<pos>0.91 0.036</pos>
+			<origin>1 1</origin>
+			<color>ffffff</color>
+		</batteryIndicator>
 
 	</view>
 
 
 
-
-	<view name="system">
-		<image name="logo">
-			<path>./${system.theme}/_inc/syslogo.svg</path>
-		</image>
-		<image name="logo" region="eu">
-			<path>./${system.theme}/_inc/syslogo-eu.svg</path>
-		</image>
-		<image name="logo" region="us">
-			<path>./${system.theme}/_inc/syslogo-us.svg</path>
-		</image>
-		<image name="logo" region="jp">
-			<path>./${system.theme}/_inc/syslogo-jp.svg</path>
-		</image>
-		<image name="logo" region="mix">
-			<path>./${system.theme}/_inc/syslogo.svg</path>
-		</image>
-	</view>
-
-
-
-
-
-
-
-
-
-	<view name="system, basic, detailed, grid">
-		<image name="background" extra="true">
-			<origin>0 0</origin>
-			<pos>0 0</pos>
-			<size>1 1</size>
-			<path>./_inc/assets/background.png</path>
-			<zIndex>0</zIndex>
-		</image>
-	</view>
-
-
-
-
-
-
+<!-- ----------------- Menu view properties ------------ -->
 
 	<view name="menu">
 		<menuText name="menutitle">
-			<fontPath>./_inc/fonts/RedHatDisplay-Regular.ttf</fontPath>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
 			<fontSize>0.034</fontSize>
 			<color>d9d9d9</color>
 		</menuText>
@@ -137,12 +131,13 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 		<menuText name="menutext">
 			<fontPath>./_inc/fonts/RedHatDisplay-Regular.ttf</fontPath>
-			<fontSize>0.030</fontSize>
+			<fontSize>0.025</fontSize>
 			<color>969696</color>
 			<separatorColor>3c3c3c</separatorColor>
 			<selectorColor>4F4F4Fff</selectorColor>
 			<selectorColorEnd>4F4F4Fff</selectorColorEnd>
-			<!--<selectedColor>ffffff</selectedColor>-->
+			<forceUppercase>false</forceUppercase>
+			<lineSpacing>4</lineSpacing>
 		</menuText>
 
 		<menuTextSmall name="menutextsmall">
@@ -168,58 +163,79 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 
 
+<!-- ------------- Global syslogo and mainlogo settings ---------- -->
 
-
-
-
-
-	<view name="system">
-		<image name="startSet" extra="static">
-			<pos>0.2828125 0.816666666666667</pos>
-			<size>0.239583333333333 0.134259259259259</size>
-			<path>./_inc/assets/start.png</path> 
-			<path>./${system.theme}/_inc/start.png</path>
-			<zIndex>200</zIndex>
+	<view name="detailed, grid">
+		<image name="logo">
+			<linearSmooth>true</linearSmooth>		
+			<path>./${system.theme}/_inc/mainlogo.svg</path>
+			<path ifSubset="artworkregion:JP">./${system.theme}/_inc/mainlogo-jp.svg</path>
+			<path ifSubset="artworkregion:US">./${system.theme}/_inc/mainlogo-us.svg</path>
+			<path ifSubset="artworkregion:EU">./${system.theme}/_inc/mainlogo-eu.svg</path>
+			<path ifSubset="artworkregion:MIX">./${system.theme}/_inc/mainlogo.svg</path>
 		</image>
 	</view>
 
 
-
-
-
-
+<!-- ----------------- System view properties ------------ -->
 
 	<view name="system">
+		<image name="logo">
+			<linearSmooth>true</linearSmooth>		
+			<path>./${system.theme}/_inc/syslogo.svg</path>
+			<path ifSubset="artworkregion:JP">./${system.theme}/_inc/syslogo-jp.svg</path>
+			<path ifSubset="artworkregion:US">./${system.theme}/_inc/syslogo-us.svg</path>
+			<path ifSubset="artworkregion:EU">./${system.theme}/_inc/syslogo-eu.svg</path>
+			<path ifSubset="artworkregion:MIX">./${system.theme}/_inc/syslogo.svg</path>
+		</image>
 
+		<image name="mainlogo" extra="true">
+			<linearSmooth>true</linearSmooth>
+			<origin>0 1</origin>
+			<pos>0.28125 0.750185185185185</pos>
+			<maxSize>0.192708333333333 0.192708333333333</maxSize>
+			<zIndex>100</zIndex>	
+			<path>./${system.theme}/_inc/mainlogo.svg</path>
+			<path ifSubset="artworkregion:JP">./${system.theme}/_inc/mainlogo-jp.svg</path>
+			<path ifSubset="artworkregion:US">./${system.theme}/_inc/mainlogo-us.svg</path>
+			<path ifSubset="artworkregion:EU">./${system.theme}/_inc/mainlogo-eu.svg</path>
+			<path ifSubset="artworkregion:MIX">./${system.theme}/_inc/mainlogo.svg</path>
+		</image>
 
-		<image name="sysBackgrounds" extra="true">
+		<image name="background" extra="true">
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<maxSize>1 1</maxSize>
+			<path>./_inc/assets/background.png</path>
+			<zIndex>0</zIndex>
+		</image>
+
+		<image name="sysBackgrounds"  extra="static">
 			<origin>0 0</origin>
 			<pos>0.229166666666667 0</pos>
-			<size>0.770833333333333 1</size>
-			<path>./_inc/assets/default.svg</path>
+			<size>0.770833333333333 0</size> 
+			<maxSize>2 2</maxSize>
+			<path>./_inc/assets/defaultbg.png</path>
 			<path>./${system.theme}/_inc/bg.jpg</path>
 		</image>
 
-		<image name="batologo" extra="static">
-			<origin>1 0</origin>
-			<pos>0.9739583333333333 0.0462962962962963</pos>
-			<size>0.0723958333333333 0.0204444444444444</size>
-			<path>./_inc/icons/batocera.svg</path>    
-			<zIndex>200</zIndex>
-		</image>
+
+
 
 		<video name="backgroundvideo" extra="true">
 			<path>{random}</path>
 			<pos>0.229166666666667 0</pos>
 			<origin>0 0</origin>
-			<!--<maxSize>0.770833333333333 2</maxSize>-->
 			<size>0.770833333333333 1</size>
-			<delay>2</delay>
+			<delay ifSubset="mainVideoDelay:2 Seconds">2</delay>
+			<delay ifSubset="mainVideoDelay:5 Seconds">5</delay>
+			<delay ifSubset="mainVideoDelay:Video off">9999</delay>
 			<effect>none</effect>
 			<zIndex>11</zIndex>
 		</video>
 
 		<carousel name="systemcarousel">
+			<scrollSound>./_inc/sound/slide.wav</scrollSound>
 			<type>vertical</type>
 			<pos>0.035 0</pos>
 			<size>0.17 1</size>
@@ -233,20 +249,37 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<maxLogoCount>7</maxLogoCount>
 			<zIndex>29</zIndex>
 			<systemInfoDelay>700</systemInfoDelay>
-			<scrollSound>./_inc/sound/slide.wav</scrollSound>
+			<defaultTransition>fade</defaultTransition>
 		</carousel>
 
 		<text name="logoText">
 			<origin>0 0</origin>
 			<pos>0.5 0.5</pos>
 			<size>1 0.8335</size>
-			<fontSize>0.025</fontSize>
+			<fontSize>0.035</fontSize>
 			<lineSpacing>1</lineSpacing>
-			<fontPath>./_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
+			<fontPath>./_inc/fonts/RedHatDisplay-Regular.ttf</fontPath>
 			<alignment>center</alignment>
-			<forceUppercase>true</forceUppercase>
+			<forceUppercase>false</forceUppercase>
 			<color>ffffff</color>
 		</text>
+
+		<text name="systemName" extra="true">
+			<text>${system.fullName}</text>
+			<origin>0 1</origin>
+			<fontSize>0.055</fontSize>
+			<lineSpacing>1</lineSpacing>
+			<fontPath>./_inc/fonts/RedHatDisplay-Regular.ttf</fontPath>
+			<alignment>left</alignment>
+			<forceUppercase>false</forceUppercase>
+			<color>ffffff</color>
+			<pos>0.28125 0.750185185185185</pos>
+			<zIndex>31</zIndex>
+		</text>
+
+
+
+		<!-- ----- this is the image that provides the gradient for the carousel and the tint for the main image. suggest splitting these so the image gradient can be turned on if a system theme has been defined ----- -->
 
 		<image name="background2" extra="static">
 			<path>./_inc/assets/overlay.png</path>
@@ -259,90 +292,89 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<image name="gamemarker" extra="static">
 			<path>./_inc/assets/marker.png</path>
 			<path>./${system.theme}/_inc/marker.png</path>
+			<path ifSubset="artworkregion:JP">./${system.theme}/_inc/marker-jp.png</path>
+			<path ifSubset="artworkregion:US">./${system.theme}/_inc/marker-us.png</path>	
+			<path ifSubset="artworkregion:EU">./${system.theme}/_inc/marker-eu.png</path>	
+			<path ifSubset="artworkregion:MIX">./${system.theme}/_inc/marker.png</path>
 			<size>0.0078125 0.1666666666666667</size>
-			<pos>0.2213541666666667 0.4166666666666667</pos>
+			<pos>0 0.4166666666666667</pos>
 			<origin>0 0</origin>
 			<zIndex>30</zIndex>
-		</image>  
+		</image> 
 
 		<text name="systemInfo">
 			<pos>0.2828125 0.77</pos>
 			<size>0.15625 0.027777777777778</size>
 			<backgroundColor>00000000</backgroundColor>
 			<color>ffffff</color>
-			<fontPath>./_inc/fonts/RedHatDisplay-Regular.ttf</fontPath>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
 			<fontSize>0.022</fontSize>
 			<alignment>left</alignment>
 		</text> 
 
-		<image name="mainlogo" extra="static">
-			<origin>0 1</origin>
-			<!--<path>./_inc/icons/batocera.svg</path>-->
-			<path>./${system.theme}/_inc/mainlogo.svg</path>
-			<pos>0.28125 0.750185185185185</pos>
-			<maxSize>0.192708333333333 0.148148148148148</maxSize>
-			<zIndex>100</zIndex>
- 
-
-		</image>
-
-
-
-
-		<image name="mainlogo" extra="true" region="eu">
-			<path>./${system.theme}/_inc/mainlogo-eu.svg</path>
-		</image>
-		<image name="mainlogo" extra="true" region="jp">
-			<path>./${system.theme}/_inc/mainlogo-jp.svg</path>
-		</image>
-		<image name="mainlogo" extra="true"  region="us">
-			<path>./${system.theme}/_inc/mainlogo-us.svg</path>
-		</image>
-		<image name="mainlogo" extra="true" region="mix">
-			<path>./${system.theme}/_inc/mainlogo.svg</path>
-		</image>
+		<!-- main system help buttons graphic -->
 
 		<image name="system_help" extra="static">
 			<path>./_inc/assets/syshelp.svg</path>
-			<pos>0.328125 0.918518518518519</pos>
-			<maxSize>0.546875 0.05</maxSize>
+			<origin>1 1</origin>
+			<pos>0.94 0.9462962962962963</pos>
+			<maxSize>1 0.05</maxSize>
 			<zIndex>200</zIndex>
 		</image>
 
+		<image name="primaryBtn" extra="true">
+			<linearSmooth>true</linearSmooth>	
+			<origin>0.5 0.734848484848485</origin>
+			<pos>0.2989583333333333 0.9212962962962963</pos>
+			<size>0.036458333333333 0.122222222222222</size>
+			<zIndex>100</zIndex>
+		</image>
+
+
+		<text name="browseGames" extra="static">
+			<text>Browse games</text>
+			<pos>0.3239583333333333 0.933</pos>
+			<origin>0 1</origin>
+			<maxSize>1 0.05</maxSize>
+			<color>ffffff</color>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+			<fontSize>0.019</fontSize>
+			<alignment>left</alignment>
+			<zIndex>200</zIndex>
+		</text>
+
+		<!-- hidden default help system -->
+
 		<helpsystem name="help">
-			<pos>-2 -2</pos>      
-			<textColor>ffffff</textColor>         
+			<origin>1 1</origin>
+			<pos>-2 -2</pos>
+			<textColor>ffffff</textColor>
+			<fontPath>./_inc/fonts/RedHatDisplay-Regular.ttf</fontPath>
+			<fontSize>0.02</fontSize>    
+			<iconColor>f11c00</iconColor>
+			<horizontalMargin>0.1 0.1</horizontalMargin>
 		</helpsystem>
 
 	</view>
 
 
-
-
-	<view name="basic, detailed, grid">
-
+	<view name="detailed, grid">
 		<helpsystem name="help">
 			<pos>-2 -2</pos>
 			<textColor>f11c00</textColor>
 			<iconColor>f11c00</iconColor>
 			<fontPath>./_inc/fonts/RedHatDisplay-Regular.ttf</fontPath>
-			<fontSize>0.0</fontSize>
+			<forceUppercase>false</forceUppercase>
 		</helpsystem> 
-
-		<image name="btnSet" extra="true">
-			<pos>0.052083333333333 0.818518518518519</pos>
-			<size>0.239583333333333 0.134259259259259</size>
-			<path>./_inc/assets/btnset.png</path>
-			<path>./${system.theme}/_inc/btnset.png</path>
-			<zIndex>100</zIndex>
-		</image>
 	</view>
 
+<!-- ---------- Detailed layout properties ------ -->
 
-	<view name="basic, detailed">
-		<text name="md_lbl_genre, md_lbl_rating, md_rating, md_lbl_developer, md_lbl_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_players, md_lbl_releasedate">
-			<pos>-2 -2</pos>
-			<visible>no</visible>
+	<view name="detailed">
+
+		<text name="md_lbl_genre, md_lbl_rating, md_rating, md_lbl_developer, md_developer, md_lbl_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_players, md_lbl_releasedate">
+			<pos>2</pos>
+			<visible>false</visible>
 		</text>
 
 		<image name="background2" extra="true">
@@ -353,17 +385,12 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<zIndex>11</zIndex>
 		</image>
 
-		<!--<image name="listsystem" extra="true">
-			<path></path>
-			<size>1 1</size>
-			<pos>0 0</pos>
-			<origin>0 0</origin>
-			<zIndex>12</zIndex>
-		</image>-->
+		<!-- help system image element -->
 
 		<image name="list_help" extra="true">
 			<path>./_inc/assets/tilehelp.svg</path>
-			<pos>0.3890625 0.918518518518519</pos>
+			<origin>0.5 0</origin>
+			<pos>0.66 0.91</pos>
 			<maxSize>0.546875 0.05</maxSize>
 			<zIndex>100</zIndex>
 		</image>
@@ -372,71 +399,71 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<origin>0 0</origin>
 			<pos>0.052083333333333 0.092592592592593</pos>
 			<maxSize>0.125 0.160185185185185</maxSize>
-			<path>./${system.theme}/_inc/mainlogo.svg</path>
 		</image>
-
-		<image name="logo" region="eu">
-			<path>./${system.theme}/_inc/mainlogo-eu.svg</path>
-		</image>
-		<image name="logo" region="us">
-			<path>./${system.theme}/_inc/mainlogo-us.svg</path>
-		</image>
-		<image name="logo" region="jp">
-			<path>./${system.theme}/_inc/mainlogo-jp.svg</path>
-		</image>
-		<image name="logo" region="mix">
-			<path>./${system.theme}/_inc/mainlogo.svg</path>
-		</image>
-
-
-
-
-
 
 		<text name="logoText">
-			<origin>0 1</origin>
-			<pos>0.059895833333333 0.271296296296296</pos>
+			<origin>0 0</origin>
+			<pos>0.056 0.008</pos>
 			<size>0.16875 0.215740740740741</size>
 			<fontSize>0.035</fontSize>
 			<lineSpacing>1</lineSpacing>
-			<fontPath>./_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
+			<fontPath>./_inc/fonts/RedHatDisplay-Regular.ttf</fontPath>
 			<alignment>left</alignment>
-			<forceUppercase>true</forceUppercase>
+			<forceUppercase>false</forceUppercase>
 			<color>ffffff</color>
 		</text>
 
 		<textlist name="gamelist">
 			<pos>0.044 0.247222222222222</pos>
-			<size>0.29 0.53</size>
+			<size>0.282 0.53</size>
 			<selectorColor>424242</selectorColor>
 			<selectedColor>ffffff</selectedColor>
 			<primaryColor>ffffff</primaryColor>
 			<secondaryColor>ffffff</secondaryColor>
-			<fontPath>./_inc/fonts/RedHatDisplay-Regular.ttf</fontPath>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
 			<fontSize>0.021</fontSize>
 			<alignment>left</alignment>
-			<horizontalMargin>0.01 0.09</horizontalMargin>
+			<horizontalMargin>0.01</horizontalMargin>
 			<selectorHeight>0.046296296296296</selectorHeight>
-			<!--<selectorOffsetY>-0.007407407407407</selectorOffsetY>-->
 			<lines>11</lines>
 			<lineSpacing>2.2</lineSpacing>
 			<scrollSound>./_inc/sound/cursor.wav</scrollSound>
 		</textlist>
 
-	</view> 
+		<image name="primaryBtn" extra="true">
+			<linearSmooth>true</linearSmooth>	
+			<pos>0.052083333333333 0.7972222222222222</pos>
+			<size>0.036458333333333 0.122222222222222</size>
+			<zIndex>100</zIndex>
+		</image>
 
+		<image name="selectTxt" extra="true">
+			<pos>0.051375 0.925</pos>
+			<size>0.036458333333333 0.02037037037037</size>
+			<path>./_inc/assets/selectTxt.png</path>
+			<zIndex>100</zIndex>
+		</image>
 
+		<image name="secondaryBtn" extra="true">
+			<linearSmooth>true</linearSmooth>	
+			<pos>0.091666666666667 0.7972222222222222</pos>
+			<size>0.036458333333333 0.122222222222222</size>
+			<zIndex>100</zIndex>
+		</image>
 
+		<image name="backTxt" extra="true">
+			<pos>0.0909583333333333 0.925</pos>
+			<size>0.036458333333333 0.02037037037037</size>
+			<path>./_inc/assets/backTxt.png</path>
+			<zIndex>100</zIndex>
+		</image>
 
-
-
-
-	<view name="detailed">
 		<image name="game-meta" extra="true">
+			<linearSmooth>true</linearSmooth>
 			<pos>0.474479166666667 0.665740740740741</pos>
 			<size>0.3765625 0.078703703703704</size>
-<path>./_inc/assets/gamemeta.svg</path>
-		<path>./${system.theme}/_inc/gamemeta.svg</path>
+			<path>./_inc/assets/gamemeta.svg</path>
+			<path>./${system.theme}/_inc/gamemeta.svg</path>
 			<color>ffffff</color>
 			<zIndex>100</zIndex>
 		</image>
@@ -453,7 +480,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<size>0.078125 0.034259259259259</size>
 			<color>B3B3B3</color>
 			<fontSize>0.014814814814815</fontSize>
-			<fontPath>./_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
 			<alignment>center</alignment>
 		</text> 
 
@@ -462,7 +489,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<size>0.078125 0.034259259259259</size>
 			<color>B3B3B3</color>
 			<fontSize>0.014814814814815</fontSize>
-			<fontPath>./_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
 			<alignment>center</alignment>
 		</text>
 
@@ -471,16 +498,17 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<size>0.078125 0.034259259259259</size>
 			<color>B3B3B3</color>
 			<fontSize>0.014814814814815</fontSize>
-			<fontPath>./_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
 			<alignment>center</alignment>
+			<format>%Y</format>
 		</datetime>
 
-		<text name="md_developer">
+		<text name="md_publisher">
 			<pos>0.6734375 0.716666666666667</pos>
 			<size>0.078125 0.034259259259259</size>
 			<color>B3B3B3</color>
 			<fontSize>0.014814814814815</fontSize>
-			<fontPath>./_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
 			<alignment>center</alignment>
 		</text>
 
@@ -491,7 +519,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<alignment>center</alignment>
 			<size>0.336458333333333 0.094444444444444</size>
 			<pos>0.494791666666667 0.777777777777778</pos>
-		</text> 
+		</text>
 
 		<video name="md_video">
 			<pos>0.322916666666667 0</pos>
@@ -499,6 +527,13 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<zIndex>10</zIndex>
 			<origin>0 0</origin>
 			<delay>1</delay>
+
+			<delay ifSubset="systemVideoDelay:2 Seconds">2</delay>
+			<delay ifSubset="systemVideoDelay:5 Seconds">5</delay>
+			<delay ifSubset="systemVideoDelay:Video off">9999</delay>
+
+
+
 			<showSnapshotNoVideo>true</showSnapshotNoVideo>
 			<showSnapshotDelay>true</showSnapshotDelay>
 			<effect>none</effect>
@@ -506,17 +541,9 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		</video>
 	</view>
 
-
-
-
-
-
-
-
-
+	<!-- ---- Grid layout properties  ---- -->
 
 	<view name="grid">
-
 
 		<image name="gridtile.favorite">
 			<path>./_inc/images/favorite.svg</path>
@@ -527,45 +554,38 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<color>909090ff</color>
 		</image>  
 
-
-		<image name="logo2" extra="true">
-			<origin>0 0</origin>
-			<pos>0.052083333333333 0.092592592592593</pos>
-			<maxSize>0.125 0.160185185185185</maxSize>
-			<path>./${system.theme}/_inc/mainlogo.svg</path>
-		</image>
-
-		<image name="logo2" extra="true" region="eu">
-			<path>./${system.theme}/_inc/mainlogo-eu.svg</path>
-		</image>
-		<image name="logo2" extra="true" region="us">
-			<path>./${system.theme}/_inc/mainlogo-us.svg</path>
-		</image>
-		<image name="logo2" extra="true" region="jp">
-			<path>./${system.theme}/_inc/mainlogo-jp.svg</path>
-		</image>
-		<image name="logo2" extra="true" region="mix">
-			<path>./${system.theme}/_inc/mainlogo.svg</path>
-		</image>
-
-
-
-
 		<image name="logo">
-			<origin>0 0</origin>
-			<path>./_inc/icons/blank.svg</path>
-			<pos>-2 -2</pos>
+			<origin>0.5 0.5</origin>
+			<pos>0.116 0.11</pos>
+			<maxSize>0.125 0.12</maxSize>
 		</image>
+
+		<text name="logoText">
+			<origin>0 0.5</origin>
+			<!-- <size>1 0.8335</size>-->
+			<fontSize>0.035</fontSize>
+			<lineSpacing>1</lineSpacing>
+			<fontPath>./_inc/fonts/RedHatDisplay-Regular.ttf</fontPath>
+			<alignment>left</alignment>
+			<forceUppercase>false</forceUppercase>
+			<color>ffffff</color>
+			<pos>0.055 0.105</pos>
+			<zIndex>31</zIndex>
+		</text>
 
 		<image name="grid_help" extra="true">
+			<origin>1 1</origin>
 			<path>./_inc/assets/gridhelp.svg</path>
-			<pos>0.3890625 0.918518518518519</pos>
+			<pos>0.94 0.920</pos>
 			<maxSize>0.546875 0.05</maxSize>
 			<zIndex>100</zIndex>
 		</image>
 
+
+		<!-- this is the tint image overlay that provides clarity over the video BG - originally used tileoverlay.png-->
+
 		<image name="gridOverlay" extra="true">
-			<path>./_inc/assets/tileoverlay.png</path>
+			<path>./_inc/assets/boxesOverlay.png</path>
 			<size>1 1</size>
 			<pos>0 0</pos>
 			<origin>0 0</origin>
@@ -573,11 +593,19 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		</image>
 
 		<imagegrid name="gamegrid">
-			<pos>0.052083333333333 0.199074074074074</pos>
-			<size>0.895833333333333 0.62962962962963</size>
+			<pos>0.049 0.199074074074074</pos>
+			<size>0.91 0.618</size>
+			<!-- define base grid -->
 			<autoLayout>7 2</autoLayout>
-			<margin>-0 0</margin>
-			<autoLayoutSelectedZoom>1.15</autoLayoutSelectedZoom>
+
+			<!-- define grid layouts per system -->
+			<autoLayout if="{system.theme} == 'n64' || {system.theme} == 'sfc' || {system.theme} == 'gameandwatch'">4 2</autoLayout>
+			<autoLayout if="{system.theme} == 'psp'">8 2</autoLayout>
+			<!-- square boxes -->
+			<autoLayout if="{system.theme} == 'gb' || {system.theme} == 'nes'  || {system.theme} == 'supergrafx' || {system.theme} == 'pce-cd'  || {system.theme} == 'pcengine'  || {system.theme} == 'psx'   || {system.theme} == 'ngpc' || {system.theme} == 'ngp' || {system.theme} == 'neogeocd' || {system.theme} == 'dreamcast' || {system.theme} == '3do' || {system.theme} == 'gba' || {system.theme} == 'gb' || {system.theme} == 'gb2players'">5 2</autoLayout>
+			<margin>0 0</margin>
+			<scrollSound>./_inc/sound/cursor.wav</scrollSound>
+			<autoLayoutSelectedZoom>1.1</autoLayoutSelectedZoom>
 		</imagegrid>
 
 		<gridtile name="default">
@@ -588,46 +616,132 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 		<gridtile name="selected">
 			<size>0.20 0.277777777777778</size>
-			<!--<backgroundImage>./_inc/images/default_grid.png</backgroundImage>-->
 			<backgroundColor>42424200</backgroundColor>
 			<imageColor>ffffffff</imageColor>
 		</gridtile>   
 
-		<text name="md_name">
+		<text name="gridtile">
+			<visible>false</visible> <!-- hides the game title from displaying underneath the grid item -->
 			<color>ffffff</color>
-			<fontPath>./_inc/fonts/RedHatDisplay-Regular.ttf</fontPath>
+			<backgroundColor>00000000</backgroundColor>
+			<fontSize>0.018</fontSize>
+			<forceUppercase>false</forceUppercase>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+			<alignment>center</alignment>
 		</text>
-	</view>
 
+		<text name="md_name">
+			<pos>0.94 0.14</pos>
+			<size>0.720833333333333 0.055555555555556</size>
+			<origin>1 1</origin>
+			<alignment>right</alignment>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+			<fontSize>0.04</fontSize>
+			<color>ffffffff</color>
+			<zIndex>100</zIndex>
+		</text>
 
-
-
-
-
-
-
-	<customView name="Boxes" inherits="grid">
+		<text name="md_publisher">
+			<pos>0.94 0.17</pos>
+			<origin>1 1</origin>
+			<size>0.4 0.034259259259259</size>
+			<color>B3B3B3</color>
+			<fontSize>0.020</fontSize>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+			<alignment>right</alignment>
+		</text>
 
 		<video name="md_video">
-			<pos>0 -0.35</pos>
+			<pos>0 -0.15</pos>
 			<size>1 1</size>
 			<zIndex>6</zIndex>
 			<origin>0 0</origin>
-			<delay>2</delay>
+			<delay ifSubset="systemVideoDelay:2 Seconds">2</delay>
+			<delay ifSubset="systemVideoDelay:5 Seconds">5</delay>
+			<delay ifSubset="systemVideoDelay:Video off">9999</delay>
+
 			<showSnapshotNoVideo>true</showSnapshotNoVideo>
 			<showSnapshotDelay>true</showSnapshotDelay>
 			<loops>10</loops>
 			<effect>none</effect>
 		</video>
 
+		<!-- ----- Button positions ------ -->
+
+		<image name="primaryBtn" extra="true">
+			<linearSmooth>true</linearSmooth>	
+			<pos>0.052083333333333 0.7972222222222222</pos>
+			<size>0.036458333333333 0.122222222222222</size>
+			<zIndex>100</zIndex>
+		</image>
+
+		<image name="selectTxt" extra="true">
+			<pos>0.051375 0.925</pos>
+			<size>0.036458333333333 0.02037037037037</size>
+			<path>./_inc/assets/selectTxt.png</path>
+			<zIndex>100</zIndex>
+		</image>
+
+		<image name="secondaryBtn" extra="true">
+			<linearSmooth>true</linearSmooth>	
+			<pos>0.091666666666667 0.7972222222222222</pos>
+			<size>0.036458333333333 0.122222222222222</size>
+			<zIndex>100</zIndex>
+		</image>
+
+		<image name="backTxt" extra="true">
+			<pos>0.0909583333333333 0.925</pos>
+			<size>0.036458333333333 0.02037037037037</size>
+			<path>./_inc/assets/backTxt.png</path>
+			<zIndex>100</zIndex>
+		</image>
+
+	</view>
+
+<!-- ------- Boxes layout ------------ -->
+
+	<customView name="Boxes" inherits="grid">
+
+		<video name="md_video">
+			<pos>0 -0.15</pos>
+			<size>1 1</size>
+			<zIndex>6</zIndex>
+			<origin>0 0</origin>
+			<delay ifSubset="systemVideoDelay:2 Seconds">2</delay>
+			<delay ifSubset="systemVideoDelay:5 Seconds">5</delay>
+			<delay ifSubset="systemVideoDelay:Video off">9999</delay>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>true</showSnapshotDelay>
+			<loops>10</loops>
+			<effect>none</effect>
+		</video>
+
+		<!-- Position of the boxes carouselL -->
+
 		<imagegrid name="gamegrid">
 			<centerSelection>true</centerSelection>
 			<scrollLoop>true</scrollLoop>
-			<pos>-0.15 0.174</pos>
-			<size>1.3 0.65</size>
+			<pos>0 0.14</pos>
+			<size>1 0.55</size>
 			<margin>0 0</margin>
-			<autoLayout>7 1</autoLayout>
-			<autoLayoutSelectedZoom>1.20</autoLayoutSelectedZoom>
+			<autoLayout>5 1</autoLayout>
+			<autoLayoutSelectedZoom>1.2</autoLayoutSelectedZoom>
+			<autoLayout if="{system.theme} == 'n64'">5 1</autoLayout>
+			<autoLayout if="{system.theme} == 'gba' || {system.theme} == 'gc'">3 1</autoLayout>
+			<autoLayout if="{system.theme} == 'atari2600' || {system.theme} == 'psx'">5 1</autoLayout>
+
+			<!-- squareish format boxes positioning -->
+
+			<pos if="{system.theme} == 'ngpc' || {system.theme} == 'ngp' || {system.theme} == 'neogeocd'">0 0.05</pos>
+			<size if="{system.theme} == 'ngpc' || {system.theme} == 'ngp'|| {system.theme} == 'neogeocd'">1 0.7</size>
+
+			<autoLayoutSelectedZoom if="{system.theme} == 'ngpc' || {system.theme} == 'ngp'  || {system.theme} == 'neogeocd' || {system.theme} == 'psx' || {system.theme} == 'gb'">1.45</autoLayoutSelectedZoom>
+
+			<!-- square format boxes positioning -->
+			<autoLayoutSelectedZoom if="{system.theme} == 'neogeocd' || {system.theme} == 'psx'  || {system.theme} == 'dreamcast' || {system.theme} == 'gb'">1.45</autoLayoutSelectedZoom>
+			<!-- taller slim boxes -->
+			<autoLayout if=" {system.theme} == 'psp'">7 1</autoLayout>
+			<autoLayoutSelectedZoom if="{system.theme} == 'psp'">1.40</autoLayoutSelectedZoom>			
 			<scrollDirection>horizontal</scrollDirection>
 			<scrollSound>./_inc/sound/cursor.wav</scrollSound>
 		</imagegrid>
@@ -645,8 +759,21 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<imageColor>ffffffff</imageColor>
 		</gridtile>
 
+		<!-- this is a background tint replacement for the one set by the grid view -->
+
+		<image name="gridOverlay" extra="true">
+			<path>./_inc/assets/boxesOverlay.png</path>
+			<size>1 1</size>
+			<pos>1 1</pos>
+			<origin>1 1</origin>
+			<zIndex>8</zIndex>
+		</image>
+
+		<!-- Game meta assets -->
+
 		<image name="game-meta" extra="true">
-			<pos>0.311979166666667 0.776851851851852</pos>
+			<linearSmooth>true</linearSmooth>	
+			<pos>0.311979166666667 0.806851851851852</pos>
 			<size>0.3765625 0.078703703703704</size>
 			<path>./_inc/assets/gamemeta.svg</path>
 			<path>./${system.theme}/_inc/gamemeta.svg</path>
@@ -655,117 +782,173 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		</image>  
 
 		<text name="md_name">
-			<pos>-2 -2</pos>
-			<color>ffffff00</color>
+			<pos>0.5 0.75</pos>
+			<size>0.99 0.055555555555556</size>
+			<origin>0.5 0.5</origin>
+			<alignment>center</alignment>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+			<fontSize>0.04</fontSize>
+			<color>ffffffff</color>
+			<zIndex>100</zIndex>
 		</text>
 
 		<datetime name="md_releasedate">
-			<pos>0.610416666666667 0.827777777777778</pos>
+			<pos>0.610416666666667 0.847777777777778</pos>
 			<size>0.078125 0.034259259259259</size>
 			<color>B3B3B3</color>
 			<fontSize>0.014814814814815</fontSize>
-			<fontPath>./_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
 			<alignment>center</alignment>
+			<format>%Y</format>
 		</datetime>
 
 		<text name="md_players">
-			<pos>0.411458333333333 0.827777777777778</pos>
+			<pos>0.411458333333333 0.847777777777778</pos>
 			<size>0.078125 0.034259259259259</size>
 			<color>B3B3B3</color>
 			<fontSize>0.014814814814815</fontSize>
-			<fontPath>./_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
 			<alignment>center</alignment>
 		</text>
 
 		<text name="md_genre">
-			<pos>0.311979166666667 0.827777777777778</pos>
+			<pos>0.311979166666667 0.847777777777778</pos>
 			<size>0.078125 0.034259259259259</size>
 			<color>B3B3B3</color>
 			<fontSize>0.014814814814815</fontSize>
-			<fontPath>./_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
 			<alignment>center</alignment>
 		</text>         
 
-		<text name="md_developer">
-			<pos>0.5109375 0.827777777777778</pos>
+		<text name="md_publisher">
+			<origin>0 0</origin>
+			<pos>0.5109375 0.847777777777778</pos>
 			<size>0.078125 0.034259259259259</size>
 			<color>B3B3B3</color>
 			<fontSize>0.014814814814815</fontSize>
-			<fontPath>./_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
 			<alignment>center</alignment>
 		</text>
+
+		<!-- --- Boxes help graphic --- --> 
 
 		<image name="grid_help" extra="true">
 			<path>./_inc/assets/tilehelp.svg</path>
 			<origin>0.5 0</origin>
 			<pos>0.5 0.918518518518519</pos>
 			<maxSize>0.546875 0.05</maxSize>
+			<zIndex>100</zIndex>
+		</image>
+
+		<image name="primaryBtn" extra="true">
+			<linearSmooth>true</linearSmooth>	
+			<pos>0.052083333333333 0.7972222222222222</pos>
+			<size>0.036458333333333 0.122222222222222</size>
+			<zIndex>100</zIndex>
+		</image>
+
+		<image name="selectTxt" extra="true">
+			<pos>0.051375 0.925</pos>
+			<size>0.036458333333333 0.02037037037037</size>
+			<path>./_inc/assets/selectTxt.png</path>
+			<zIndex>100</zIndex>
+		</image>
+
+		<image name="secondaryBtn" extra="true">
+			<linearSmooth>true</linearSmooth>	
+			<pos>0.091666666666667 0.7972222222222222</pos>
+			<size>0.036458333333333 0.122222222222222</size>
+			<zIndex>100</zIndex>
+		</image>
+
+		<image name="backTxt" extra="true">	
+			<pos>0.0909583333333333 0.925</pos>
+			<size>0.036458333333333 0.02037037037037</size>
+			<path>./_inc/assets/backTxt.png</path>
 			<zIndex>100</zIndex>
 		</image>
 
 	</customView>
 
 
+	<!-- ---- Tiles view ---- -->
+
+	<customView name="Tiles" inherits="grid">
+
+		<image name="gridOverlay" extra="true">
+			<path>./_inc/assets/tileoverlay.png</path>
+			<size>1 1</size>
+			<pos>1 1</pos>
+			<origin>1 1</origin>
+			<zIndex>8</zIndex>
+		</image>
 
 
-
-<customView name="Tiles" inherits="grid">
-
-
-
-<imagegrid name="gamegrid">
+		<imagegrid name="gamegrid">
 			<autoLayout>5 2</autoLayout>
-			<scrollLoop>true</scrollLoop>
 			<autoLayoutSelectedZoom>1</autoLayoutSelectedZoom>
+			<scrollLoop>true</scrollLoop>
 			<imageSource>image</imageSource>
 			<margin>0.00625 0.011111111111111</margin>
 			<size>0.895833333333333 0.342592592592593</size>
 			<pos>0.052083333333333 0.537037037037037</pos>
-			<showVideoAtDelay>800</showVideoAtDelay>
 			<animateSelection>true</animateSelection>
 			<zIndex>10</zIndex>
 			<scrollSound>./_inc/sound/cursor.wav</scrollSound>
+			<showVideoAtDelay>-1</showVideoAtDelay>
 		</imagegrid>
 
-
 		<image name="grid_help" extra="true">
-			<path>./_inc/assets/tilehelp.svg</path>
+			<path>./_inc/assets/gridhelp.svg</path>
 			<origin>0.5 0</origin>
 			<pos>0.5 0.918518518518519</pos>
 			<maxSize>0.546875 0.05</maxSize>
 			<zIndex>100</zIndex>
 		</image>
 
-		<image name="btnSet" extra="true">
-			<pos>0.052083333333333 0.356481481481481</pos>
-			<size>0.239583333333333 0.134259259259259</size>
+		<image name="primaryBtn" extra="true">
+			<linearSmooth>true</linearSmooth>	
+			<pos>0.052083333333333 0.34537037037037</pos>
+			<size>0.036458333333333 0.122222222222222</size>
+			<zIndex>100</zIndex>
+		</image>
 
-			<path>./${system.theme}/_inc/btnset.png</path>
+		<image name="selectTxt" extra="true">
+			<pos>0.052083333333333 0.474</pos>
+			<size>0.036458333333333 0.02037037037037</size>
+			<path>./_inc/assets/selectTxt.png</path>
+			<zIndex>100</zIndex>
+		</image>
+
+		<image name="secondaryBtn" extra="true">
+			<linearSmooth>true</linearSmooth>	
+			<pos>0.091666666666667 0.34537037037037</pos>
+			<size>0.036458333333333 0.122222222222222</size>
 			<zIndex>100</zIndex>
 		</image>
 
 
-		
+		<image name="backTxt" extra="true">
+			<pos>0.091666666666667 0.474</pos>
+			<size>0.036458333333333 0.02037037037037</size>
+			<path>./_inc/assets/backTxt.png</path>
+			<zIndex>100</zIndex>
+		</image>
 
-
-
-<video name="md_video">
-			<pos>0 -0.3</pos>
+		<video name="md_video">
+			<linearSmooth>true</linearSmooth>
+			<origin>0.5 0</origin>
+			<pos>0.5 -0.3</pos>
 			<size>1 1</size>
 			<zIndex>6</zIndex>
-			<origin>0 0</origin>
-			<delay>0.5</delay>
+			<delay ifSubset="systemVideoDelay:2 Seconds">2</delay>
+			<delay ifSubset="systemVideoDelay:5 Seconds">5</delay>
+			<delay ifSubset="systemVideoDelay:Video off">9999</delay>
 			<showSnapshotNoVideo>true</showSnapshotNoVideo>
 			<showSnapshotDelay>true</showSnapshotDelay>
 			<loops>10</loops>
 			<effect>none</effect>
 		</video>
-
-
-		<imagegrid name="gamegrid">
-			<showVideoAtDelay>-1</showVideoAtDelay>
-		</imagegrid>
-
 
 		<gridtile name="default">
 			<backgroundCenterColor>40404080</backgroundCenterColor>
@@ -789,18 +972,13 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<roundCorners>0</roundCorners>
 		</image>
 
-
-
 		<image name="thumbnailFallback" extra="true">
 			<pos>0 0</pos>
 			<size>1 1</size>
 			<zIndex>5</zIndex>
 			<origin>0 0</origin>
-			<path>./_inc/assets/defaultwide.svg</path>
+			<path>./_inc/assets/default.png</path>
 		</image>
-
-
-
 
 		<image name="gridtile.marquee">
 			<color>dadadaff</color>
@@ -820,10 +998,6 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<size>0.60 0.60</size>
 		</image>
 
-		
-
-		
-
 		<image name="md_marquee">
 			<pos>0.5 0.162037037037037</pos>
 			<origin>0.5 0.5</origin>
@@ -832,6 +1006,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		</image>
 
 		<image name="game-meta" extra="true">
+			<linearSmooth>true</linearSmooth>	
 			<pos>0.311979166666667 0.416666666666667</pos>
 			<size>0.3765625 0.078703703703704</size>
 			<path>./_inc/assets/gamemeta.svg</path>
@@ -840,14 +1015,16 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<zIndex>100</zIndex>
 		</image>
 
-
+		<text name="md_name">
+			<pos>-2 -2</pos>
+		</text>
 
 		<text name="md_genre">
 			<pos>0.311979166666667 0.467592592592593</pos>
 			<size>0.078125 0.034259259259259</size>
 			<color>B3B3B3</color>
 			<fontSize>0.014814814814815</fontSize>
-			<fontPath>./_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
 			<alignment>center</alignment>
 		</text> 
 
@@ -856,7 +1033,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<size>0.078125 0.034259259259259</size>
 			<color>B3B3B3</color>
 			<fontSize>0.014814814814815</fontSize>
-			<fontPath>./_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
 			<alignment>center</alignment>
 		</text>
 
@@ -865,17 +1042,23 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<size>0.078125 0.034259259259259</size>
 			<color>B3B3B3</color>
 			<fontSize>0.014814814814815</fontSize>
-			<fontPath>./_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
 			<alignment>center</alignment>
+			<format>%Y</format>
 		</datetime>
 
 		<text name="md_publisher">
+			<origin>0 0</origin>
 			<pos>0.5109375 0.467592592592593</pos>
 			<size>0.078125 0.034259259259259</size>
 			<color>B3B3B3</color>
 			<fontSize>0.014814814814815</fontSize>
-			<fontPath>./_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
 			<alignment>center</alignment>
+		</text>
+
+		<text name="md_developer">
+			<pos>-2 -2</pos>
 		</text>
 
 		<text name="md_description">
@@ -887,19 +1070,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<pos>0.332291666666667 0.287037037037037</pos>
 		</text> 
 
-
-<!--<text name="gridtile.text">
-			<pos>0 0</pos>
-			<padding>0.1 0</padding>
-			<fontPath>./_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
-			<size>1 1</size>
-			<fontSize>0.020</fontSize>
-			<alignment>center</alignment>
-		</text>
-	-->
-
-
-<text name="gridtile">
+		<text name="gridtile">
 			<visible>true</visible>
 			<pos>0 0</pos>
 			<size>1 1</size>
@@ -914,77 +1085,77 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<visible>false</visible>
 		</text>
 
-
-
-
-
-
-
+		<text name="logoText">
+			<size>0.16875 0.215740740740741</size>
+		</text>
 
 	</customView>
 
 
 
-	<subset name="videoDelay" displayName="${subset.videoDelay}">
-		<include name="2 Seconds"/>
-		<include name="5 Seconds">./_inc/system/video/5seconds.xml</include>
-		<include name="video off">./_inc/system/video/videooff.xml</include>
+
+<!-- --- Subsets --- -->
+
+
+	<subset name="animations" displayName="${subset.animations}">
+		<include name="Animations on">./_inc/system/storyboards.xml</include>
+		<include name="Animations off"/>
 	</subset>
-
-
-<subset name="animations" displayName="${subset.animations}">
-		<include name="Off"/>
-		<include name="On">./_inc/system/storyboards.xml</include>
-	</subset>
-
-
-	<subset name="systemsVideoDelay" displayName="${subset.systemsVideoDelay}">
-		<include name="2 Seconds"/>
-		<include name="5 Seconds">./_inc/system/video/systems-5seconds.xml</include>
-		<include name="video off">./_inc/system/video/systems-videooff.xml</include>
-	</subset>
-
 
 	<subset name="buttonSet" displayName="${subset.buttonSet}">
-		<include name="All system buttons"/>
-		<include name="Generic buttons">./_inc/system/buttons/generic.xml</include>
-		<include name="Master System">./_inc/system/buttons/mastersystem.xml</include>
-		<include name="SG-1000">./_inc/system/buttons/sg1000.xml</include>
-		<include name="Snes">./_inc/system/buttons/snes.xml</include>
-		<include name="Neo Geo">./_inc/system/buttons/neogeo.xml</include>
-		<include name="Neo Geo Pocket Color">./_inc/system/buttons/ngpc.xml</include>
-		<include name="Mega Drive / 32x / CD">./_inc/system/buttons/megadrive.xml</include>
-		<include name="Atari 800 / 2600 / 5200">./_inc/system/buttons/atari2600-5200.xml</include>
-		<include name="Atari 7800">./_inc/system/buttons/atari7800.xml</include>
-		<include name="Atari Jaguar">./_inc/system/buttons/jaguar.xml</include>
-		<include name="NES">./_inc/system/buttons/nes.xml</include>
-		<include name="PC Engine / PC Engine CD">./_inc/system/buttons/pcengine.xml</include>
-		<include name="Super Grafx">./_inc/system/buttons/supergrafx.xml</include>
-		<include name="Arcade">./_inc/system/buttons/mame.xml</include>
-		<include name="GameBoy">./_inc/system/buttons/gameboy.xml</include>
-		<include name="GameBoy Advance">./_inc/system/buttons/gba.xml</include>
-		<include name="Nintendo 64">./_inc/system/buttons/n64.xml</include>
-		<include name="PlayStation">./_inc/system/buttons/psx.xml</include>
-		<include name="3DO">./_inc/system/buttons/3do.xml</include>
-		<include name="Odyssey 2 / Videopac">./_inc/system/buttons/odyssey2.xml</include>
-		<include name="Dreamcast">./_inc/system/buttons/dreamcast.xml</include>
-		<include name="Wii">./_inc/system/buttons/wii.xml</include>
-		<include name="Gamecube">./_inc/system/buttons/gamecube.xml</include>
-		<include name="MSX">./_inc/system/buttons/msx.xml</include>
-		<include name="Vectrex">./_inc/system/buttons/vectrex.xml</include>
+		<include name="Unique (default)"/>
+		<include name="Red Buttons"/>
+		<include name="Blue Buttons"/>
+		<include name="Black Buttons"/>
+		<include name="Cyan Buttons"/>
+		<include name="Green Buttons"/>
+		<include name="Yellow Buttons"/>
+		<include name="Master System"/>
+		<include name="SG-1000"/>
+		<include name="Snes"/>
+		<include name="Neo Geo"/>
+		<include name="Neo Geo Pocket Color"/>
+		<include name="Mega Drive / 32x / CD"/>
+		<include name="Atari 800 / 2600 / 5200"/>
+		<include name="Atari 7800"/>
+		<include name="Atari Jaguar"/>
+		<include name="NES"/>
+		<include name="PC Engine / PC Engine CD"/>
+		<include name="Super Grafx"/>
+		<include name="GameBoy"/>
+		<include name="GameBoy Advance"/>
+		<include name="Nintendo 64"/>
+		<include name="PlayStation"/>
+		<include name="3DO"/>
+		<include name="Odyssey 2 / Videopac"/>
+		<include name="Dreamcast"/>
+		<include name="Wii"/>
+		<include name="Gamecube"/>
+		<include name="MSX"/>
+		<include name="Vectrex"/>
 	</subset>
 
-	<subset name="boxNames" displayName="${subset.boxNames}">
-		<include name="no"/>
-		<include name="yes">./_inc/system/toggleboxnames.xml</include>
+	<subset name="UImode" displayName="${subset.UImode}">
+		<include name="Grey mode (default)"/>
+		<include name="Darker mode">./_inc/system/darkmode.xml</include>
+
+	</subset>
+
+	<subset name="primaryButton" displayName="${subset.primaryButton}">
+		<include name="b">./_inc/system/primary-b.xml</include>
+		<include name="a">./_inc/system/primary-a.xml</include>
+		<include name="x">./_inc/system/primary-x.xml</include>
+		<include name="y">./_inc/system/primary-y.xml</include>
+	</subset>
+
+	<subset name="secondaryButton" displayName="${subset.secondaryButton}">
+		<include name="a">./_inc/system/secondary-a.xml</include>
+		<include name="b">./_inc/system/secondary-b.xml</include>	
+		<include name="x">./_inc/system/secondary-x.xml</include>
+		<include name="y">./_inc/system/secondary-y.xml</include>
 	</subset>
 
 
-
-	<subset name="darkmode" displayName="${subset.darkmode}">
-		<include name="no"/>
-		<include name="yes">./_inc/system/darkmode.xml</include>
-	</subset>
-
+<!-- There's nothing else down here! If you're that interested why not drop me a line and help out :) -->
 
 </theme>

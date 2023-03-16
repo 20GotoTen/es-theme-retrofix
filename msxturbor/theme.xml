@@ -1,0 +1,28 @@
+<theme>
+	<formatVersion>7</formatVersion>
+	<include>./../theme.xml</include>
+<include>./../_inc/system/hidenames.xml</include>
+	<view name="system">
+		<image name="startSet" extra="static"></image>
+	</view>
+
+	<view name="detailed">
+		<textlist name="gamelist">
+			<selectorColor>D0B272</selectorColor>
+		</textlist>
+	</view>
+
+<view name="grid">
+  <image name="gridtile.favorite">
+    <color>D0B272ff</color>
+  </image>  
+</view>
+
+<customView name="Tiles" inherits="grid">
+  <gridtile name="selected">
+    <backgroundEdgeColor>D0B272</backgroundEdgeColor>
+  </gridtile>
+</customView>
+
+
+</theme>

@@ -1,16 +1,29 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<include>./../theme.xml</include>
+<include>./../_inc/system/hidenames.xml</include>
 
-	<view name="system">
-		<image name="startSet" extra="static"></image>
-	</view>
+  <view name="system">
+   <image name="startSet" extra="static"></image>
+ </view>
 
-	<view name="basic, detailed">
-		<textlist name="gamelist">
-			<selectorColor>E60012</selectorColor>
-			<selectedColor>ffffff</selectedColor>
-		</textlist>
-	</view>
+ <view name="detailed">
+  <textlist name="gamelist">
+   <selectorColor>BE282A</selectorColor>
+   <selectedColor>ffffff</selectedColor>
+ </textlist>
+</view>
+
+<view name="grid">
+  <image name="gridtile.favorite">
+    <color>BE282Aff</color>
+  </image>  
+</view>
+
+<customView name="Tiles" inherits="grid">
+  <gridtile name="selected">
+    <backgroundEdgeColor>BE282A</backgroundEdgeColor>
+  </gridtile>
+</customView>
 
 </theme>

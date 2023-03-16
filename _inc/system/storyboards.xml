@@ -1,133 +1,431 @@
-<!-- animation routine -->
-
 <theme>
 	<formatVersion>7</formatVersion>
 
+<!-- ----- System view routines ---- -->
 
-<view name="system">
-		
-		<image name="mainlogo" extra="static">
- 			<storyboard>
-        		<animation property="x" from="0.27125" begin="300" duration="500" mode="easeOut"/>
-        		<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
-        		<animation property="opacity" from="0" to="1" duration="500" begin="300" mode="easeOut"/>
+	<view name="system">
+
+		<image name="sysBackgrounds" extra="true">	
+			<origin>0 0</origin>
+			<pos>0.229166666666667 0</pos>
+			<linearSmooth>true</linearSmooth>		
+			<storyboard>
+				<animation property="scale" from="1.10" to="1" begin="0" duration="15000" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.10" begin="20000" duration="20000" autoReverse="true" repeat="forever" mode="easeInOut"/>
 			</storyboard>
 		</image>
 
+		<text name="systemName" extra="true">
+			<storyboard>
+				<animation property="x" from="0.27125" begin="300" duration="500" mode="easeOut"/>
+				<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="300" mode="easeOut"/>
+			</storyboard>
+		</text>
+
+		<image name="mainlogo" extra="static">
+			<storyboard>
+				<animation property="x" from="0.27125" begin="300" duration="500" mode="easeOut"/>
+				<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="300" mode="easeOut"/>
+			</storyboard>
+		</image>
+
+		<image name="gamemarker" extra="static">
+			<pos>-0.009 0.4166666666666667</pos>
+			<storyboard>
+				<animation property="x" from="-0.009" to="-0.009" begin="0" duration="200" mode="easeOut"/>
+				<animation property="x" from="-0.009" to="0" begin="200" duration="500" mode="easeOut"/>
+			</storyboard>
+		</image>
+
+		<image name="syslogoBG" extra="static">
+			<path>./../_inc/assets/syslogoBG.png</path>
+			<size>0.2291666666666667 0.1666666666666667</size>
+			<pos>0 0.4166666666666667</pos>
+			<origin>0 0</origin>
+			<zIndex>31</zIndex>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
+				<animation property="opacity" from="0" to="0.8" duration="1600" begin="600" mode="easeOut"/>
+				<animation property="opacity" from="0.8" to="0.2" begin="1800" duration="1600" autoReverse="true" repeat="forever" mode="easeInOut"/>
+			</storyboard>
+		</image> 
+
+
+
+
+
+
+
+		<text name="systemInfo">
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="300" mode="easeOut"/>
+			</storyboard>
+		</text>
+
+		<image name="primaryBtn" extra="static">
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="500" begin="0" mode="easeOut"/>
+				<animation property="opacity" from="0" to="1" duration="700" begin="500" mode="easeOut"/>
+				<animation property="scale" from="1" to="1.15" begin="700" duration="600" autoReverse="true" repeat="forever" mode="easeInOut"/>
+			</storyboard>
+			<linearSmooth>true</linearSmooth>
+		</image>
+
+		<text name="browseGames" extra="static">
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="500" begin="0" mode="easeOut"/>
+				<animation property="opacity" from="0" to="1" duration="700" begin="500" mode="easeOut"/>
+			</storyboard>
+		</text>
 
 	</view>
 
+<!-- ----- Detailed view routines ---- -->
 
+	<view name="detailed">
 
-<customView name="Tiles" inherits="grid">
-
-
-
-<image name="logo2" extra="true">
-			 <storyboard>
-			 	<animation property="x" from="0.042083333333333" begin="300" duration="500" mode="easeOut"/>
-        		<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
-        		<animation property="opacity" from="0" to="1" duration="500" begin="300" mode="easeOut"/>
-        		</storyboard>
+		<image name="logo">
+			<storyboard>
+				<animation property="x" from="0.042083333333333" begin="300" duration="500" mode="easeOut"/>
+				<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="300" mode="easeOut"/>
+			</storyboard>
 		</image>
 
+		<textlist name="gamelist">
+			<storyboard>
+				<animation property="y" from="0.3" begin="0" duration="1000" mode="easeOut"/>
+				<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="300" mode="easeOut"/>
+			</storyboard>
+		</textlist>
 
-
-
-<image name="btnSet" extra="true">
-
-
-<storyboard>
-			 	<animation property="y" from="0.396481481481481" begin="300" duration="500" mode="easeOut"/>
-        		<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
-        		<animation property="opacity" from="0" to="1" duration="500" begin="300" mode="easeOut"/>
-        		</storyboard>
-
-
-			<!--<pos>0.052083333333333 0.356481481481481</pos>-->
-
+		<image name="list_help" extra="true">
+			<storyboard>
+				<animation property="y" from="1" begin="0" duration="1000" mode="easeOut"/>
+				<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="300" mode="easeOut"/>
+			</storyboard>
 		</image>
 
+		<image name="primaryBtn" extra="true">
+			<storyboard>
+				<animation property="y" from="0.8333333333333333" begin="300" duration="500" mode="easeOut"/>
+				<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="300" mode="easeOut"/>
+			</storyboard>
+		</image>
 
+		<image name="secondaryBtn" extra="true">
+			<storyboard>
+				<animation property="y" from="0.8333333333333333" begin="300" duration="500" mode="easeOut"/>
+				<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="300" mode="easeOut"/>
+			</storyboard>
+		</image>
 
+		<image name="buttonBG" extra="true">
+			<storyboard>
+				<animation property="y" from="0.8333333333333333" begin="300" duration="500" mode="easeOut"/>
+				<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="300" mode="easeOut"/>
+			</storyboard>
+		</image>
 
-<imagegrid name="gamegrid">
-	<storyboard>		
+		<image name="selectTxt" extra="true">
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="500" mode="easeOut"/>
+			</storyboard>
+		</image>
 
-        		<animation property="opacity" from="0" to="1" duration="800" mode="easeOut"/>
-        		<animation property="y" from="0.657037037037037" duration="800" mode="easeOut"/>
-        		</storyboard>
+		<image name="backTxt" extra="true">
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="500" mode="easeOut"/>
+			</storyboard>
+		</image>
 
+		<image name="md_marquee">
+			<storyboard>
+				<animation property="y" from="0.63" begin="500" duration="600" mode="easeOut"/>
+				<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="500"  duration="600" mode="easeOut"/>
+			</storyboard>
+		</image>
 
+		<text name="md_description">
+			<storyboard>
+				<animation property="y" from="0.80" begin="500" duration="600" mode="easeOut"/>
+				<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="600" mode="easeOut"/>
+			</storyboard>
+		</text>
+
+		<image name="game-meta" extra="true">
+			<storyboard>
+				<animation property="y" from="0.70" begin="600" duration="500" mode="easeOut"/>
+				<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="600" duration="500" mode="easeOut"/>
+			</storyboard>
+		</image>
+
+		<text name="md_genre, md_players, md_publisher">
+			<storyboard>
+				<animation property="y" from="0.75" begin="500" duration="600" mode="easeOut"/>
+				<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="600" mode="easeOut"/>
+			</storyboard>
+		</text>
+
+		<datetime name="md_releasedate">
+			<storyboard>
+				<animation property="y" from="0.75" begin="500" duration="600" mode="easeOut"/>
+				<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="600" mode="easeOut"/>
+			</storyboard>
+		</datetime>
+
+	</view>
+
+<!-- ----- Grid view routines ---- -->
+
+	<view name="grid">
+
+		<image name="logo">
+			<storyboard>
+				<animation property="x" from="0.10" begin="300" duration="500" mode="easeOut"/>
+				<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="300" mode="easeOut"/>
+			</storyboard>
+		</image>
+
+		<image name="primaryBtn" extra="true">
+			<storyboard>
+				<animation property="y" from="0.82" begin="300" duration="500" mode="easeOut"/>
+				<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="300" mode="easeOut"/>
+			</storyboard>
+		</image>
+
+		<image name="secondaryBtn" extra="true">
+			<storyboard>
+				<animation property="y" from="0.82" begin="300" duration="500" mode="easeOut"/>
+				<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="300" mode="easeOut"/>
+			</storyboard>
+		</image>
+
+		<image name="buttonBG" extra="true">
+			<storyboard>
+				<animation property="y" from="0.82" begin="300" duration="500" mode="easeOut"/>
+				<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="300" mode="easeOut"/>
+			</storyboard>
+		</image>
+
+		<image name="selectTxt" extra="true">
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="500" mode="easeOut"/>
+			</storyboard>
+		</image>
+
+		<image name="backTxt" extra="true">
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="500" mode="easeOut"/>
+			</storyboard>
+		</image>
+
+		<text name="md_name">
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="500"  duration="600" mode="easeOut"/>
+			</storyboard>
+		</text>
+
+		<text name="md_publisher">
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="500"  duration="600" mode="easeOut"/>
+			</storyboard>
+		</text>
+
+		<imagegrid name="gamegrid">
+			<storyboard>		
+				<animation property="opacity" from="0" to="1" duration="800" mode="easeOut"/>
+				<animation property="y" from="0.35" duration="800" mode="easeOut"/>
+			</storyboard>
 			<!-- <pos>0.052083333333333 0.537037037037037</pos>-->
 		</imagegrid>
 
-
-
-
 		<image name="grid_help" extra="true">
-		
-<storyboard>		
-
-        		<animation property="opacity" from="0" to="1" duration="800" mode="easeOut"/>
-        		<animation property="y" from="1" duration="800" mode="easeOut"/>
-        		</storyboard>
-
-
-		
-		</image>
-
-
-
-
-
-
-<image name="md_marquee">
-	<storyboard>
-        		<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
-        		<animation property="opacity" from="0" to="1" begin="500"  duration="600" mode="easeOut"/>
-			</storyboard>
-</image>
-
-
-<text name="md_description">
-	<storyboard>
-        		<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
-        		<animation property="opacity" from="0" to="1" begin="500" duration="600" mode="easeOut"/>
-			</storyboard>
-</text>
-
-
-	<image name="game-meta" extra="true">
- <storyboard>
-        		<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
-        		<animation property="opacity" from="0" to="1" duration="500" begin="600" mode="easeOut"/>
+			<storyboard>		
+				<animation property="opacity" from="0" to="1" duration="800" mode="easeOut"/>
+				<animation property="y" from="1" duration="800" mode="easeOut"/>
 			</storyboard>
 		</image>
 
+	</view>
 
-<text name="md_genre, md_players, md_publisher">
-	<storyboard>
-        		<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
-        		<animation property="opacity" from="0" to="1" duration="500" begin="600" mode="easeOut"/>
+<!-- ----- Boxes view routines ---- -->
+
+	<customView name="Boxes" inherits="grid">
+
+		<image name="game-meta" extra="true">
+			<storyboard>
+				<animation property="y" from="0.83" begin="400" duration="500" mode="easeOut"/>
+				<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="400" mode="easeOut"/>
 			</storyboard>
-</text>
+		</image>
 
-
-<datetime name="md_releasedate">
-	<storyboard>
-        		<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
-        		<animation property="opacity" from="0" to="1" duration="500" begin="600" mode="easeOut"/>
+		<text name="md_genre, md_players, md_publisher">
+			<storyboard>
+				<animation property="y" from="0.88" begin="400" duration="500" mode="easeOut"/>
+				<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="400" mode="easeOut"/>
 			</storyboard>
-</datetime>
+		</text>
+
+		<text name="md_name">
+			<storyboard>
+				<animation property="y" from="0.78" begin="400" duration="500" mode="easeOut"/>
+				<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="400" mode="easeOut"/>
+			</storyboard>
+		</text>
+
+		<datetime name="md_releasedate">
+			<storyboard>
+				<animation property="y" from="0.88" begin="400" duration="500" mode="easeOut"/>
+				<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="400" mode="easeOut"/>
+			</storyboard>
+		</datetime>
+
+	</customView>
+
+<!-- ----- Tiles view routines ---- -->
+
+	<customView name="Tiles">
+
+		<image name="game-meta" extra="true">
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="300" duration="500" mode="easeOut"/>
+				<animation property="y" from="0.5" begin="200" duration="700" mode="easeOut"/>
+			</storyboard>
+		</image>
+
+		<image name="logo2" extra="true">
+			<storyboard>
+				<animation property="y" from="0.14" begin="300" duration="500" mode="easeOut"/>
+				<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="300" mode="easeOut"/>
+			</storyboard>
+		</image>
+
+		<image name="primaryBtn" extra="true">
+			<storyboard>
+				<animation property="y" from="0.396481481481481" begin="300" duration="500" mode="easeOut"/>
+				<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="300" mode="easeOut"/>
+			</storyboard>
+		</image>
+
+		<image name="secondaryBtn" extra="true">
+			<storyboard>
+				<animation property="y" from="0.396481481481481" begin="300" duration="500" mode="easeOut"/>
+				<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="300" mode="easeOut"/>
+			</storyboard>
+		</image>
+
+		<image name="buttonBG" extra="true">
+			<storyboard>
+				<animation property="y" from="0.396481481481481" begin="300" duration="500" mode="easeOut"/>
+				<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="300" mode="easeOut"/>
+			</storyboard>
+		</image>
+
+		<image name="selectTxt" extra="true">
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="500" mode="easeOut"/>
+			</storyboard>
+		</image>
+
+		<image name="backTxt" extra="true">
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="500" mode="easeOut"/>
+			</storyboard>
+		</image>
+
+		<imagegrid name="gamegrid">
+			<storyboard>		
+				<animation property="opacity" from="0" to="1" duration="800" mode="easeOut"/>
+				<animation property="y" from="0.657037037037037" duration="800" mode="easeOut"/>
+			</storyboard>
+			<!-- <pos>0.052083333333333 0.537037037037037</pos>-->
+		</imagegrid>
+
+		<image name="grid_help" extra="true">	
+			<storyboard>		
+				<animation property="opacity" from="0" to="1" duration="800" mode="easeOut"/>
+				<animation property="y" from="1" duration="800" mode="easeOut"/>
+			</storyboard>
+		</image>
+
+		<image name="md_marquee">
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="200"  duration="500" mode="easeOut"/>
+				<animation property="y" from="0.25" begin="200" duration="700" mode="easeOut"/>
+			</storyboard>
+		</image>
+
+		<text name="md_description">
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="300" duration="600" mode="easeOut"/>
+				<animation property="y" from="0.35" begin="300" duration="600" mode="easeOut"/>
+			</storyboard>
+		</text>
+
+		<text name="md_genre, md_players, md_publisher, md_developer">
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="600" mode="easeOut"/>
+			</storyboard>
+		</text>
+
+		<datetime name="md_releasedate">
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="600" mode="easeOut"/>
+			</storyboard>
+		</datetime>
+
+	</customView>
 
 
-</customView>
+	<feature supported="manufacturer">
+		<view name="system">
 
-
-
-
-
-
+			<text name="releaseYear" extra="true">
+				<storyboard>
+					<animation property="opacity" from="0" to="0" duration="300" mode="linear"/>
+					<animation property="opacity" from="0" to="0.2" duration="500" begin="300" mode="easeOut"/>
+				</storyboard>
+			</text> 
+		</view>
+	</feature>
 
 </theme>

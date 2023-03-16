@@ -10,9 +10,8 @@ GitHub:      	https://github.com/
 
 <theme>
 	<formatVersion>7</formatVersion>
-
-
-<view name="splash">
+	
+	<view name="splash">
 		<splash name="splash">
 			<backgroundColor>303030FF</backgroundColor>
 		</splash>
@@ -20,8 +19,6 @@ GitHub:      	https://github.com/
 		<image name="background">
 			<path>./_inc/assets/background.png</path>
 		</image>
-
-
 
 		<image name="progressbarbg" extra="true">
 			<origin>0 0</origin>
@@ -45,6 +42,7 @@ GitHub:      	https://github.com/
 			<roundCorners>0</roundCorners>
 			<zIndex>6</zIndex>
 		</image>
+
 		<image name="progressbar:active">
 			<tile>true</tile>
 			<path>./_inc/assets/progressbar.png</path>
@@ -53,17 +51,13 @@ GitHub:      	https://github.com/
 			<zIndex>7</zIndex>
 		</image>
 
-
 		<image name="splashlogo" extra="true">
 			<path>./_inc/assets/splashlogo.svg</path>
 			<size>0.3216458333333333 0.1666666666666667</size>
 			<pos>0.2213541666666667 0.4166666666666667</pos>
 		</image>
-
-
 		
 		<text name="label">
-
 			<color>FFFFFFFF</color>
 			<alignment>left</alignment>
 			<fontPath>./_inc/fonts/RedHatDisplay-Regular.ttf</fontPath>
@@ -75,14 +69,5 @@ GitHub:      	https://github.com/
 			<glowOffset>0</glowOffset>
 		</text>
 	</view>
-
-
-
-
-
-
-
-
-
 
 </theme>

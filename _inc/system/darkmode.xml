@@ -1,47 +1,43 @@
 <theme>
 	<formatVersion>7</formatVersion>
-	
 
-	<view name="system, basic, detailed, grid">
-		<image name="preloadBasicDetailed" extra="true">
-			<pos>-1 -1</pos>
-			<size>0.2 0.2</size>
-			<path>./../_inc/assets/dark/detailed.png</path>
-			<zIndex>-10</zIndex>
+	<view name="system">
+		<image name="background" extra="true">
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<maxSize>1 1</maxSize>
+			<path>./../_inc/assets/dark/background.png</path>
+			<path>./_inc/assets/dark/background.png</path>
+			<zIndex>0</zIndex>
 		</image>
 
-		<image name="preloadOverlay" extra="true">
-			<pos>-1 -1</pos>
-			<size>0.2 0.2</size>
-			<path>./../_inc/assets/dark/tileoverlay.png</path>
-			<zIndex>-10</zIndex>
-		</image>
-</view>
+		<carousel name="systemcarousel">
+			<minLogoOpacity>0.15</minLogoOpacity>
+		</carousel>
 
+	</view>
 
-	<view name="system, basic, detailed, grid">
-<image name="background" extra="true">
+	<view name="system, detailed, grid">
+		<image name="background" extra="true">
 			<origin>0 0</origin>
 			<pos>0 0</pos>
 			<size>1 1</size>
+			<path>./_inc/assets/dark/background.png</path>
 			<path>./../_inc/assets/dark/background.png</path>
 			<zIndex>0</zIndex>
 		</image>
 	</view>
 
-
-<view name="menu">
+	<view name="menu">
 		<menuBackground name="menubg">
 			<color>2F2F2F</color>
 			<cornerSize>32 32</cornerSize>
 		</menuBackground>
 	</view>
 
-
-
-
-	<view name="basic, detailed">
-			<image name="background2" extra="true">
+	<view name="detailed">
+		<image name="background2" extra="true">
+			<path>./_inc/assets/dark/detailed.png</path>
 			<path>./../_inc/assets/dark/detailed.png</path>
 			<size>1 1</size>
 			<pos>0 0</pos>
@@ -50,31 +46,26 @@
 		</image>
 	</view>
 
-
-
-<view name="system">
-			<image name="background2" extra="static">
+	<view name="system">
+		<image name="background2" extra="static">
 			<path>./../_inc/assets/dark/overlay.png</path>
+			<path>./_inc/assets/dark/overlay.png</path>
 			<size>1 1</size>
 			<pos>0 0</pos>
 			<origin>0 0</origin>
 			<zIndex>30</zIndex>
 		</image>
-</view>
+	</view>
 
-
-<view name="grid">
-			<image name="gridOverlay" extra="true">
+	<view name="grid">
+		<image name="gridOverlay" extra="true">
 			<path>./../_inc/assets/dark/tileoverlay.png</path>
+			<path>./_inc/assets/dark/tileoverlay.png</path>
 			<size>1 1</size>
 			<pos>0 0</pos>
 			<origin>0 0</origin>
 			<zIndex>8</zIndex>
 		</image>
-</view>
-
-
-
-
+	</view>
 
 </theme>
