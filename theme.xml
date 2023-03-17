@@ -541,6 +541,99 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		</video>
 	</view>
 
+
+
+
+<!-- --- detailed plus boxart view -->
+
+<customView name="detailed BoxArt" inherits="detailed">
+	
+<image name="game-meta" extra="true">
+		<pos>0.495 0.665740740740741</pos>
+		
+			<path>./_inc/assets/gamemetaNoBar.svg</path>
+		</image>
+
+
+<text name="md_description">
+			<alignment>left</alignment>
+			<!--<pos>0.57 0.777777777777778</pos>-->
+			<size>0.38 0.11</size>
+		</text>
+
+
+ <image name="md_thumbnail">
+
+      <maxSize>0.1 1</maxSize>
+      <pos>0.41 0.665740740740741</pos>
+      <origin>0.5 0</origin>
+
+      <linearSmooth>true</linearSmooth>
+      <zIndex>99</zIndex>
+    </image>
+
+
+
+    <image name="md_marquee">
+			<pos>0.36 0.611111111111111</pos>
+			<origin>0 1</origin>
+			<maxSize>0.20 0.15</maxSize>
+			<zIndex>100</zIndex>
+		</image>
+
+
+
+<image name="list_help" extra="true">
+			
+			<origin>0 0</origin>
+			<pos>0.494791666666667 0.91</pos>
+		</image>
+
+
+<text name="md_genre">
+			<pos>0.495 0.716666666666667</pos>
+			<size>0.14 0.034259259259259</size>
+			<alignment>left</alignment>
+		</text> 
+
+	<datetime name="md_releasedate">
+			<pos>0.8175 0.716666666666667</pos>
+		</datetime>
+
+
+
+<text name="md_players">
+			<pos>0.6545 0.716666666666667</pos>
+		</text>
+
+
+
+<text name="md_publisher">
+			<pos>0.735 0.716666666666667</pos>
+		</text>
+
+
+
+</customView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	<!-- ---- Grid layout properties  ---- -->
 
 	<view name="grid">
