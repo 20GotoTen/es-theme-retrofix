@@ -213,7 +213,9 @@ Gamelist view styles to try:
 
 - **TILES (default):** The default layout. Like Netflix or Prime for retro games! Each game pulls in a thumbnail, Marquee and plays a video clip of the selected game in the background. If no video is scraped, it will show the thumbnail.
 
-- **DETAILED:** A nice balance of speed and visual niceties. Plays the selected video in the background, alongside the game marquee and game overview. Supported by a left-side gamelist, with optional system diagrams, activated in the UI settings (off by default, only SNES, PC Engine, Neo Geo and Master System have these at the moment.
+- **DETAILED:** A nice balance of speed and visual niceties. Plays the selected video in the background, alongside the game marquee and game overview. Supported by a left-side gamelist.
+
+- **DETAILED BOXART:** As above, but with a slightly tweaked layout to to accommodate box art.
 
 - **GRID:** Displays boxes automatically in a two row configuration. Will be refined in a later update.
 
