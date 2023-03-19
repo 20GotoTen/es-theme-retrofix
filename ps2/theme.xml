@@ -8,7 +8,9 @@
 
 	<view name="detailed">
 		<textlist name="gamelist">
-			<selectorColor>E60012</selectorColor>
+			<selectorColor>5354BB</selectorColor>
+						<selectorColorEnd>1EE0EF</selectorColorEnd>
+			<selectorGradientType>default</selectorGradientType>
 		</textlist>
 	</view>
 </theme>
