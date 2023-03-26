@@ -393,7 +393,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<size>1 1</size>
 			<pos>0 0</pos>
 			<origin>0 0</origin>
-			<zIndex>11</zIndex>
+			<zIndex>10</zIndex>
 		</image>
 
 		<text name="md_lbl_genre, md_lbl_rating, md_rating, md_lbl_developer, md_developer, md_lbl_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_players, md_lbl_releasedate">
@@ -610,7 +610,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<video name="md_video">
 			<pos>0.322916666666667 0</pos>
 			<maxSize>0.677083333333333 2</maxSize>
-			<zIndex>10</zIndex>
+			<zIndex>9</zIndex>
 			<origin>0 0</origin>
 			<delay>1</delay>
 			<delay ifSubset="systemVideoDelay:2 Seconds">2</delay>
