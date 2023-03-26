@@ -23,6 +23,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<subset.artworkregion>System logos</subset.artworkregion>
 		<subset.buttonSet>Button Set</subset.buttonSet>
 		<subset.hideLogo>Batocera logo</subset.hideLogo>
+		<subset.scanlines>Scanlines on system views</subset.scanlines>
 	</variables>
 
 
@@ -52,6 +53,14 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 	</subset>
 
 
+	<subset name="scanlines" displayName="${subset.scanlines}">
+		<include name="No scanlines"/>
+		<include name="Light scanlines"/>
+		<include name="Dark scanlines"/>
+	</subset>
+
+
+
 	<view name="system, detailed, grid">
 		
 		<text name="md_lbl_rating">
@@ -68,7 +77,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<origin>1 0</origin>
 			<pos ifSubset="hideLogo:Show logo">0.94 0.07</pos>
 			<pos ifSubset="hideLogo:Hide logo">-2 -2</pos>
-			<size>0.071875 0.0203703703703704</size>
+			<size>0.0510416666666667 0.014462962962963</size>
 			<path>./_inc/icons/batocera.svg</path>    
 			<zIndex>200</zIndex>
 		</image>
@@ -368,9 +377,24 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		</helpsystem> 
 	</view>
 
+
+
+
+
+
 	<!-- ---------- Detailed layout properties ------ -->
 
 	<view name="detailed">
+
+		<image name="scanlines" extra="true">
+			<path ifSubset="scanlines:No scanlines"/>
+			<path ifSubset="scanlines:Light scanlines">./_inc/assets/scanlines.png</path>
+			<path ifSubset="scanlines:Dark scanlines">./_inc/assets/darkscanlines.png</path>
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<zIndex>11</zIndex>
+		</image>
 
 		<text name="md_lbl_genre, md_lbl_rating, md_rating, md_lbl_developer, md_developer, md_lbl_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_players, md_lbl_releasedate">
 			<pos>2</pos>
@@ -697,8 +721,8 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 		<text name="md_description">
 			<alignment>left</alignment>
-			<!--<pos>0.57 0.777777777777778</pos>-->
 			<size>0.38 0.09</size>
+			<text>no content</text>
 		</text>
 
 
@@ -734,6 +758,18 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 	<!-- ---- Grid layout properties  ---- -->
 
 	<view name="grid">
+
+
+
+		<image name="scanlines" extra="true">
+			<path ifSubset="scanlines:No scanlines"/>
+			<path ifSubset="scanlines:Light scanlines">./_inc/assets/scanlines.png</path>
+			<path ifSubset="scanlines:Dark scanlines">./_inc/assets/darkscanlines.png</path>
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<zIndex>11</zIndex>
+		</image>
 
 		<image name="gridtile.favorite">
 			<path>./_inc/images/favorite.svg</path>
@@ -1118,6 +1154,12 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 	<!-- ---- Tiles view ---- -->
 
 	<customView name="Tiles" inherits="grid">
+
+		
+		<image name="scanlines" extra="true">
+			<zIndex>9</zIndex>
+		</image>
+
 
 		<image name="gridOverlay" extra="true">
 			<path>./_inc/assets/tileoverlay.png</path>

@@ -183,6 +183,7 @@ Supported themes in version 2.0:
 - Sharp X1
 - Sharp x68000
 - Xbox
+- Xbox 360
 
 
 
@@ -250,10 +251,21 @@ Batocera logo:
 Animations:
 -----------
 
-To user of lower-powered devices such as the Raspberry Pi, you may want to turn off animations for a speedier experience.
+To users of lower-powered devices such as the Raspberry Pi, you may want to turn off animations for a speedier experience.
 
 - **Animations on:** Turn on the animations (theme default).
 - **Animations off:** Turn off the animations.
+
+
+Scanlines:
+-----------
+
+Display a scanline overlay over the screenshots and videos displayed in individual system views.
+
+- **No scanlines:** Don't show scanlines (theme default).
+- **Light scanlines:** Show light scanlines over images and videos in individual system views.
+- **Dark scanlines:** Show darker scanlines over images and videos in individual system views.
+
 
 
 Button set:
