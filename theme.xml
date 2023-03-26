@@ -32,7 +32,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<include name="Video off"/>
 	</subset>
 
-		<subset name="systemVideoDelay" displayName="${subset.systemVideoDelay}">
+	<subset name="systemVideoDelay" displayName="${subset.systemVideoDelay}">
 		<include name="2 Seconds"/>
 		<include name="5 Seconds"/>
 		<include name="Video off"/>
@@ -75,7 +75,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 	</view>
 
-<!-- ----- Screen view properties ----- -->
+	<!-- ----- Screen view properties ----- -->
 
 	<view name="screen"> 
 
@@ -114,7 +114,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 
 
-<!-- ----------------- Menu view properties ------------ -->
+	<!-- ----------------- Menu view properties ------------ -->
 
 	<view name="menu">
 		<menuText name="menutitle">
@@ -163,7 +163,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 
 
-<!-- ------------- Global syslogo and mainlogo settings ---------- -->
+	<!-- ------------- Global syslogo and mainlogo settings ---------- -->
 
 	<view name="detailed, grid">
 		<image name="logo">
@@ -177,7 +177,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 	</view>
 
 
-<!-- ----------------- System view properties ------------ -->
+	<!-- ----------------- System view properties ------------ -->
 
 	<view name="system">
 		<image name="logo">
@@ -368,7 +368,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		</helpsystem> 
 	</view>
 
-<!-- ---------- Detailed layout properties ------ -->
+	<!-- ---------- Detailed layout properties ------ -->
 
 	<view name="detailed">
 
@@ -417,9 +417,6 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<pos>0.044 0.247222222222222</pos>
 			<size>0.282 0.53</size>
 			<selectorColor>424242</selectorColor>
-
-
-
 			<selectedColor>ffffff</selectedColor>
 			<primaryColor>959595</primaryColor>
 			<secondaryColor>959595</secondaryColor>
@@ -461,15 +458,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<zIndex>100</zIndex>
 		</image>
 
-		<image name="game-meta" extra="true">
-			<linearSmooth>true</linearSmooth>
-			<pos>0.474479166666667 0.665740740740741</pos>
-			<size>0.3765625 0.078703703703704</size>
-			<path>./_inc/assets/gamemeta.svg</path>
-			<path>./${system.theme}/_inc/gamemeta.svg</path>
-			<color>ffffff</color>
-			<zIndex>100</zIndex>
-		</image>
+
 
 		<image name="md_marquee">
 			<pos>0.661458333333333 0.611111111111111</pos>
@@ -483,42 +472,107 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<pos>-3 -3</pos>
 		</rating>
 
+		
+
+		<image name="meta-genre" extra="true">
+			<origin>0.5 0</origin>
+			<pos>0.506 0.6638888888888889</pos>
+			<size>0.0625 0.0740740740740741</size>
+			<path>./_inc/assets/meta-genre.svg</path>
+			<path>./${system.theme}/_inc/meta-genre.svg</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+		</image>
+
+
+
 		<text name="md_genre">
-			<pos>0.474479166666667 0.716666666666667</pos>
-			<size>0.078125 0.034259259259259</size>
+			<origin>0.5 0</origin>
+			<pos>0.506 0.7231481481481481</pos>
+			<size>0.0625 0.034259259259259</size>
+			<alignment>center</alignment>
 			<color>B3B3B3</color>
 			<fontSize>0.014814814814815</fontSize>
 			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
-			<alignment>center</alignment>
 		</text> 
 
+
+		<image name="meta-players" extra="true">
+			<origin>0.5 0</origin>
+			<pos>0.6106875 0.6638888888888889</pos>
+			<size>0.0625 0.0740740740740741</size>
+			<path>./_inc/assets/meta-players.svg</path>
+			<path>./${system.theme}/_inc/meta-players.svg</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+		</image>
+
+
 		<text name="md_players">
-			<pos>0.573958333333333 0.716666666666667</pos>
-			<size>0.078125 0.034259259259259</size>
+			<origin>0.5 0</origin>
+			<pos>0.6106875 0.7231481481481481</pos>
+			<size>0.0625 0.034259259259259</size>
+			<alignment>center</alignment>
 			<color>B3B3B3</color>
 			<fontSize>0.014814814814815</fontSize>
 			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
-			<alignment>center</alignment>
 		</text>
 
-		<datetime name="md_releasedate">
-			<pos>0.772916666666667 0.716666666666667</pos>
-			<size>0.078125 0.034259259259259</size>
-			<color>B3B3B3</color>
-			<fontSize>0.014814814814815</fontSize>
-			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
-			<alignment>center</alignment>
-			<format>%Y</format>
-		</datetime>
+
+		<image name="meta-publisher" extra="true">
+			<origin>0.5 0</origin>
+			<pos>0.715375 0.6638888888888889</pos>
+			<size>0.0625 0.0740740740740741</size>
+			<path>./_inc/assets/meta-publisher.svg</path>
+			<path>./${system.theme}/_inc/meta-publisher.svg</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+		</image>
+
 
 		<text name="md_publisher">
-			<pos>0.6734375 0.716666666666667</pos>
-			<size>0.078125 0.034259259259259</size>
+			<origin>0.5 0</origin>
+			<pos>0.715375 0.7231481481481481</pos>
+			<size>0.0625 0.034259259259259</size>
 			<color>B3B3B3</color>
 			<fontSize>0.014814814814815</fontSize>
 			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
 			<alignment>center</alignment>
 		</text>
+
+
+		<image name="meta-date" extra="true">
+			<origin>0.5 0</origin>
+			<pos>0.8200625 0.6638888888888889</pos>
+			<size>0.0625 0.0740740740740741</size>
+			<path>./_inc/assets/meta-date.svg</path>
+			<path>./${system.theme}/_inc/meta-date.svg</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+		</image>
+
+
+		<datetime name="md_releasedate">
+			<origin>0.5 0</origin>
+			<pos>0.8200625 0.7231481481481481</pos>
+			<size>0.0625 0.034259259259259</size>
+			<color>B3B3B3</color>
+			<fontSize>0.014814814814815</fontSize>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+			<format>%Y</format>
+			<alignment>center</alignment>
+		</datetime>
+
+
+		<image name="dividers" extra="true">
+			<origin>0.5 0</origin>
+			<pos>0.66303125 0.6638888888888889</pos>
+			<size>0.2098958333333333 0.0462962962962963</size>
+			<path>./_inc/assets/dividers.svg</path>
+			<zIndex>99</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+
 
 		<text name="md_description">
 			<color>ffffff</color>
@@ -535,13 +589,9 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<zIndex>10</zIndex>
 			<origin>0 0</origin>
 			<delay>1</delay>
-
 			<delay ifSubset="systemVideoDelay:2 Seconds">2</delay>
 			<delay ifSubset="systemVideoDelay:5 Seconds">5</delay>
 			<delay ifSubset="systemVideoDelay:Video off">9999</delay>
-
-
-
 			<showSnapshotNoVideo>true</showSnapshotNoVideo>
 			<showSnapshotDelay>true</showSnapshotDelay>
 			<effect>none</effect>
@@ -552,75 +602,133 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 
 
-<!-- --- detailed plus boxart view -->
+	<!-- --- detailed plus boxart view -->
 
-<customView name="detailed BoxArt" inherits="detailed">
-	
-	<image name="game-meta" extra="true">
-		<pos>0.495 0.665740740740741</pos>
-		
-		<path>./_inc/assets/gamemetaNoBar.svg</path>
-	</image>
+	<customView name="detailed BoxArt" inherits="detailed">
 
-
-	<text name="md_description">
-		<alignment>left</alignment>
-		<!--<pos>0.57 0.777777777777778</pos>-->
-		<size>0.38 0.11</size>
-	</text>
+		<image name="meta-genre" extra="true">
+			<origin>0.5 0</origin>
+			<pos>0.5260416666666667 0.6648148148148148</pos>
+			<size>0.0625 0.0740740740740741</size>
+			<path>./_inc/assets/meta-genre.svg</path>
+			<path>./${system.theme}/_inc/meta-genre.svg</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+		</image>
 
 
-	<image name="md_thumbnail">
-
-		<maxSize>0.1 0.28</maxSize>
-		<pos>0.41 0.665740740740741</pos>
-		<origin>0.5 0</origin>
-		<default>./resources/noArt.svg</default>
-		<linearSmooth>true</linearSmooth>
-		<zIndex>99</zIndex>
-	</image>
-
-
-
-	<image name="md_marquee">
-		<pos>0.36 0.611111111111111</pos>
-		<origin>0 1</origin>
-		<maxSize>0.20 0.15</maxSize>
-		<zIndex>100</zIndex>
-	</image>
+		<image name="meta-players" extra="true">
+			<origin>0.5 0</origin>
+			<pos>0.6307291666666667 0.6648148148148148</pos>
+			<size>0.0625 0.0740740740740741</size>
+			<path>./_inc/assets/meta-players.svg</path>
+			<path>./${system.theme}/_inc/meta-players.svg</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+		</image>
 
 
+		<image name="meta-publisher" extra="true">
+			<origin>0.5 0</origin>
+			<pos>0.7354166666666667 0.6648148148148148</pos>
+			<size>0.0625 0.0740740740740741</size>
+			<path>./_inc/assets/meta-publisher.svg</path>
+			<path>./${system.theme}/_inc/meta-publisher.svg</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+		</image>
 
-	<image name="list_help" extra="true">
 
-		<origin>0 0</origin>
-		<pos>0.494791666666667 0.91</pos>
-	</image>
-
-
-	<text name="md_genre">
-		<pos>0.495 0.716666666666667</pos>
-		<size>0.14 0.034259259259259</size>
-		<alignment>left</alignment>
-	</text> 
-
-	<datetime name="md_releasedate">
-		<pos>0.8175 0.716666666666667</pos>
-	</datetime>
+		<image name="meta-date" extra="true">
+			<origin>0.5 0</origin>
+			<pos>0.8401041666666667 0.6648148148148148</pos>
+			<size>0.0625 0.0740740740740741</size>
+			<path>./_inc/assets/meta-date.svg</path>
+			<path>./${system.theme}/_inc/meta-date.svg</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+			<alignment>center</alignment>
+		</image>
 
 
 
-	<text name="md_players">
-		<pos>0.6545 0.716666666666667</pos>
-	</text>
+		<text name="md_genre">
+			<origin>0.5 0</origin>
+			<pos>0.5260416666666667 0.7231481481481481</pos>
+			<size>0.0625 0.034259259259259</size>
+			<alignment>center</alignment>
+			<color>B3B3B3</color>
+			<fontSize>0.014814814814815</fontSize>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+		</text> 
+
+
+		<text name="md_players">
+			<origin>0.5 0</origin>
+			<pos>0.6307291666666667 0.7231481481481481</pos>
+			<size>0.0625 0.034259259259259</size>
+			<alignment>center</alignment>
+		</text>
+
+		<text name="md_publisher">
+			<origin>0.5 0</origin>
+			<pos>0.7354166666666667 0.7231481481481481</pos>
+			<size>0.0625 0.034259259259259</size>
+			<alignment>center</alignment>
+		</text>
+
+
+		<datetime name="md_releasedate">
+			<origin>0.5 0</origin>
+			<pos>0.8401041666666667 0.7231481481481481</pos>
+			<size>0.0625 0.034259259259259</size>
+			<format>%Y</format>
+		</datetime>
+
+
+		<image name="dividers" extra="true">
+			<origin>0.5 0</origin>
+			<pos>0.6830729166666667 0.6648148148148148</pos>
+			<size>0.2098958333333333 0.0462962962962963</size>
+			<path>./_inc/assets/dividers.svg</path>
+			<zIndex>99</zIndex>
+		</image>
+
+
+		<text name="md_description">
+			<alignment>left</alignment>
+			<!--<pos>0.57 0.777777777777778</pos>-->
+			<size>0.38 0.09</size>
+		</text>
+
+
+		<image name="md_thumbnail">
+			<maxSize>0.1 0.28</maxSize>
+			<pos>0.41 0.665740740740741</pos>
+			<origin>0.5 0</origin>
+			<default>./_inc/assets/noArt.svg</default>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+		</image>
+
+
+		<image name="md_marquee">
+			<pos>0.36 0.611111111111111</pos>
+			<origin>0 1</origin>
+			<maxSize>0.20 0.15</maxSize>
+			<zIndex>100</zIndex>
+		</image>
+
+
+		<image name="list_help" extra="true">
+			<origin>0 0</origin>
+			<pos>0.494791666666667 0.91</pos>
+		</image>
+
+	</customView>
 
 
 
-	<text name="md_publisher">
-		<pos>0.735 0.716666666666667</pos>
-	</text>
-
-</customView>
 
 
 	<!-- ---- Grid layout properties  ---- -->
@@ -679,7 +787,6 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<size>0.91 0.618</size>
 			<!-- define base grid -->
 			<autoLayout>7 2</autoLayout>
-
 			<!-- define grid layouts per system -->
 			<autoLayout if="{system.theme} == 'n64' || {system.theme} == 'sfc' || {system.theme} == 'gameandwatch'">4 2</autoLayout>
 			<autoLayout if="{system.theme} == 'psp'">8 2</autoLayout>
@@ -780,7 +887,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 	</view>
 
-<!-- ------- Boxes layout ------------ -->
+	<!-- ------- Boxes layout ------------ -->
 
 	<customView name="Boxes" inherits="grid">
 
@@ -821,7 +928,9 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 			<!-- square format boxes positioning -->
 			<autoLayoutSelectedZoom if="{system.theme} == 'neogeocd' || {system.theme} == 'psx'  || {system.theme} == 'dreamcast' || {system.theme} == 'gb'">1.45</autoLayoutSelectedZoom>
+
 			<!-- taller slim boxes -->
+
 			<autoLayout if=" {system.theme} == 'psp'">7 1</autoLayout>
 			<autoLayoutSelectedZoom if="{system.theme} == 'psp'">1.40</autoLayoutSelectedZoom>			
 			<scrollDirection>horizontal</scrollDirection>
@@ -851,17 +960,107 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<zIndex>8</zIndex>
 		</image>
 
+
+
 		<!-- Game meta assets -->
 
-		<image name="game-meta" extra="true">
-			<linearSmooth>true</linearSmooth>	
-			<pos>0.311979166666667 0.806851851851852</pos>
-			<size>0.3765625 0.078703703703704</size>
-			<path>./_inc/assets/gamemeta.svg</path>
-			<path>./${system.theme}/_inc/gamemeta.svg</path>
-			<color>ffffff</color>
-			<zIndex>100</zIndex>
-		</image>  
+		<image name="meta-genre" extra="true">
+			<origin>0.5 0</origin>
+			<pos>0.34296875 0.8018518518518519</pos>
+			<size>0.0625 0.0740740740740741</size>
+			<path>./_inc/assets/meta-genre.svg</path>
+			<path>./${system.theme}/_inc/meta-genre.svg</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+		</image>
+
+		<text name="md_genre">
+			<origin>0.5 0</origin>
+			<pos>0.34296875 0.8611111111111111</pos>
+			<size>0.0625 0.034259259259259</size>
+			<alignment>center</alignment>
+			<color>B3B3B3</color>
+			<fontSize>0.014814814814815</fontSize>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+		</text> 
+
+
+		<image name="meta-players" extra="true">
+			<origin>0.5 0</origin>
+			<pos>0.44765625 0.8018518518518519</pos>
+			<size>0.0625 0.0740740740740741</size>
+			<path>./_inc/assets/meta-players.svg</path>
+			<path>./${system.theme}/_inc/meta-players.svg</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+		</image>
+
+
+		<text name="md_players">
+			<origin>0.5 0</origin>
+			<pos>0.44765625 0.8611111111111111</pos>
+			<size>0.0625 0.034259259259259</size>
+			<alignment>center</alignment>
+			<color>B3B3B3</color>
+			<fontSize>0.014814814814815</fontSize>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+		</text>
+
+
+		<image name="meta-publisher" extra="true">
+			<origin>0.5 0</origin>
+			<pos>0.55234375 0.8018518518518519</pos>
+			<size>0.0625 0.0740740740740741</size>
+			<path>./_inc/assets/meta-publisher.svg</path>
+			<path>./${system.theme}/_inc/meta-publisher.svg</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+		</image>
+
+
+		<text name="md_publisher">
+			<origin>0.5 0</origin>
+			<pos>0.55234375 0.8611111111111111</pos>
+			<size>0.0625 0.034259259259259</size>
+			<color>B3B3B3</color>
+			<fontSize>0.014814814814815</fontSize>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+			<alignment>center</alignment>
+		</text>
+
+
+		<image name="meta-date" extra="true">
+			<origin>0.5 0</origin>
+			<pos>0.65703125 0.8018518518518519</pos>
+			<size>0.0625 0.0740740740740741</size>
+			<path>./_inc/assets/meta-date.svg</path>
+			<path>./${system.theme}/_inc/meta-date.svg</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+		</image>
+
+
+		<datetime name="md_releasedate">
+			<origin>0.5 0</origin>
+			<pos>0.65703125 0.8611111111111111</pos>
+			<size>0.0625 0.034259259259259</size>
+			<color>B3B3B3</color>
+			<fontSize>0.014814814814815</fontSize>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+			<format>%Y</format>
+			<alignment>center</alignment>
+		</datetime>
+
+
+		<image name="dividers" extra="true">
+			<origin>0.5 0</origin>
+			<pos>0.5 0.8018518518518519</pos>
+			<size>0.2098958333333333 0.0462962962962963</size>
+			<path>./_inc/assets/dividers.svg</path>
+			<zIndex>99</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+
 
 		<text name="md_name">
 			<pos>0.5 0.75</pos>
@@ -874,43 +1073,6 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<zIndex>100</zIndex>
 		</text>
 
-		<datetime name="md_releasedate">
-			<pos>0.610416666666667 0.847777777777778</pos>
-			<size>0.078125 0.034259259259259</size>
-			<color>B3B3B3</color>
-			<fontSize>0.014814814814815</fontSize>
-			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
-			<alignment>center</alignment>
-			<format>%Y</format>
-		</datetime>
-
-		<text name="md_players">
-			<pos>0.411458333333333 0.847777777777778</pos>
-			<size>0.078125 0.034259259259259</size>
-			<color>B3B3B3</color>
-			<fontSize>0.014814814814815</fontSize>
-			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
-			<alignment>center</alignment>
-		</text>
-
-		<text name="md_genre">
-			<pos>0.311979166666667 0.847777777777778</pos>
-			<size>0.078125 0.034259259259259</size>
-			<color>B3B3B3</color>
-			<fontSize>0.014814814814815</fontSize>
-			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
-			<alignment>center</alignment>
-		</text>         
-
-		<text name="md_publisher">
-			<origin>0 0</origin>
-			<pos>0.5109375 0.847777777777778</pos>
-			<size>0.078125 0.034259259259259</size>
-			<color>B3B3B3</color>
-			<fontSize>0.014814814814815</fontSize>
-			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
-			<alignment>center</alignment>
-		</text>
 
 		<!-- --- Boxes help graphic --- --> 
 
@@ -1087,57 +1249,110 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<zIndex>100</zIndex>
 		</image>
 
-		<image name="game-meta" extra="true">
-			<linearSmooth>true</linearSmooth>	
-			<pos>0.311979166666667 0.416666666666667</pos>
-			<size>0.3765625 0.078703703703704</size>
-			<path>./_inc/assets/gamemeta.svg</path>
-			<path>./${system.theme}/_inc/gamemeta.svg</path>
-			<color>ffffff</color>
-			<zIndex>100</zIndex>
-		</image>
 
 		<text name="md_name">
 			<pos>-2 -2</pos>
 		</text>
 
+
+		<image name="meta-genre" extra="true">
+			<origin>0.5 0</origin>
+			<pos>0.34296875 0.4157407407407407</pos>
+			<size>0.0625 0.0740740740740741</size>
+			<path>./_inc/assets/meta-genre.svg</path>
+			<path>./${system.theme}/_inc/meta-genre.svg</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+		</image>
+
+
 		<text name="md_genre">
-			<pos>0.311979166666667 0.467592592592593</pos>
-			<size>0.078125 0.034259259259259</size>
+			<origin>0.5 0</origin>
+			<pos>0.34296875 0.475</pos>
+			<size>0.0625 0.034259259259259</size>
+			<alignment>center</alignment>
 			<color>B3B3B3</color>
 			<fontSize>0.014814814814815</fontSize>
 			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
-			<alignment>center</alignment>
 		</text> 
 
+
+		<image name="meta-players" extra="true">
+			<origin>0.5 0</origin>
+			<pos>0.44765625 0.4157407407407407</pos>
+			<size>0.0625 0.0740740740740741</size>
+			<path>./_inc/assets/meta-players.svg</path>
+			<path>./${system.theme}/_inc/meta-players.svg</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+		</image>
+
+
 		<text name="md_players">
-			<pos>0.411458333333333 0.467592592592593</pos>
-			<size>0.078125 0.034259259259259</size>
+			<origin>0.5 0</origin>
+			<pos>0.44765625 0.475</pos>
+			<size>0.0625 0.034259259259259</size>
+			<alignment>center</alignment>
 			<color>B3B3B3</color>
 			<fontSize>0.014814814814815</fontSize>
 			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
-			<alignment>center</alignment>
 		</text>
 
-		<datetime name="md_releasedate">
-			<pos>0.610416666666667 0.467592592592593</pos>
-			<size>0.078125 0.034259259259259</size>
-			<color>B3B3B3</color>
-			<fontSize>0.014814814814815</fontSize>
-			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
-			<alignment>center</alignment>
-			<format>%Y</format>
-		</datetime>
+
+		<image name="meta-publisher" extra="true">
+			<origin>0.5 0</origin>
+			<pos>0.55234375 0.4157407407407407</pos>
+			<size>0.0625 0.0740740740740741</size>
+			<path>./_inc/assets/meta-publisher.svg</path>
+			<path>./${system.theme}/_inc/meta-publisher.svg</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+		</image>
+
 
 		<text name="md_publisher">
-			<origin>0 0</origin>
-			<pos>0.5109375 0.467592592592593</pos>
-			<size>0.078125 0.034259259259259</size>
+			<origin>0.5 0</origin>
+			<pos>0.55234375 0.475</pos>
+			<size>0.0625 0.034259259259259</size>
 			<color>B3B3B3</color>
 			<fontSize>0.014814814814815</fontSize>
 			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
 			<alignment>center</alignment>
 		</text>
+
+
+		<image name="meta-date" extra="true">
+			<origin>0.5 0</origin>
+			<pos>0.65703125 0.4157407407407407</pos>
+			<size>0.0625 0.0740740740740741</size>
+			<path>./_inc/assets/meta-date.svg</path>
+			<path>./${system.theme}/_inc/meta-date.svg</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+		</image>
+
+
+		<datetime name="md_releasedate">
+			<origin>0.5 0</origin>
+			<pos>0.65703125 0.475</pos>
+			<size>0.0625 0.034259259259259</size>
+			<color>B3B3B3</color>
+			<fontSize>0.014814814814815</fontSize>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+			<format>%Y</format>
+			<alignment>center</alignment>
+		</datetime>
+
+
+		<image name="dividers" extra="true">
+			<origin>0.5 0</origin>
+			<pos>0.5 0.4157407407407407</pos>
+			<size>0.2098958333333333 0.0462962962962963</size>
+			<path>./_inc/assets/dividers.svg</path>
+			<zIndex>99</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+
 
 		<text name="md_developer">
 			<pos>-2 -2</pos>
@@ -1176,7 +1391,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 
 
-<!-- --- Subsets --- -->
+	<!-- --- Subsets --- -->
 
 
 	<subset name="animations" displayName="${subset.animations}">
@@ -1237,7 +1452,6 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<include name="y">./_inc/system/secondary-y.xml</include>
 	</subset>
 
-
-<!-- There's nothing else down here! If you're that interested why not drop me a line and help out :) -->
+	<!-- There's nothing else down here! If you're that interested why not drop me a line and help out :) -->
 
 </theme>
