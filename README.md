@@ -257,15 +257,14 @@ To users of lower-powered devices such as the Raspberry Pi, you may want to turn
 - **Animations off:** Turn off the animations.
 
 
-Scanlines:
+Scanlines on System Views / Main Menu:
 -----------
 
-Display a scanline overlay over the screenshots and videos displayed in individual system views.
+Display a scanline overlay over the screenshots and videos displayed in individual system views / the main menu.
 
 - **No scanlines:** Don't show scanlines (theme default).
-- **Light scanlines:** Show light scanlines over images and videos in individual system views.
-- **Dark scanlines:** Show darker scanlines over images and videos in individual system views.
-
+- **Light scanlines:** Show light scanlines over images and videos in individual system views / main menu.
+- **Dark scanlines:** Show darker scanlines over images and videos in individual system views / main menu.
 
 
 Button set:

@@ -23,7 +23,9 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<subset.artworkregion>System logos</subset.artworkregion>
 		<subset.buttonSet>Button Set</subset.buttonSet>
 		<subset.hideLogo>Batocera logo</subset.hideLogo>
-		<subset.scanlines>Scanlines on system views</subset.scanlines>
+		<subset.scanlines>Scanlines on System Views</subset.scanlines>
+		<subset.scanlinesMain>Scanlines on Main Menu</subset.scanlinesMain>
+		<subset.menuFanArt>Show fan art on Main Menu</subset.menuFanArt>
 	</variables>
 
 
@@ -59,6 +61,13 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<include name="Dark scanlines"/>
 	</subset>
 
+
+
+	<subset name="scanlinesMain" displayName="${subset.scanlinesMain}">
+		<include name="No scanlines"/>
+		<include name="Light scanlines"/>
+		<include name="Dark scanlines"/>
+	</subset>
 
 
 	<view name="system, detailed, grid">
@@ -221,14 +230,13 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 		<image name="sysBackgrounds"  extra="static">
 			<origin>0 0</origin>
-			<pos>0.229166666666667 0</pos>
+			<pos>0.2604166666666667 0</pos>
 			<size>0.770833333333333 0</size> 
 			<maxSize>2 2</maxSize>
 			<path>./_inc/assets/defaultbg.png</path>
 			<path>./${system.theme}/_inc/bg.jpg</path>
+			<linearSmooth>true</linearSmooth>
 		</image>
-
-
 
 
 		<video name="backgroundvideo" extra="true">
@@ -288,6 +296,19 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 
 
+		<image name="scanlines" extra="true">
+			<path ifSubset="scanlinesMain:No scanlines"/>
+			<path ifSubset="scanlinesMain:Light scanlines">./_inc/assets/scanlines.png</path>
+			<path ifSubset="scanlinesMain:Dark scanlines">./_inc/assets/darkscanlines.png</path>
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<zIndex>12</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+
+
+
 		<!-- ----- this is the image that provides the gradient for the carousel and the tint for the main image. suggest splitting these so the image gradient can be turned on if a system theme has been defined ----- -->
 
 		<image name="background2" extra="static">
@@ -296,7 +317,22 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<pos>0 0</pos>
 			<origin>0 0</origin>
 			<zIndex>30</zIndex>
+			<linearSmooth>true</linearSmooth>
 		</image>
+
+
+		<image name="menuBar" extra="static">
+			<path>./_inc/assets/menuBar.png</path>
+			<size>0.2604166666666667 1</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<zIndex>20</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+
+
+
+
 
 		<image name="gamemarker" extra="static">
 			<path>./_inc/assets/marker.png</path>
@@ -307,6 +343,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<path ifSubset="artworkregion:MIX">./${system.theme}/_inc/marker.png</path>
 			<size>0.0078125 0.1666666666666667</size>
 			<pos>0 0.4166666666666667</pos>
+			<linearSmooth>true</linearSmooth>
 			<origin>0 0</origin>
 			<zIndex>30</zIndex>
 		</image> 
@@ -329,6 +366,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<pos>0.94 0.9462962962962963</pos>
 			<maxSize>1 0.05</maxSize>
 			<zIndex>200</zIndex>
+			<linearSmooth>true</linearSmooth>
 		</image>
 
 		<image name="primaryBtn" extra="true">
@@ -365,6 +403,9 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		</helpsystem>
 
 	</view>
+
+
+
 
 
 	<view name="detailed, grid">
@@ -941,7 +982,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<effect>none</effect>
 		</video>
 
-		<!-- Position of the boxes carouselL -->
+		<!-- Position of the boxes carousel -->
 
 		<imagegrid name="gamegrid">
 			<centerSelection>true</centerSelection>
@@ -952,6 +993,11 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<autoLayout>5 1</autoLayout>
 			<autoLayoutSelectedZoom>1.2</autoLayoutSelectedZoom>
 			<autoLayout if="{system.theme} == 'n64'">5 1</autoLayout>
+			<pos if="{system.theme} == 'n64'">-0.125 -0.05</pos>
+			<size if="{system.theme} == 'n64'">1.25 1</size>
+			<autoLayoutSelectedZoom if="{system.theme} == 'n64'">1.5</autoLayoutSelectedZoom>
+
+
 			<autoLayout if="{system.theme} == 'gba' || {system.theme} == 'gc'">3 1</autoLayout>
 			<autoLayout if="{system.theme} == 'atari2600' || {system.theme} == 'psx'">5 1</autoLayout>
 
