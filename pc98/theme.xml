@@ -3,8 +3,30 @@
 	<include>./../theme.xml</include>
 <include>./../_inc/system/hidenames.xml</include>
 
-	<view name="system">
-		<image name="startSet" extra="static"></image>
-	</view>
+  <view name="system">
+    <image name="startSet" extra="static"></image>
+  </view>
+
+
+  <view name="detailed">
+    <textlist name="gamelist">
+     <selectorColor>EB222C</selectorColor>
+     <selectedColor>ffffff</selectedColor>
+   </textlist>
+ </view>
+
+
+<view name="grid">
+  <image name="gridtile.favorite">
+    <color>EB222Cff</color>
+  </image>  
+</view>
+
+
+<customView name="Tiles" inherits="grid">
+  <gridtile name="selected">
+    <backgroundEdgeColor>EB222C</backgroundEdgeColor>
+  </gridtile>
+  </customView>
 
 </theme>

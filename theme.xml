@@ -809,7 +809,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<size>1 1</size>
 			<pos>0 0</pos>
 			<origin>0 0</origin>
-			<zIndex>11</zIndex>
+			<zIndex>7</zIndex>
 		</image>
 
 		<image name="gridtile.favorite">
@@ -1200,12 +1200,6 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 	<!-- ---- Tiles view ---- -->
 
 	<customView name="Tiles" inherits="grid">
-
-		
-		<image name="scanlines" extra="true">
-			<zIndex>9</zIndex>
-		</image>
-
 
 		<image name="gridOverlay" extra="true">
 			<path>./_inc/assets/tileoverlay.png</path>

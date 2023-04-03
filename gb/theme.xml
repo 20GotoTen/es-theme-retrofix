@@ -5,6 +5,17 @@
 
   <view name="system">
     <image name="startSet" extra="static"></image>
+
+
+<video name="backgroundvideo" extra="true">
+  <color>94B300ff</color>
+    </video>
+
+
+
+
+
+
   </view>
 
 
@@ -13,6 +24,11 @@
      <selectorColor>4B4793</selectorColor>
      <selectedColor>ffffff</selectedColor>
    </textlist>
+
+       <video name="md_video">
+     <color>94B300ff</color>
+     <delay>0</delay>
+    </video>
  </view>
 
 
@@ -43,7 +59,29 @@
  </video>
 </customView>
 
+
+  <customView name="Boxes" inherits="grid">
+    <video name="md_video">
+     <color>94B300ff</color>
+     <delay>0</delay>
+    </video>
+  </customView>
+
+
+
+
+
+
+
+
+
 <view name="grid">
+
+      <video name="md_video">
+     <color>94B300ff</color>
+     <delay>0</delay>
+    </video>
+
   <image name="gridtile.favorite">
     <color>4B4793ff</color>
   </image>  

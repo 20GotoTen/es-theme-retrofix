@@ -1,13 +1,13 @@
 <theme>
-	<formatVersion>7</formatVersion>
-	<include>./../theme.xml</include>
+  <formatVersion>7</formatVersion>
+  <include>./../theme.xml</include>
 <include>./../_inc/system/hidenames.xml</include>
 
   <view name="system">
    <image name="startSet" extra="static"></image>
  </view>
 
- <view name="detailed">
+<view name="detailed">
    <textlist name="gamelist">
     <selectorColor>009BB3</selectorColor>
     <selectedColor>ffffff</selectedColor>
@@ -17,9 +17,19 @@
 
 
 <customView name="Tiles" inherits="grid">
-	<gridtile name="selected">
+  <gridtile name="selected">
     <backgroundEdgeColor>009BB3</backgroundEdgeColor>
   </gridtile>
 </customView>
+
+
+
+<view name="grid">
+  <image name="gridtile.favorite">
+    <color>009BB3ff</color>
+  </image>  
+</view>
+
+
 
 </theme>

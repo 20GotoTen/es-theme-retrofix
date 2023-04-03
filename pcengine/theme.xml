@@ -18,25 +18,6 @@
  </view>
 
 
-
- <customView name="Boxes" inherits="grid">
-   <imagegrid name="gamegrid">
-     <autoLayout>7 1</autoLayout>
-     <pos>-0.13 0.144</pos>
-     <size>1.26 0.65</size>
-     <autoLayoutSelectedZoom>1.45</autoLayoutSelectedZoom>
-   </imagegrid>
-
-
-   <!-- THIS IS A TITLE POSITION OVERRIDE FOR THIS THEME ONLY -->
-   <text name="md_name">
-    <pos>0.5 0.751481481481481</pos>
-  </text>
-
-
-</customView>
-
-
 <view name="grid">
   <image name="gridtile.favorite">
     <color>EB222Cff</color>
@@ -45,12 +26,6 @@
   <image ifSubset="artworkregion:US" name="gridtile.favorite">
     <color>F79226ff</color>
   </image>  
-
-
-
-
-
-
 </view>
 
 

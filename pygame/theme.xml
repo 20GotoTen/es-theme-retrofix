@@ -26,10 +26,6 @@
   </image>  
 </view>
 
-<customView name="Tiles" inherits="grid">
-  <gridtile name="selected">
-    <backgroundEdgeColor>69EE2A</backgroundEdgeColor>
-  </gridtile>
-</customView>
+
 
 </theme>

@@ -17,17 +17,6 @@
    </textlist>
  </view>
 
- <customView name="Boxes" inherits="grid">
-   <imagegrid name="gamegrid">
-     <autoLayout>7 1</autoLayout>
-     <pos>-0.13 0.174</pos>
-     <size>1.26 0.65</size>
-     <autoLayoutSelectedZoom>1.45</autoLayoutSelectedZoom>
-   </imagegrid>
-   <text name="md_name">
-    <pos>0.5 0.231481481481481</pos>
-  </text>
-</customView>
 
 
 <view name="grid">
@@ -38,12 +27,6 @@
   <image ifSubset="artworkregion:US" name="gridtile.favorite">
     <color>F79226ff</color>
   </image>  
-
-
-
-
-
-
 </view>
 
 

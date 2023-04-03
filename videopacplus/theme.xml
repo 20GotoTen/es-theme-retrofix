@@ -9,14 +9,7 @@
     <image ifSubset="artworkregion:EU" name="gamemarker" extra="static">
       <path>./_inc/marker-eu.png</path>
     </image>  
-
-
-
-
-
-
-
-<image name="startSet" ifSubset="artworkregion:EU" extra="static">
+	<image name="startSet" ifSubset="artworkregion:EU" extra="static">
       <path>./_inc/start-eu.png</path>
     </image>
 
