@@ -868,7 +868,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<autoLayout if="{system.theme} == 'n64' || {system.theme} == 'sfc' || {system.theme} == 'gameandwatch'">4 2</autoLayout>
 			<autoLayout if="{system.theme} == 'psp'">8 2</autoLayout>
 			<!-- square boxes -->
-			<autoLayout if="{system.theme} == 'gb' || {system.theme} == 'nes'  || {system.theme} == 'supergrafx' || {system.theme} == 'pce-cd'  || {system.theme} == 'pcengine'  || {system.theme} == 'psx'   || {system.theme} == 'ngpc' || {system.theme} == 'ngp' || {system.theme} == 'neogeocd' || {system.theme} == 'dreamcast' || {system.theme} == '3do' || {system.theme} == 'gba' || {system.theme} == 'gb' || {system.theme} == 'gb2players'">5 2</autoLayout>
+			<autoLayout if="{system.theme} == 'gb' || {system.theme} == 'nes'  || {system.theme} == 'supergrafx' || {system.theme} == 'pce-cd'  || {system.theme} == 'pcengine'  || {system.theme} == 'psx'   || {system.theme} == 'ngpc' || {system.theme} == 'ngp' || {system.theme} == 'neogeocd' || {system.theme} == 'dreamcast' || {system.theme} == '3do' || {system.theme} == 'gba' || {system.theme} == 'gb' || {system.theme} == 'gb2players'|| {system.theme} == 'cdi'">5 2</autoLayout>
 			<margin>0 0</margin>
 			<scrollSound>./_inc/sound/cursor.wav</scrollSound>
 			<autoLayoutSelectedZoom>1.1</autoLayoutSelectedZoom>
@@ -1003,13 +1003,13 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 			<!-- squareish format boxes positioning -->
 
-			<pos if="{system.theme} == 'ngpc' || {system.theme} == 'ngp' || {system.theme} == 'neogeocd'">0 0.05</pos>
-			<size if="{system.theme} == 'ngpc' || {system.theme} == 'ngp'|| {system.theme} == 'neogeocd'">1 0.7</size>
+			<pos if="{system.theme} == 'ngpc' || {system.theme} == 'ngp' || {system.theme} == 'neogeocd'|| {system.theme} == 'cdi'">0 0.05</pos>
+			<size if="{system.theme} == 'ngpc' || {system.theme} == 'ngp'|| {system.theme} == 'neogeocd'|| {system.theme} == 'cdi'">1 0.7</size>
 
 			<autoLayoutSelectedZoom if="{system.theme} == 'ngpc' || {system.theme} == 'ngp'  || {system.theme} == 'neogeocd' || {system.theme} == 'psx' || {system.theme} == 'gb'">1.45</autoLayoutSelectedZoom>
 
 			<!-- square format boxes positioning -->
-			<autoLayoutSelectedZoom if="{system.theme} == 'neogeocd' || {system.theme} == 'psx'  || {system.theme} == 'dreamcast' || {system.theme} == 'gb'">1.45</autoLayoutSelectedZoom>
+			<autoLayoutSelectedZoom if="{system.theme} == 'neogeocd' || {system.theme} == 'psx'  || {system.theme} == 'dreamcast' || {system.theme} == 'gb'|| {system.theme} == 'cdi'">1.45</autoLayoutSelectedZoom>
 
 			<!-- taller slim boxes -->
 
