@@ -4,7 +4,7 @@ Retrofix - Emulationstation theme for Batocera 5.25+
 Theme designed by 20Goto10
 Version 2.0
 First release 31/05/2020
-Last updated 16/03/2023
+Last updated 05/04/2023
 
 
 **Retrofix combines two of my loves: vintage video game artwork and Batocera. Sometimes the game art
@@ -53,6 +53,7 @@ Supported themes in version 2.0:
 - PlayStation 2
 - PlayStation 3
 - PSP
+- PSP Minis
 - PS Vita
 - Sega 32X
 - Sega Mega CD (and regional variants)
@@ -128,6 +129,7 @@ Supported themes in version 2.0:
 - 3DO
 - Odyssey 2 / Philips Videpac
 - Philips Videopac +
+- Philips CDi
 - 3DO
 - Commodore 64
 - Gamecube
@@ -174,6 +176,7 @@ Supported themes in version 2.0:
 - Scummvm
 - Super Cassette Vision
 - Solarus
+- EasyRPG
 - Sufami Turbo
 - TI-99
 - TIC-80
