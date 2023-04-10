@@ -671,7 +671,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		</text>
 
 		<video name="md_video">
-			<pos>0.322916666666667 -0.3</pos>
+			<pos>0.322916666666667 0</pos>
 			<maxSize>0.677083333333333 2</maxSize>
 			<zIndex>9</zIndex>
 			<origin>0 0</origin>
