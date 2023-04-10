@@ -1,6 +1,6 @@
 <theme>
-  <formatVersion>7</formatVersion>
-  <include>./../theme.xml</include>
+	<formatVersion>7</formatVersion>
+	<include>./../theme.xml</include>
   <include>./../_inc/system/hidenames.xml</include>
 
   <view name="system">
@@ -83,18 +83,18 @@
 
  <image name="md_image">
  
-   <origin>0.5 0</origin>
-   <pos>0.5 -0.3</pos>
-   <size>1 1</size>
+   <origin>0 0</origin>
+   <pos>0 -0.3</pos>
+   <size>1 0</size>
    <zIndex>5</zIndex>
    <color>94B300ff</color>
  </image>
 
- <video name="backgroundvideo" extra="true">
+<video name="backgroundvideo" extra="true">
   <path>{game:video}</path>
-  <origin>0.5 0</origin>
-  <pos>0.5 -0.3</pos>
-  <size>1 1</size>
+  <origin>0 0</origin>
+  <pos>0 -0.3</pos>
+  <minSize>1 0</minSize>
   <effect>none</effect>
   <zIndex>6</zIndex>
   <color>94B300ff</color>
