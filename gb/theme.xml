@@ -82,7 +82,7 @@
  </video>
 
  <image name="md_image">
-   <linearSmooth>true</linearSmooth>
+ 
    <origin>0.5 0</origin>
    <pos>0.5 -0.3</pos>
    <size>1 1</size>
