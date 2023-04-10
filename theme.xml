@@ -1054,7 +1054,12 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<centerSelection>true</centerSelection>
 			<scrollLoop>true</scrollLoop>
 			<pos>0 0.14</pos>
+
+			<pos if="{system.theme} == 'gb' || {system.theme} == 'gb2players' ">0 0.07</pos>
+
 			<size>1 0.55</size>
+			<size if="{system.theme} == 'gb' || {system.theme} == 'gb2players' ">1 0.65</size>
+
 			<margin>0 0</margin>
 			<autoLayout>5 1</autoLayout>
 			<autoLayoutSelectedZoom>1.2</autoLayoutSelectedZoom>
@@ -1064,7 +1069,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 			<autoLayoutSelectedZoom if="{system.theme} == 'atarilynx'">1.3</autoLayoutSelectedZoom>
 
-			<autoLayoutSelectedZoom if="{system.theme} == 'ps3' || {system.theme} == 'psp' || {system.theme} == 'saturn' || {system.theme} == 'ngp' || {system.theme} == 'ngpc'">1.4</autoLayoutSelectedZoom>
+			<autoLayoutSelectedZoom if="{system.theme} == 'ps3' || {system.theme} == 'psp' || {system.theme} == 'saturn' || {system.theme} == 'ngp' || {system.theme} == 'ngpc' || {system.theme} == 'gb' || {system.theme} == 'gb2players'">1.4</autoLayoutSelectedZoom>
 
 			<autoLayoutSelectedZoom if="{system.theme} == 'n64' || {system.theme} == 'c64' || {system.theme} == 'c20' || {system.theme} == 'zxspectrum'">1.5</autoLayoutSelectedZoom>
 			
@@ -1072,7 +1077,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 				if="{system.theme} == 'neogeocd'
 				|| {system.theme} == 'psx'  
 				|| {system.theme} == 'dreamcast' 
-				|| {system.theme} == 'gb'
+
 				|| {system.theme} == 'cdi' 
 				|| {system.theme} == '3do'
 				|| {system.theme} == '3ds'
