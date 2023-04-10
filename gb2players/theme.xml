@@ -1,37 +1,55 @@
 <theme>
   <formatVersion>7</formatVersion>
   <include>./../theme.xml</include>
-<include>./../_inc/system/hidenames.xml</include>
+  <include>./../_inc/system/hidenames.xml</include>
 
   <view name="system">
     <image name="startSet" extra="static"></image>
 
-
-<video name="backgroundvideo" extra="true">
-  <color>94B300ff</color>
-    </video>
-
-
-
-
-
-
-  </view>
-
-
-  <view name="detailed">
-    <textlist name="gamelist">
-     <selectorColor>4B4793</selectorColor>
-     <selectedColor>ffffff</selectedColor>
-   </textlist>
-
-       <video name="md_video">
+    <video name="backgroundvideo" extra="true">
      <color>94B300ff</color>
-     <delay>0</delay>
-    </video>
+   </video>
+
  </view>
 
 
+ <view name="detailed">
+ 
+  <textlist name="gamelist">
+   <selectorColor>4B4793</selectorColor>
+   <selectedColor>ffffff</selectedColor>
+ </textlist>
+
+
+  <video name="md_video">
+   <delay>999999999999</delay>
+   <pos>-2 -2</pos>
+ </video>
+
+ <image name="md_image">
+      <origin>0 0</origin>
+      <pos>0.322916666666667 -0.3</pos>
+      <maxSize>0.677083333333333 2</maxSize>
+
+   <zIndex>8</zIndex>
+   <color>94B300ff</color>
+ </image>
+
+ <video name="backgroundvideo" extra="true">
+  <path>{game:video}</path>
+  <origin>0 0</origin>
+ <pos>0.322916666666667 -0.3</pos>
+      <maxSize>0.677083333333333 2</maxSize>
+
+  <effect>none</effect>
+  <zIndex>9</zIndex>
+  <color>94B300ff</color>
+  <delay ifSubset="mainVideoDelay:2 Seconds">2</delay>
+  <delay ifSubset="mainVideoDelay:5 Seconds">5</delay>
+  <delay ifSubset="mainVideoDelay:Video off">999999999</delay>
+</video>
+
+</view>
 
 
 <customView name="Tiles" inherits="grid">
@@ -51,37 +69,44 @@
     <backgroundCornerSize>0</backgroundCornerSize>
     <backgroundEdgeColor>4B4793</backgroundEdgeColor>
   </gridtile>
-
-  <video name="md_video">
-   <color>94B300ff</color>
-   <showSnapshotDelay>false</showSnapshotDelay>
-   <delay>0</delay>
- </video>
 </customView>
-
-
-  <customView name="Boxes" inherits="grid">
-    <video name="md_video">
-     <color>94B300ff</color>
-     <delay>0</delay>
-    </video>
-  </customView>
-
-
-
-
-
 
 
 
 
 <view name="grid">
 
-      <video name="md_video">
-     <color>94B300ff</color>
-     <delay>0</delay>
-    </video>
+  <video name="md_video">
+   <delay>999999999999</delay>
+   <pos>-2 -2</pos>
+ </video>
 
+ <image name="md_image">
+   <linearSmooth>true</linearSmooth>
+   <origin>0.5 0</origin>
+   <pos>0.5 -0.3</pos>
+   <size>1 1</size>
+   <zIndex>5</zIndex>
+   <color>94B300ff</color>
+ </image>
+
+ <video name="backgroundvideo" extra="true">
+  <path>{game:video}</path>
+  <origin>0.5 0</origin>
+  <pos>0.5 -0.3</pos>
+  <size>1 1</size>
+  <effect>none</effect>
+  <zIndex>6</zIndex>
+  <color>94B300ff</color>
+  <delay ifSubset="mainVideoDelay:2 Seconds">2</delay>
+  <delay ifSubset="mainVideoDelay:5 Seconds">5</delay>
+  <delay ifSubset="mainVideoDelay:Video off">999999999</delay>
+</video>
+
+</view>
+
+
+<view name="grid">
   <image name="gridtile.favorite">
     <color>4B4793ff</color>
   </image>  

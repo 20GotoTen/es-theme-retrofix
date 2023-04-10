@@ -671,7 +671,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		</text>
 
 		<video name="md_video">
-			<pos>0.322916666666667 0</pos>
+			<pos>0.322916666666667 -0.3</pos>
 			<maxSize>0.677083333333333 2</maxSize>
 			<zIndex>9</zIndex>
 			<origin>0 0</origin>
@@ -979,7 +979,6 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<delay ifSubset="systemVideoDelay:2 Seconds">2</delay>
 			<delay ifSubset="systemVideoDelay:5 Seconds">5</delay>
 			<delay ifSubset="systemVideoDelay:Video off">9999</delay>
-
 			<showSnapshotNoVideo>true</showSnapshotNoVideo>
 			<showSnapshotDelay>true</showSnapshotDelay>
 			<loops>10</loops>
@@ -1339,7 +1338,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		</image>
 
 		<video name="md_video">
-			<linearSmooth>true</linearSmooth>
+
 			<origin>0.5 0</origin>
 			<pos>0.5 -0.3</pos>
 			<size>1 1</size>
