@@ -230,22 +230,12 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<zIndex>0</zIndex>
 		</image>
 
-
-
-		<image name="fallbackBG"  extra="static">
-			<origin>0 0</origin>
-			<pos>0.2291666666666667 0</pos>
-			<size>0.770833333333333 0</size> 
-			<maxSize>2 2</maxSize>
-			<path>./_inc/assets/defaultbg.png</path>
-			<linearSmooth>true</linearSmooth>
-		</image>
-
 		<image name="sysBackgrounds"  extra="static">
 			<origin>0 0</origin>
 			<pos>0.2291666666666667 0</pos>
 			<size>0.770833333333333 0</size> 
 			<maxSize>2 2</maxSize>
+			<path>./_inc/assets/defaultbg.png</path>
 			<path>./${system.theme}/_inc/bg.jpg</path>
 			<linearSmooth>true</linearSmooth>
 		</image>
