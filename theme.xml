@@ -896,9 +896,9 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<autoLayout if="{system.theme} == 'n64' || {system.theme} == 'sfc' || {system.theme} == 'gameandwatch'">4 2</autoLayout>
 			<autoLayout if="{system.theme} == 'psp'">8 2</autoLayout>
 			<!-- square boxes -->
-			<autoLayout if="{system.theme} == 'gb' || {system.theme} == 'nes'  || {system.theme} == 'supergrafx' || {system.theme} == 'pce-cd'  || {system.theme} == 'pcengine'  || {system.theme} == 'psx'   || {system.theme} == 'ngpc' || {system.theme} == 'ngp' || {system.theme} == 'neogeocd' || {system.theme} == 'dreamcast' || {system.theme} == '3do' || {system.theme} == 'gba' || {system.theme} == 'gb' || {system.theme} == 'gb2players'|| {system.theme} == 'cdi'">5 2</autoLayout>
+			<autoLayout if="{system.theme} == 'gb'|| {system.theme} == 'supergrafx' || {system.theme} == 'pce-cd'  || {system.theme} == 'pcengine'  || {system.theme} == 'psx'   || {system.theme} == 'ngpc' || {system.theme} == 'ngp' || {system.theme} == 'neogeocd' || {system.theme} == 'dreamcast' || {system.theme} == '3do' || {system.theme} == 'gba' || {system.theme} == 'gb' || {system.theme} == 'gb2players'|| {system.theme} == 'cdi'">5 2</autoLayout>
 			
-			<autoLayout if="{system.theme} == 'retrobat' || {system.theme} == 'flatpak'">6 2</autoLayout>
+			<autoLayout if="{system.theme} == 'retrobat' || {system.theme} == 'flatpak' || {system.theme} == 'nes'  ">6 2</autoLayout>
 			<autoLayout if="{system.theme} == 'imageviewer'">4 2</autoLayout>
 
 
@@ -972,8 +972,10 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		</text>
 
 		<video name="md_video">
-			<pos>0 -0.15</pos>
+			<linearSmooth>true</linearSmooth>	
+			<pos>0 -0.25</pos>
 			<size>1 1</size>
+			<minSize>1 0</minSize>
 			<zIndex>6</zIndex>
 			<origin>0 0</origin>
 			<delay ifSubset="systemVideoDelay:2 Seconds">2</delay>
@@ -984,6 +986,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<loops>10</loops>
 			<effect>none</effect>
 		</video>
+
 
 		<video name="md_video"  if="{system.theme} == 'retrobat' || {system.theme} == 'flatpak'|| {system.theme} == 'imageviewer'">
 			<showSnapshotNoVideo>false</showSnapshotNoVideo>
@@ -1034,20 +1037,6 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 	<customView name="Boxes" inherits="grid">
 
-		<video name="md_video">
-			<pos>0 -0.15</pos>
-			<size>1 1</size>
-			<zIndex>6</zIndex>
-			<origin>0 0</origin>
-			<delay ifSubset="systemVideoDelay:2 Seconds">2</delay>
-			<delay ifSubset="systemVideoDelay:5 Seconds">5</delay>
-			<delay ifSubset="systemVideoDelay:Video off">9999</delay>
-			<showSnapshotNoVideo>true</showSnapshotNoVideo>
-			<showSnapshotDelay>true</showSnapshotDelay>
-			<loops>10</loops>
-			<effect>none</effect>
-		</video>
-
 		<!-- Position of the boxes carousel -->
 
 		<imagegrid name="gamegrid">
@@ -1055,10 +1044,10 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<scrollLoop>true</scrollLoop>
 			<pos>0 0.14</pos>
 
-			<pos if="{system.theme} == 'gb' || {system.theme} == 'gb2players' ">0 0.07</pos>
+			<!--<pos if="{system.theme} == 'gb' || {system.theme} == 'gb2players' ">0 0.07</pos>-->
 
 			<size>1 0.55</size>
-			<size if="{system.theme} == 'gb' || {system.theme} == 'gb2players' ">1 0.65</size>
+			<!--<size if="{system.theme} == 'gb' || {system.theme} == 'gb2players' ">1 0.65</size>-->
 
 			<margin>0 0</margin>
 			<autoLayout>5 1</autoLayout>
@@ -1069,7 +1058,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 			<autoLayoutSelectedZoom if="{system.theme} == 'atarilynx'">1.3</autoLayoutSelectedZoom>
 
-			<autoLayoutSelectedZoom if="{system.theme} == 'ps3' || {system.theme} == 'psp' || {system.theme} == 'saturn' || {system.theme} == 'ngp' || {system.theme} == 'ngpc' || {system.theme} == 'gb' || {system.theme} == 'gb2players'">1.4</autoLayoutSelectedZoom>
+			<autoLayoutSelectedZoom if="{system.theme} == 'ps3' || {system.theme} == 'psp' || {system.theme} == 'saturn' || {system.theme} == 'ngp' || {system.theme} == 'ngpc'">1.4</autoLayoutSelectedZoom>
 
 			<autoLayoutSelectedZoom if="{system.theme} == 'n64' || {system.theme} == 'c64' || {system.theme} == 'c20' || {system.theme} == 'zxspectrum'">1.5</autoLayoutSelectedZoom>
 			
@@ -1089,7 +1078,9 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 				|| {system.theme} == 'pce-cd'
 				|| {system.theme} == 'pcengine'	
 				|| {system.theme} == 'amigacdtv'
-				|| {system.theme} == 'segacd'">1.60</autoLayoutSelectedZoom>
+				|| {system.theme} == 'segacd'
+				|| {system.theme} == 'gb'
+				|| {system.theme} == 'gb2players'">1.60</autoLayoutSelectedZoom>
 
 			<autoLayoutSelectedZoom
 				if="{system.theme} == 'snes' || {system.theme} == 'n64'|| {system.theme} == 'gameandwatch'|| {system.theme} == 'scv'">1.90</autoLayoutSelectedZoom>
@@ -1342,7 +1333,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<zIndex>100</zIndex>
 		</image>
 
-		<video name="md_video">
+		<!--<video name="md_video">
 
 			<origin>0.5 0</origin>
 			<pos>0.5 -0.3</pos>
@@ -1356,6 +1347,30 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<loops>10</loops>
 			<effect>none</effect>
 		</video>
+
+
+
+
+<video name="md_video">
+			<pos>0 -0.15</pos>
+			<size>1 1</size>
+			<minSize>1 0</minSize>
+			<zIndex>6</zIndex>
+			<origin>0 0</origin>
+			<delay ifSubset="systemVideoDelay:2 Seconds">2</delay>
+			<delay ifSubset="systemVideoDelay:5 Seconds">5</delay>
+			<delay ifSubset="systemVideoDelay:Video off">9999</delay>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>true</showSnapshotDelay>
+			<loops>10</loops>
+			<effect>none</effect>
+		</video>
+-->
+
+
+
+
+
 
 		<gridtile name="default">
 			<backgroundCenterColor>40404080</backgroundCenterColor>

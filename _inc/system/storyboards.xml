@@ -317,6 +317,7 @@
 
 	<customView name="Boxes" inherits="grid">
 
+
 		<image name="dividers" extra="true">
 			<storyboard>
 				<animation property="y" from="0.83" begin="400" duration="500" mode="easeOut"/>
