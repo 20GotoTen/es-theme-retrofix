@@ -21,14 +21,16 @@
  </textlist>
 
 
-  <video name="md_video">
+ <video name="md_video">
    <delay>999999999999</delay>
-   <pos>-2 -2</pos>
+    <pos>0.322916666666667 0</pos>
+   <origin>0 0</origin>
+   <zIndex>-2</zIndex>
  </video>
 
  <image name="md_image">
       <origin>0 0</origin>
-      <pos>0.322916666666667 -0.3</pos>
+      <pos>0.322916666666667 0</pos>
       <maxSize>0.677083333333333 2</maxSize>
 
    <zIndex>8</zIndex>
@@ -38,8 +40,8 @@
  <video name="backgroundvideo" extra="true">
   <path>{game:video}</path>
   <origin>0 0</origin>
- <pos>0.322916666666667 -0.3</pos>
-      <maxSize>0.677083333333333 2</maxSize>
+ <pos>0.322916666666667 0</pos>
+     <maxSize>0.677083333333333 2</maxSize>
 
   <effect>none</effect>
   <zIndex>9</zIndex>
@@ -78,7 +80,9 @@
 
   <video name="md_video">
    <delay>999999999999</delay>
-   <pos>-2 -2</pos>
+   <pos>0 -0.3</pos>
+   <zIndex>-2</zIndex>
+   <origin>0 0</origin>
  </video>
 
  <image name="md_image">
