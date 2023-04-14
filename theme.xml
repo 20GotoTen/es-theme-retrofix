@@ -979,8 +979,8 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 <video name="md_video">
 			<linearSmooth>true</linearSmooth>	
 			<pos>0 -0.25</pos>
-			<size>1 1</size>
-			<minSize>1 0</minSize>
+			<!--      <size>1 1</size>      -->
+			<maxSize>1 2</maxSize>
 			<zIndex>6</zIndex>
 			<origin>0 0</origin>
 			<delay ifSubset="systemVideoDelay:1 Second">2</delay>
@@ -1732,7 +1732,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<pos>0.3828125 0.5981481481481481</pos>
 			<!--<pos if="{system.theme} == 'psp' || {system.theme} == 'wii' ">1 0</pos>-->
 
-      <maxSize>0.6171875 2</maxSize>
+      <maxSize>0.6171875 1</maxSize>
 			<zIndex>6</zIndex>
 			<delay ifSubset="systemVideoDelay:1 Second">1</delay>
 			<delay ifSubset="systemVideoDelay:2 Seconds">2</delay>
