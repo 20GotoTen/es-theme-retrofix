@@ -28,8 +28,19 @@ Examples:
 ![Detailed view](https://github.com/20GotoTen/es-theme-retrofix/blob/master/_inc/screenshot/Detailed.png "Detailed view")
 - Detailed view: https://youtu.be/cFv1xhQ5-xM
 
+
+![Detailed + Boxart view](https://github.com/20GotoTen/es-theme-retrofix/blob/master/_inc/screenshot/Detailed%20Boxart.png "Detailed + Boxart view")
+
+
 ![Boxes view](https://github.com/20GotoTen/es-theme-retrofix/blob/master/_inc/screenshot/Boxes.png "Boxes view")
 - Boxes view: https://youtu.be/XLuyA9z8LYA
+
+![Boxes + Info view](https://github.com/20GotoTen/es-theme-retrofix/blob/master/_inc/screenshot/Boxes+Info.png "Boxes + Info view")
+
+
+![Grid view](https://github.com/20GotoTen/es-theme-retrofix/blob/master/_inc/screenshot/Grid.png "Grid view")
+
+
 
 Supported themes in version 2.0:
 --------------------------------

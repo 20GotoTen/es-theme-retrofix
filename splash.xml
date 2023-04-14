@@ -17,7 +17,7 @@ GitHub:      	https://github.com/
 		</splash>
 
 		<image name="background">
-			<path>./_inc/assets/background.png</path>
+			<path>./_inc/assets/splashbg.png</path>
 		</image>
 
 		<image name="progressbarbg" extra="true">

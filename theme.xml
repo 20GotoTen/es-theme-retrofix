@@ -30,12 +30,14 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 
 	<subset name="mainVideoDelay" displayName="${subset.mainVideoDelay}">
+		<include name="1 Second"/>
 		<include name="2 Seconds"/>
 		<include name="5 Seconds"/>
 		<include name="Video off"/>
 	</subset>
 
 	<subset name="systemVideoDelay" displayName="${subset.systemVideoDelay}">
+		<include name="1 Second"/>
 		<include name="2 Seconds"/>
 		<include name="5 Seconds"/>
 		<include name="Video off"/>
@@ -84,7 +86,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 		<image name="batologo" extra="static">
 			<origin>1 0</origin>
-			<pos ifSubset="hideLogo:Show logo">0.94 0.07</pos>
+			<pos ifSubset="hideLogo:Show logo">0.9463541666666667 0.07</pos>
 			<pos ifSubset="hideLogo:Hide logo">-2 -2</pos>
 			<size>0.0510416666666667 0.014462962962963</size>
 			<path>./_inc/icons/batocera.svg</path>    
@@ -125,7 +127,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<!-- Battery and WIfi icons -->
 
 		<batteryIndicator name="batteryIndicator">
-			<pos>0.91 0.036</pos>
+			<pos>0.9155 0.036</pos>
 			<origin>1 1</origin>
 			<color>ffffff</color>
 		</batteryIndicator>
@@ -246,6 +248,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<pos>0.229166666666667 0</pos>
 			<origin>0 0</origin>
 			<size>0.770833333333333 1</size>
+			<delay ifSubset="mainVideoDelay:1 Second">1</delay>
 			<delay ifSubset="mainVideoDelay:2 Seconds">2</delay>
 			<delay ifSubset="mainVideoDelay:5 Seconds">5</delay>
 			<delay ifSubset="mainVideoDelay:Video off">9999</delay>
@@ -365,7 +368,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<image name="system_help" extra="static">
 			<path>./_inc/assets/syshelp.svg</path>
 			<origin>1 1</origin>
-			<pos>0.94 0.9462962962962963</pos>
+			<pos>0.9463541666666667 0.9462962962962963</pos>
 			<maxSize>1 0.05</maxSize>
 			<zIndex>200</zIndex>
 			<linearSmooth>true</linearSmooth>
@@ -431,13 +434,13 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 
 
-		<image name="thumbnailFallback" extra="true">
+	<!--	<image name="thumbnailFallback" extra="true">
 			<pos>0 0</pos>
 			<size>1 1</size>
 			<zIndex>5</zIndex>
 			<origin>0 0</origin>
 			<path>./_inc/assets/default.png</path>
-		</image>
+		</image>-->
 
 		<image name="scanlines" extra="true">
 			<path ifSubset="scanlines:No scanlines"/>
@@ -465,7 +468,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<!-- help system image element -->
 
 		<image name="list_help" extra="true">
-			<path>./_inc/assets/tilehelp.svg</path>
+			<path>./_inc/assets/detailhelp.svg</path>
 			<origin>0.5 0</origin>
 			<pos>0.66 0.91</pos>
 			<maxSize>0.546875 0.05</maxSize>
@@ -661,11 +664,11 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		</text>
 
 		<video name="md_video">
-			<pos>0.322916666666667 0</pos>
+			<pos>0.322916666666667 0.6740740740740741</pos>
 			<maxSize>0.677083333333333 2</maxSize>
 			<zIndex>9</zIndex>
-			<origin>0 0</origin>
-			<delay>1</delay>
+			<origin>0 1</origin>
+			<delay ifSubset="systemVideoDelay:1 Second">1</delay>
 			<delay ifSubset="systemVideoDelay:2 Seconds">2</delay>
 			<delay ifSubset="systemVideoDelay:5 Seconds">5</delay>
 			<delay ifSubset="systemVideoDelay:Video off">9999</delay>
@@ -798,9 +801,15 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 
 		<image name="list_help" extra="true">
+			<path>./_inc/assets/detailboxhelp.svg</path>
 			<origin>0 0</origin>
 			<pos>0.494791666666667 0.91</pos>
 		</image>
+
+
+
+
+
 
 	</customView>
 
@@ -812,13 +821,13 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 	<view name="grid">
 
-<image name="thumbnailFallback" extra="true">
+<!--<image name="thumbnailFallback" extra="true">
 			<pos>0 0</pos>
 			<size>1 1</size>
 			<zIndex>5</zIndex>
 			<origin>0 0</origin>
 			<path>./_inc/assets/default.png</path>
-		</image>
+		</image>-->
 
 		<image name="scanlines" extra="true">
 			<path ifSubset="scanlines:No scanlines"/>
@@ -861,16 +870,16 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<image name="grid_help" extra="true">
 			<origin>1 1</origin>
 			<path>./_inc/assets/gridhelp.svg</path>
-			<pos>0.94 0.920</pos>
+			<pos>0.9463541666666667 0.9601851851851852</pos>
 			<maxSize>0.546875 0.05</maxSize>
 			<zIndex>100</zIndex>
 		</image>
 
 
-		<!-- this is the tint image overlay that provides clarity over the video BG - originally used tileoverlay.png-->
+		<!-- this is the tint image overlay that provides clarity over the video BG -->
 
 		<image name="gridOverlay" extra="true">
-			<path>./_inc/assets/boxesOverlay.png</path>
+			<path>./_inc/assets/gridoverlay.png</path>
 			<size>1 1</size>
 			<pos>0 0</pos>
 			<origin>0 0</origin>
@@ -878,8 +887,8 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		</image>
 
 		<imagegrid name="gamegrid">
-			<pos>0.049 0.199074074074074</pos>
-			<size>0.91 0.618</size>
+			<pos>0.0458333333333333 0.199074074074074</pos>
+			<size>0.9083333333333333 0.618</size>
 			<!-- define base grid -->
 			<autoLayout>7 2</autoLayout>
 			<!-- define grid layouts per system -->
@@ -935,7 +944,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 
 		<text name="md_name">
-			<pos>0.94 0.14</pos>
+			<pos>0.9463541666666667 0.14</pos>
 			<size>0.720833333333333 0.055555555555556</size>
 			<origin>1 1</origin>
 			<alignment>right</alignment>
@@ -953,7 +962,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 
 		<text name="md_publisher">
-			<pos>0.94 0.17</pos>
+			<pos>0.9463541666666667 0.17</pos>
 			<origin>1 1</origin>
 			<size>0.4 0.034259259259259</size>
 			<color>B3B3B3</color>
@@ -966,13 +975,15 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<pos>-2 -2</pos>
 		</text>
 
-		<video name="md_video">
+
+<video name="md_video">
 			<linearSmooth>true</linearSmooth>	
 			<pos>0 -0.25</pos>
 			<size>1 1</size>
 			<minSize>1 0</minSize>
 			<zIndex>6</zIndex>
 			<origin>0 0</origin>
+			<delay ifSubset="systemVideoDelay:1 Second">2</delay>
 			<delay ifSubset="systemVideoDelay:2 Seconds">2</delay>
 			<delay ifSubset="systemVideoDelay:5 Seconds">5</delay>
 			<delay ifSubset="systemVideoDelay:Video off">9999</delay>
@@ -983,17 +994,12 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		</video>
 
 
+
 		<video name="md_video"  if="{system.theme} == 'retrobat' || {system.theme} == 'flatpak'|| {system.theme} == 'imageviewer'">
 			<showSnapshotNoVideo>false</showSnapshotNoVideo>
 			<showSnapshotDelay>false</showSnapshotDelay>
 			<effect>none</effect>
 		</video>
-
-
-
-
-
-
 
 
 		<!-- ----- Button positions ------ -->
@@ -1027,6 +1033,12 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		</image>
 
 	</view>
+
+
+
+
+
+
 
 	<!-- ------- Boxes layout ------------ -->
 
@@ -1104,7 +1116,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<!-- this is a background tint replacement for the one set by the grid view -->
 
 		<image name="gridOverlay" extra="true">
-			<path>./_inc/assets/boxesOverlay.png</path>
+			<path>./_inc/assets/tilesoverlay.png</path>
 			<size>1 1</size>
 			<pos>1 1</pos>
 			<origin>1 1</origin>
@@ -1229,11 +1241,13 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 		<image name="grid_help" extra="true">
 			<path>./_inc/assets/tilehelp.svg</path>
-			<origin>0.5 0</origin>
-			<pos>0.5 0.918518518518519</pos>
+			<origin>1 1</origin>
+			<pos>0.9463541666666667 0.9601851851851852</pos>
 			<maxSize>0.546875 0.05</maxSize>
 			<zIndex>100</zIndex>
 		</image>
+
+
 
 		<image name="primaryBtn" extra="true">
 			<linearSmooth>true</linearSmooth>	
@@ -1286,7 +1300,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<imageSource>image</imageSource>
 			<margin>0.00625 0.011111111111111</margin>
 			<size>0.895833333333333 0.342592592592593</size>
-			<pos>0.052083333333333 0.537037037037037</pos>
+			<pos>0.052083333333333 0.562037037037037</pos>
 			<animateSelection>true</animateSelection>
 			<zIndex>10</zIndex>
 			<scrollSound>./_inc/sound/cursor.wav</scrollSound>
@@ -1295,21 +1309,22 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 		<image name="grid_help" extra="true">
 			<path>./_inc/assets/gridhelp.svg</path>
-			<origin>0.5 0</origin>
-			<pos>0.5 0.918518518518519</pos>
+			<origin>1 1</origin>
+			<pos>0.9463541666666667 0.5175925925925926</pos>
 			<maxSize>0.546875 0.05</maxSize>
 			<zIndex>100</zIndex>
 		</image>
 
+
 		<image name="primaryBtn" extra="true">
 			<linearSmooth>true</linearSmooth>	
-			<pos>0.052083333333333 0.34537037037037</pos>
+			<pos>0.052083333333333 0.3546481481481481</pos>
 			<size>0.036458333333333 0.122222222222222</size>
 			<zIndex>100</zIndex>
 		</image>
 
 		<image name="selectTxt" extra="true">
-			<pos>0.052083333333333 0.474</pos>
+			<pos>0.052083333333333 0.4828518518518519</pos>
 			<size>0.036458333333333 0.02037037037037</size>
 			<path>./_inc/assets/selectTxt.png</path>
 			<zIndex>100</zIndex>
@@ -1317,25 +1332,27 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 		<image name="secondaryBtn" extra="true">
 			<linearSmooth>true</linearSmooth>	
-			<pos>0.091666666666667 0.34537037037037</pos>
+			<pos>0.091666666666667 0.3546481481481481</pos>
 			<size>0.036458333333333 0.122222222222222</size>
 			<zIndex>100</zIndex>
 		</image>
 
 
 		<image name="backTxt" extra="true">
-			<pos>0.091666666666667 0.474</pos>
+			<pos>0.091666666666667 0.4828518518518519</pos>
 			<size>0.036458333333333 0.02037037037037</size>
 			<path>./_inc/assets/backTxt.png</path>
 			<zIndex>100</zIndex>
 		</image>
 
-		<!--<video name="md_video">
+		<video name="md_video">
 
 			<origin>0.5 0</origin>
-			<pos>0.5 -0.3</pos>
-			<size>1 1</size>
+			<pos>0.5 -0.15</pos>
+			<!--<size>1 1</size>-->
+			      <maxSize>1 2</maxSize>
 			<zIndex>6</zIndex>
+			<delay ifSubset="systemVideoDelay:1 Second">1</delay>
 			<delay ifSubset="systemVideoDelay:2 Seconds">2</delay>
 			<delay ifSubset="systemVideoDelay:5 Seconds">5</delay>
 			<delay ifSubset="systemVideoDelay:Video off">9999</delay>
@@ -1343,26 +1360,11 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<showSnapshotDelay>true</showSnapshotDelay>
 			<loops>10</loops>
 			<effect>none</effect>
+			<linearSmooth>true</linearSmooth>
 		</video>
 
 
 
-
-<video name="md_video">
-			<pos>0 -0.15</pos>
-			<size>1 1</size>
-			<minSize>1 0</minSize>
-			<zIndex>6</zIndex>
-			<origin>0 0</origin>
-			<delay ifSubset="systemVideoDelay:2 Seconds">2</delay>
-			<delay ifSubset="systemVideoDelay:5 Seconds">5</delay>
-			<delay ifSubset="systemVideoDelay:Video off">9999</delay>
-			<showSnapshotNoVideo>true</showSnapshotNoVideo>
-			<showSnapshotDelay>true</showSnapshotDelay>
-			<loops>10</loops>
-			<effect>none</effect>
-		</video>
--->
 
 
 
@@ -1391,13 +1393,13 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			<roundCorners>0</roundCorners>
 		</image>
 
-		<image name="thumbnailFallback" extra="true">
+		<!--<image name="thumbnailFallback" extra="true">
 			<pos>0 0</pos>
 			<size>1 1</size>
 			<zIndex>5</zIndex>
 			<origin>0 0</origin>
 			<path>./_inc/assets/default.png</path>
-		</image>
+		</image>-->
 
 		<image name="gridtile.marquee">
 			<color>dadadaff</color>
@@ -1560,6 +1562,195 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<text name="logoText">
 			<size>0.16875 0.215740740740741</size>
 		</text>
+
+	</customView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<customView name="Boxes+Info" inherits="grid">
+
+
+		<image name="md_marquee">
+			<pos>0.5692708333333333 0.5416666666666667</pos>
+			<origin>0 1</origin>
+			<maxSize>0.20 0.15</maxSize>
+			<zIndex>100</zIndex>
+		</image>
+
+
+		<text name="md_name">
+			<pos>-2 -2</pos>
+		</text>
+
+
+		<imagegrid name="gamegrid">
+			<pos>0.0458333333333333 0.199074074074074</pos>
+			<size>0.4947916666666667 0.618</size>
+			<!-- define base grid -->
+			<autoLayout>4 2</autoLayout>
+			<!-- define grid layouts per system -->
+			<autoLayout if="{system.theme} == 'n64' || {system.theme} == 'sfc' || {system.theme} == 'gameandwatch' || {system.theme} == 'scv'  || {system.theme} == 'snes'  || {system.theme} == 'n64dd' ">3 3</autoLayout>
+
+
+			<autoLayout if="{system.theme} == 'psp'">4 2</autoLayout>
+
+			<!-- square boxes -->
+			<autoLayout if="{system.theme} == 'supergrafx' || {system.theme} == 'pce-cd'  || {system.theme} == 'pcengine'  || {system.theme} == 'psx' || {system.theme} == 'neogeocd' || {system.theme} == 'dreamcast' || {system.theme} == '3do' || {system.theme} == 'gba' || {system.theme} == 'gb' || {system.theme} == 'gb2players'|| {system.theme} == 'cdi'|| {system.theme} == 'nds' || {system.theme} == 'fds' || {system.theme} == 'virtualboy' || {system.theme} == 'gbc' || {system.theme} == 'gbc2players' || {system.theme} == '3ds'  || {system.theme} == 'segacd'  ">3 2</autoLayout>
+		</imagegrid>
+
+
+		<image name="meta-genre" extra="true">
+			<origin>0 0</origin>
+			<pos>0.5692708333333333 0.5805555555555556</pos>
+			<size>0.0625 0.0740740740740741</size>
+			<path>./_inc/assets/meta-genre.svg</path>
+			<path>./${system.theme}/_inc/meta-genre.svg</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+		</image>
+
+
+		<image name="dividers" extra="true">
+			<origin>0 0</origin>
+			<pos>0.6526041666666667 0.5805555555555556</pos>
+			<size>0.2098958333333333 0.0462962962962963</size>
+			<path>./_inc/assets/dividers.svg</path>
+			<zIndex>99</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+
+
+
+		<image name="meta-players" extra="true">
+			<origin>0 0</origin>
+			<pos>0.6739583333333333 0.5805555555555556</pos>
+			<size>0.0625 0.0740740740740741</size>
+			<path>./_inc/assets/meta-players.svg</path>
+			<path>./${system.theme}/_inc/meta-players.svg</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+		</image>
+
+
+		<image name="meta-publisher" extra="true">
+			<origin>0 0</origin>
+			<pos>0.7786458333333333 0.5805555555555556</pos>
+			<size>0.0625 0.0740740740740741</size>
+			<path>./_inc/assets/meta-publisher.svg</path>
+			<path>./${system.theme}/_inc/meta-publisher.svg</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+		</image>
+
+
+		<image name="meta-date" extra="true">
+			<origin>0 0</origin>
+			<pos>0.8833333333333333 0.5805555555555556</pos>
+			<size>0.0625 0.0740740740740741</size>
+			<path>./_inc/assets/meta-date.svg</path>
+			<path>./${system.theme}/_inc/meta-date.svg</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+			<alignment>center</alignment>
+		</image>
+
+
+		<text name="md_genre">
+			<origin>0 0</origin>
+			<pos>0.5692708333333333 0.637962962962963</pos>
+			<size>0.0625 0.034259259259259</size>
+			<alignment>center</alignment>
+			<color>B3B3B3</color>
+			<fontSize>0.014814814814815</fontSize>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+		</text> 
+
+
+		<text name="md_players">
+			<origin>0 0</origin>
+			<pos>0.6739583333333333 0.637962962962963</pos>
+			<size>0.0625 0.034259259259259</size>
+			<alignment>center</alignment>
+			<color>B3B3B3</color>
+			<fontSize>0.014814814814815</fontSize>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+		</text>
+
+
+		<text name="md_publisher">
+			<origin>0 0</origin>
+			<pos>0.7786458333333333 0.637962962962963</pos>
+			<size>0.0625 0.034259259259259</size>
+			<color>B3B3B3</color>
+			<fontSize>0.014814814814815</fontSize>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+			<alignment>center</alignment>
+		</text>
+
+
+		<datetime name="md_releasedate">
+			<origin>0 0</origin>
+			<pos>0.8833333333333333 0.637962962962963</pos>
+			<size>0.0625 0.034259259259259</size>
+			<color>B3B3B3</color>
+			<fontSize>0.014814814814815</fontSize>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+			<format>%Y</format>
+			<alignment>center</alignment>
+		</datetime>
+
+
+		<text name="md_description">
+			<color>ffffff</color>
+			<fontPath>./_inc/fonts/RedHatDisplay-Regular.ttf</fontPath>
+			<fontSize>0.016</fontSize>
+			<alignment>left</alignment>
+			<size>0.336458333333333 0.094444444444444</size>
+			<pos>0.5692708333333333 0.6925925925925926</pos>
+		</text>
+
+
+
+		<video name="md_video">
+			<linearSmooth>true</linearSmooth>	
+			<origin>0 1</origin>
+			<pos>0.3828125 0.5981481481481481</pos>
+			<!--<pos if="{system.theme} == 'psp' || {system.theme} == 'wii' ">1 0</pos>-->
+
+      <maxSize>0.6171875 2</maxSize>
+			<zIndex>6</zIndex>
+			<delay ifSubset="systemVideoDelay:1 Second">1</delay>
+			<delay ifSubset="systemVideoDelay:2 Seconds">2</delay>
+			<delay ifSubset="systemVideoDelay:5 Seconds">5</delay>
+			<delay ifSubset="systemVideoDelay:Video off">9999</delay>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>true</showSnapshotDelay>
+			<loops>10</loops>
+			<effect>none</effect>
+		</video>
+
+		<image name="gridOverlay" extra="true">
+			<path>./_inc/assets/boxDetailOverlay.png</path>
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<zIndex>8</zIndex>
+		</image>
 
 	</customView>
 

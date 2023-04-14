@@ -366,6 +366,75 @@
 
 
 
+<!-- ------ boxes + info routines ------ -->
+
+
+		<customView name="Boxes+Info" inherits="grid">
+
+		<image name="dividers" extra="true">
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="300" duration="500" mode="easeInOut"/>
+				<animation property="y" from="0.67" begin="200" duration="700" mode="easeOut"/>
+			</storyboard>
+		</image>
+
+		<image name="meta-genre, meta-players, meta-publisher, meta-date" extra="true">
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="300" duration="500" mode="easeInOut"/>
+				<animation property="y" from="0.67" begin="200" duration="700" mode="easeOut"/>
+			</storyboard>
+		</image>
+
+
+		<image name="md_marquee">
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="200"  duration="500" mode="easeInOut"/>
+				<animation property="y" from="0.60" begin="200" duration="700" mode="easeOut"/>
+			</storyboard>
+		</image>
+
+
+		<text name="md_description">
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="300" duration="600" mode="easeInOut"/>
+				<animation property="y" from="0.80" begin="300" duration="600" mode="easeOut"/>
+			</storyboard>
+		</text>
+
+
+		<text name="md_genre, md_players, md_publisher">
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="600" mode="easeInOut"/>
+			</storyboard>
+		</text>
+
+
+		<datetime name="md_releasedate">
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="500" begin="600" mode="easeInOut"/>
+			</storyboard>
+		</datetime>
+
+
+
+
+
+
+
+
+		</customView>
+
+
+
+
+
+
 
 	<!-- --------------- Tiles view routines --------------- -->
 
@@ -486,13 +555,15 @@
 		</imagegrid>
 
 		<image name="grid_help" extra="true">	
-			<storyboard>		
+			<storyboard>
 				<animation property="opacity" from="0" to="1" duration="800" mode="easeOut"/>
-				<animation property="y" from="1" duration="800" mode="easeOut"/>
+				<animation property="y" from="0.6092592592592593" duration="800" mode="easeOut"/>
 			</storyboard>
 		</image>
 
 	</customView>
+
+
 
 
 
