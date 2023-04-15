@@ -28,6 +28,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 	<subset.menuFanArt>Show fan art on Main Menu</subset.menuFanArt>
 </variables>
 
+
 <subset name="mainVideoDelay" displayName="${subset.mainVideoDelay}">
 	<include name="1 Second"/>
 	<include name="2 Seconds"/>
@@ -992,7 +993,6 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<zIndex>100</zIndex>
 	</image>
 
-
 	<image name="secondaryBtn" extra="true">
 		<linearSmooth>true</linearSmooth>	
 		<pos>0.091666666666667 0.7972222222222222</pos>
@@ -1009,21 +1009,10 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 </view>
 
-	<image name="secondaryBtn" extra="true">
-		<linearSmooth>true</linearSmooth>	
-		<pos>0.091666666666667 0.7972222222222222</pos>
-		<size>0.036458333333333 0.122222222222222</size>
-		<zIndex>100</zIndex>
-	</image>
 
-	<image name="backTxt" extra="true">
-		<pos>0.0909583333333333 0.925</pos>
-		<size>0.036458333333333 0.02037037037037</size>
-		<path>./_inc/assets/backTxt.png</path>
-		<zIndex>100</zIndex>
-	</image>
 
-</view>
+
+
 
 <!-- ------- Boxes layout ------------ -->
 
@@ -1069,7 +1058,6 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 			|| {system.theme} == 'pcengine'	
 			|| {system.theme} == 'amigacdtv'
 			|| {system.theme} == 'segacd'
-			|| {system.theme} == 'supervision'
 			|| {system.theme} == 'gb'
 			|| {system.theme} == 'gb2players'
 			|| {system.theme} == 'gbc'
@@ -1574,8 +1562,6 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 
 		<autoLayout if="{system.theme} == 'ngpc' || {system.theme} == 'ngp'">3 2</autoLayout>
-		<autoLayout if="{system.theme} == 'advision'">4 1</autoLayout>
-
 
 		<!-- square boxes -->
 		<autoLayout if="{system.theme} == 'supergrafx' || {system.theme} == 'pce-cd'  || {system.theme} == 'pcengine'  || {system.theme} == 'psx' || {system.theme} == 'neogeocd' || {system.theme} == 'dreamcast' || {system.theme} == '3do' || {system.theme} == 'gba' || {system.theme} == 'gb' || {system.theme} == 'gb2players'|| {system.theme} == 'cdi'|| {system.theme} == 'nds' || {system.theme} == 'fds' || {system.theme} == 'virtualboy' || {system.theme} == 'gbc' || {system.theme} == 'gbc2players' || {system.theme} == '3ds'  || {system.theme} == 'segacd'   || {system.theme} == 'atarilynx' || {system.theme} == 'gx4000'">3 2</autoLayout>
@@ -1637,158 +1623,6 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<alignment>center</alignment>
 	</image>
 
-
-	<datetime name="md_releasedate">
-		<origin>0.5 0</origin>
-		<pos>0.65703125 0.475</pos>
-		<size>0.0625 0.034259259259259</size>
-		<color>B3B3B3</color>
-		<fontSize>0.014814814814815</fontSize>
-		<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
-		<format>%Y</format>
-		<alignment>center</alignment>
-	</datetime>
-
-
-	<image name="dividers" extra="true">
-		<origin>0.5 0</origin>
-		<pos>0.5 0.4157407407407407</pos>
-		<size>0.2098958333333333 0.0462962962962963</size>
-		<path>./_inc/assets/dividers.svg</path>
-		<zIndex>99</zIndex>
-		<linearSmooth>true</linearSmooth>
-	</image>
-
-
-	<text name="md_developer">
-		<pos>-2 -2</pos>
-	</text>
-
-	<text name="md_description">
-		<color>ffffff</color>
-		<fontPath>./_inc/fonts/RedHatDisplay-Regular.ttf</fontPath>
-		<fontSize>0.016</fontSize>
-		<alignment>center</alignment>
-		<size>0.336458333333333 0.094444444444444</size>
-		<pos>0.332291666666667 0.287037037037037</pos>
-	</text> 
-
-	<text name="gridtile">
-		<visible>true</visible>
-		<pos>0 0</pos>
-		<size>1 1</size>
-		<fontPath>./../_inc/fonts/RedHatDisplay-Bold.ttf</fontPath>
-		<fontSize>0.018</fontSize>
-		<lineSpacing>1.15</lineSpacing>
-		<alignment>center</alignment>
-		<singleLineScroll>false</singleLineScroll>
-		<padding>0 0</padding>      
-		<backgroundColor>00000000</backgroundColor>
-		<glowSize>3</glowSize>
-		<visible>false</visible>
-	</text>
-
-	<text name="logoText">
-		<size>0.16875 0.215740740740741</size>
-	</text>
-
-</customView>
-
-
-
-
-
-
-
-
-<!-- ------- Boxes and Info layout ------------ -->
-
-<customView name="Boxes+Info" inherits="grid">
-
-	<image name="md_marquee">
-		<pos>0.5692708333333333 0.5416666666666667</pos>
-		<origin>0 1</origin>
-		<maxSize>0.20 0.15</maxSize>
-		<zIndex>100</zIndex>
-	</image>
-
-
-	<text name="md_name">
-		<pos>-2 -2</pos>
-	</text>
-
-
-	<imagegrid name="gamegrid">
-		<pos>0.0458333333333333 0.199074074074074</pos>
-		<size>0.4947916666666667 0.618</size>
-		<!-- define base grid -->
-		<autoLayout>4 2</autoLayout>
-
-		<!-- define grid layouts per system -->
-		<autoLayout if="{system.theme} == 'n64' || {system.theme} == 'sfc' || {system.theme} == 'gameandwatch' || {system.theme} == 'scv'  || {system.theme} == 'snes'  || {system.theme} == 'n64dd'">3 3</autoLayout>
-
-
-		<autoLayout if="{system.theme} == 'ngpc' || {system.theme} == 'ngp'">3 2</autoLayout>
-
-		<!-- square boxes -->
-		<autoLayout if="{system.theme} == 'supergrafx' || {system.theme} == 'pce-cd'  || {system.theme} == 'pcengine'  || {system.theme} == 'psx' || {system.theme} == 'neogeocd' || {system.theme} == 'dreamcast' || {system.theme} == '3do' || {system.theme} == 'gba' || {system.theme} == 'gb' || {system.theme} == 'gb2players'|| {system.theme} == 'cdi'|| {system.theme} == 'nds' || {system.theme} == 'fds' || {system.theme} == 'virtualboy' || {system.theme} == 'gbc' || {system.theme} == 'gbc2players' || {system.theme} == '3ds'  || {system.theme} == 'segacd'   || {system.theme} == 'atarilynx' || {system.theme} == 'gx4000'">3 2</autoLayout>
-	</imagegrid>
-
-
-	<image name="meta-genre" extra="true">
-		<origin>0 0</origin>
-		<pos>0.5692708333333333 0.5805555555555556</pos>
-		<size>0.0625 0.0740740740740741</size>
-		<path>./_inc/assets/meta-genre.svg</path>
-		<path>./${system.theme}/_inc/meta-genre.svg</path>
-		<linearSmooth>true</linearSmooth>
-		<zIndex>99</zIndex>
-	</image>
-
-
-	<image name="dividers" extra="true">
-		<origin>0 0</origin>
-		<pos>0.6526041666666667 0.5805555555555556</pos>
-		<size>0.2098958333333333 0.0462962962962963</size>
-		<path>./_inc/assets/dividers.svg</path>
-		<zIndex>99</zIndex>
-		<linearSmooth>true</linearSmooth>
-	</image>
-
-
-
-	<image name="meta-players" extra="true">
-		<origin>0 0</origin>
-		<pos>0.6739583333333333 0.5805555555555556</pos>
-		<size>0.0625 0.0740740740740741</size>
-		<path>./_inc/assets/meta-players.svg</path>
-		<path>./${system.theme}/_inc/meta-players.svg</path>
-		<linearSmooth>true</linearSmooth>
-		<zIndex>99</zIndex>
-	</image>
-
-
-	<image name="meta-publisher" extra="true">
-		<origin>0 0</origin>
-		<pos>0.7786458333333333 0.5805555555555556</pos>
-		<size>0.0625 0.0740740740740741</size>
-		<path>./_inc/assets/meta-publisher.svg</path>
-		<path>./${system.theme}/_inc/meta-publisher.svg</path>
-		<linearSmooth>true</linearSmooth>
-		<zIndex>99</zIndex>
-	</image>
-
-
-	<image name="meta-date" extra="true">
-		<origin>0 0</origin>
-		<pos>0.8833333333333333 0.5805555555555556</pos>
-		<size>0.0625 0.0740740740740741</size>
-		<path>./_inc/assets/meta-date.svg</path>
-		<path>./${system.theme}/_inc/meta-date.svg</path>
-		<linearSmooth>true</linearSmooth>
-		<zIndex>99</zIndex>
-		<alignment>center</alignment>
-	</image>
 
 	<text name="md_genre">
 		<origin>0 0</origin>
