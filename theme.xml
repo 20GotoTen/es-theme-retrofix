@@ -1562,6 +1562,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 
 		<autoLayout if="{system.theme} == 'ngpc' || {system.theme} == 'ngp'">3 2</autoLayout>
+		<autoLayout if="{system.theme} == 'advision'">4 1</autoLayout>
 
 		<!-- square boxes -->
 		<autoLayout if="{system.theme} == 'supergrafx' || {system.theme} == 'pce-cd'  || {system.theme} == 'pcengine'  || {system.theme} == 'psx' || {system.theme} == 'neogeocd' || {system.theme} == 'dreamcast' || {system.theme} == '3do' || {system.theme} == 'gba' || {system.theme} == 'gb' || {system.theme} == 'gb2players'|| {system.theme} == 'cdi'|| {system.theme} == 'nds' || {system.theme} == 'fds' || {system.theme} == 'virtualboy' || {system.theme} == 'gbc' || {system.theme} == 'gbc2players' || {system.theme} == '3ds'  || {system.theme} == 'segacd'   || {system.theme} == 'atarilynx' || {system.theme} == 'gx4000'">3 2</autoLayout>
