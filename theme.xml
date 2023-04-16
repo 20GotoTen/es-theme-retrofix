@@ -1756,6 +1756,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 <subset name="UImode" displayName="${subset.UImode}">
 	<include name="Grey mode (default)"/>
 	<include name="Darker mode">./_inc/system/darkmode.xml</include>
+	<include name="Black mode">./_inc/system/blackmode.xml</include>
 
 </subset>
 

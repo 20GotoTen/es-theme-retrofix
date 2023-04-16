@@ -20,8 +20,8 @@
     <origin>0 0 </origin>
     <pos>0 0</pos>
     <size>1 1</size>
-    <path>./_inc/assets/splashloading.svg</path>
-    <zIndex>0</zIndex>
+    <path>./_inc/assets/splashloading.png</path>
+    <zIndex>1</zIndex>
   </image>
 
   <text name="label">
