@@ -1561,6 +1561,9 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<autoLayout if="{system.theme} == 'n64' || {system.theme} == 'sfc' || {system.theme} == 'gameandwatch' || {system.theme} == 'scv'  || {system.theme} == 'snes'  || {system.theme} == 'n64dd'">3 3</autoLayout>
 
 
+<autoLayout if="{system.theme} == 'sdlpop'">1 1</autoLayout>
+
+
 		<autoLayout if="{system.theme} == 'ngpc' || {system.theme} == 'ngp'">3 2</autoLayout>
 		<autoLayout if="{system.theme} == 'advision'">4 1</autoLayout>
 
