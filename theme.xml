@@ -1691,7 +1691,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<pos>0.3828125 0.5981481481481481</pos>
 		<pos if="{system.theme} == 'vectrex'">0.42 0.90</pos>
 		<pos if="{system.theme} == 'nds'">0.3828125 -0.2</pos>
-		<maxSize>0.6171875 1</maxSize>
+		<maxSize>0.6171875 2</maxSize>
 		<maxSize if="{system.theme} == 'vectrex' || {system.theme} == 'nds'">0.6171875 3</maxSize>
 		<zIndex>6</zIndex>
 		<delay ifSubset="systemVideoDelay:1 Second">1</delay>
