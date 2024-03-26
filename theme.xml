@@ -1715,6 +1715,320 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 
 </customView>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ------- Vertical Boxes layout ------------ -->
+
+	<customView name="Vertical Boxes" inherits="grid">
+
+		<video name="md_video">
+			<pos>0 -0.15</pos>
+			<size>1</size>
+			<zIndex>6</zIndex>
+			<origin>0 0</origin>
+			<delay ifSubset="systemVideoDelay:2 Seconds">2</delay>
+			<delay ifSubset="systemVideoDelay:5 Seconds">5</delay>
+			<delay ifSubset="systemVideoDelay:Video off">9999</delay>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>true</showSnapshotDelay>
+			<loops>10</loops>
+			<effect>none</effect>
+		</video>
+
+	
+
+
+
+
+
+		<!-- Position of the boxes carousel -->
+
+		<imagegrid name="gamegrid">
+			<centerSelection>true</centerSelection>
+			<scrollLoop>true</scrollLoop>
+			<pos>0.09 -0.075</pos>
+			<size>0.45 1.15</size>
+			<margin>0 0</margin>
+
+			
+			<scrollDirection>vertical</scrollDirection>
+			<scrollSound>./_inc/sound/cursor.wav</scrollSound>
+
+			<autoLayout>1 3</autoLayout>
+			<autoLayoutSelectedZoom>1.7</autoLayoutSelectedZoom>
+
+<autoLayout if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'solarus'">1 5</autoLayout>
+
+<autoLayoutSelectedZoom if="{system.theme} == 'snes'||  {system.theme} == 'n64'">1.8</autoLayoutSelectedZoom>
+
+<autoLayoutSelectedZoom if="{system.theme} == 'solarus">1.2</autoLayoutSelectedZoom>
+
+<autoLayoutSelectedZoom if="{system.theme} == 'gbc'
+	|| {system.theme} == 'gbc2players'
+	|| {system.theme} == 'gba'
+	|| {system.theme} == 'nds'
+	|| {system.theme} == '3ds'	
+	|| {system.theme} == 'segacd'
+	|| {system.theme} == 'dreamcast'
+	|| {system.theme} == 'neogeocd'
+	|| {system.theme} == 'ngp'
+	|| {system.theme} == 'ngpc'
+	|| {system.theme} == 'psx'
+		|| {system.theme} == 'gx4000'
+	">1.4</autoLayoutSelectedZoom>
+
+			<autoLayoutSelectedZoom if="{system.theme} == 'cdi' || {system.theme} == '3do' ">1.4</autoLayoutSelectedZoom>
+			<autoLayoutSelectedZoom if="{system.theme} == '3do'">1.3</autoLayoutSelectedZoom>
+			<autoLayoutSelectedZoom if="{system.theme} == 'saturn' || {system.theme} == 'psp'">1.9</autoLayoutSelectedZoom>
+
+
+
+
+
+		</imagegrid>
+
+
+
+		<gridtile name="default">
+			<size>0.177083333333333 1</size>
+			<backgroundCornerSize>0 0</backgroundCornerSize>
+			<padding>10 10</padding>
+			<imageColor>4e4e4eff</imageColor>
+		</gridtile>
+
+		<gridtile name="selected">
+			<size>0.177083333333333 1</size>
+			<backgroundCornerSize>0 0</backgroundCornerSize>
+			<imageColor>ffffffff</imageColor>
+		</gridtile>
+
+		<!-- this is a background tint replacement for the one set by the grid view -->
+
+		<image name="gridOverlay" extra="true">
+			<path>./_inc/assets/boxesOverlay.png</path>
+			<size>1 1</size>
+			<pos>1 1</pos>
+			<origin>1 1</origin>
+			<zIndex>8</zIndex>
+		</image>
+
+
+
+		<!-- Game meta assets -->
+
+		<image name="meta-genre" extra="true">
+			<origin>0 0</origin>
+			<pos>0.5 0.443037037037037</pos>
+			<size>0.0625 0.0740740740740741</size>
+					<path>./_inc/assets/meta-genre.svg</path>
+					<path>./${system.theme}/_inc/meta-genre.svg</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+		</image>
+
+
+
+
+
+
+
+
+
+
+		<text name="md_genre">
+			<origin>0 0</origin>
+			<pos>0.5 0.5013703703703704</pos>
+			<size>0.0625 0.034259259259259</size>
+			<alignment>center</alignment>
+			<color>B3B3B3</color>
+			<fontSize>0.014814814814815</fontSize>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+		</text> 
+
+
+		<image name="meta-players" extra="true">
+			<origin>0 0</origin>
+			<pos>0.6046875 0.443037037037037</pos>
+			<size>0.0625 0.0740740740740741</size>
+			<path>./_inc/assets/meta-players.svg</path>
+			<path>./${system.theme}/_inc/meta-players.svg</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+		</image>
+
+
+		<text name="md_players">
+			<origin>0 0</origin>
+			<pos>0.6046875 0.5013703703703704</pos>
+			<size>0.0625 0.034259259259259</size>
+			<alignment>center</alignment>
+			<color>B3B3B3</color>
+			<fontSize>0.014814814814815</fontSize>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+		</text>
+
+
+		<image name="meta-publisher" extra="true">
+			<origin>0 0</origin>
+			<pos>0.709375 0.443037037037037</pos>
+			<size>0.0625 0.0740740740740741</size>
+			<path>./_inc/assets/meta-publisher.svg</path>
+			<path>./${system.theme}/_inc/meta-publisher.svg</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+		</image>
+
+
+		<text name="md_publisher">
+			<origin>0 0</origin>
+			<pos>0.709375 0.5013703703703704</pos>
+			<size>0.0625 0.034259259259259</size>
+			<color>B3B3B3</color>
+			<fontSize>0.014814814814815</fontSize>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+			<alignment>center</alignment>
+		</text>
+
+
+		<image name="meta-date" extra="true">
+			<origin>0 0</origin>
+			<pos>0.8140625 0.443037037037037</pos>
+			<size>0.0625 0.0740740740740741</size>
+			<path>./_inc/assets/meta-date.svg</path>
+			<path>./${system.theme}/_inc/meta-date.svg</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+		</image>
+
+
+		<datetime name="md_releasedate">
+			<origin>0 0</origin>
+			<pos>0.8140625 0.5013703703703704</pos>
+			<size>0.0625 0.034259259259259</size>
+			<color>B3B3B3</color>
+			<fontSize>0.014814814814815</fontSize>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+			<format>%Y</format>
+			<alignment>center</alignment>
+		</datetime>
+
+
+		<image name="dividers" extra="true">
+			<origin>0 0</origin>
+			<pos>0.5833333333333333 0.4429444444444444</pos>
+			<size>0.2098958333333333 0.0462962962962963</size>
+			<path>./_inc/assets/dividers.svg</path>
+			<zIndex>99</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+
+
+		<text name="md_name">
+			<pos>0.5 0.3138888888888889</pos>
+			<size>0.3765625 0.1046296296296296</size>
+			<origin>0 0</origin>
+			<alignment>left</alignment>
+			<fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+			<fontSize>0.04</fontSize>
+			<color>ffffffff</color>
+			<zIndex>100</zIndex>
+			<verticalAlignment>bottom</verticalAlignment>
+			<lineSpacing>1.4</lineSpacing>
+		</text>
+
+
+		<text name="md_description">
+			<color>ffffff</color>
+			<fontPath>./_inc/fonts/RedHatDisplay-Regular.ttf</fontPath>
+			<fontSize>0.016</fontSize>
+			<alignment>left</alignment>
+			<size>0.3765625 0.094444444444444</size>
+			<pos>0.5 0.5546296296296296</pos>
+		</text>
+
+
+
+
+	<image name="grid_help" extra="true">
+		<origin>1 1</origin>
+		<path>./_inc/assets/gridhelp.svg</path>
+		<pos>0.9463541666666667 0.9601851851851852</pos>
+		<maxSize>0.546875 0.05</maxSize>
+		<zIndex>100</zIndex>
+	</image>
+
+		<image name="primaryBtn" extra="true">
+			<linearSmooth>true</linearSmooth>	
+			<pos>0.052083333333333 0.7972222222222222</pos>
+			<size>0.036458333333333 0.122222222222222</size>
+			<zIndex>100</zIndex>
+		</image>
+
+		<image name="selectTxt" extra="true">
+			<pos>0.051375 0.925</pos>
+			<size>0.036458333333333 0.02037037037037</size>
+			<path>./_inc/assets/selectTxt.png</path>
+			<zIndex>100</zIndex>
+		</image>
+
+		<image name="secondaryBtn" extra="true">
+			<linearSmooth>true</linearSmooth>	
+			<pos>0.091666666666667 0.7972222222222222</pos>
+			<size>0.036458333333333 0.122222222222222</size>
+			<zIndex>100</zIndex>
+		</image>
+
+		<image name="backTxt" extra="true">	
+			<pos>0.0909583333333333 0.925</pos>
+			<size>0.036458333333333 0.02037037037037</size>
+			<path>./_inc/assets/backTxt.png</path>
+			<zIndex>100</zIndex>
+		</image>
+
+	</customView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- --- Subsets --- -->
 
 
