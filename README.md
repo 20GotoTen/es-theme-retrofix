@@ -1,4 +1,4 @@
-Retrofix - Emulationstation theme for Batocera 5.25+
+Retrofix - A theme for Batocera and RetoBat 5.25+
 ====================================================
 
 Theme designed by 20Goto10
