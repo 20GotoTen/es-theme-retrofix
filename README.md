@@ -73,7 +73,6 @@ Supported themes in version 2.0:
 - SNES-MSU1
 - SatellaView
 - Nintendo DS
-- Nintendo Switch
 - Nintendo Virtualboy
 - Super Grafx
 - NEC PC-FX
