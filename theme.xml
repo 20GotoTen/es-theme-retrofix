@@ -269,6 +269,7 @@ GitHub:      	https://github.com/20GotoTen/es-theme-retrofix
 		<logoRotationOrigin>0.5 0.5</logoRotationOrigin>
 		<logoAlignment>left</logoAlignment>
 		<maxLogoCount>7</maxLogoCount>
+		<minLogoOpacity>0.10</minLogoOpacity>
 		<zIndex>29</zIndex>
 		<systemInfoDelay>700</systemInfoDelay>
 		<defaultTransition>fade</defaultTransition>
