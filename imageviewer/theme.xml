@@ -5,24 +5,37 @@
 
   <view name="system">
    <image name="startSet" extra="static"></image>
+     <text name="browseGames" extra="static">
+    <text>Browse images</text>
+    <pos>0.3239583333333333 0.933</pos>
+    <origin>0 1</origin>
+    <maxSize>1 0.05</maxSize>
+    <color>ffffff</color>
+    <fontPath>./_inc/fonts/RedHatDisplay-Medium.ttf</fontPath>
+    <fontSize>0.019</fontSize>
+    <alignment>left</alignment>
+    <zIndex>200</zIndex>
+  </text>
  </view>
+
+
 
  <view name="detailed">
   <textlist name="gamelist">
-   <selectorColor>D9482D</selectorColor>
+   <selectorColor>4F4F4F</selectorColor>
    <selectedColor>ffffff</selectedColor>
  </textlist>
 </view>
 
 <view name="grid">
   <image name="gridtile.favorite">
-    <color>D9482Dff</color>
+    <color>4F4F4Fff</color>
   </image>  
 </view>
 
 <customView name="Tiles" inherits="grid">
   <gridtile name="selected">
-    <backgroundEdgeColor>D9482D</backgroundEdgeColor>
+    <backgroundEdgeColor>4F4F4F</backgroundEdgeColor>
   </gridtile>
 </customView>
 
