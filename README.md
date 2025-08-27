@@ -4,7 +4,7 @@ Retrofix - A theme for Batocera and RetoBat 5.25+
 Theme designed by 20Goto10
 Version 2.0
 First release 31/05/2020
-Last updated 31/03/2024
+Last updated 25/08/2025
 
 
 **Retrofix combines two of my loves: vintage video game artwork and Batocera. Sometimes the game art
